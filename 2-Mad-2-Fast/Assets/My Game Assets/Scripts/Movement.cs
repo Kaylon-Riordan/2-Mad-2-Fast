@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed;
-    public float rotationSpeed;
+    [SerializeField]
+    private float maxSpeed;
+    [SerializeField]
+    private float rotationSpeed;
+    [SerializeField]
+    private Transform cameraTransform;
 
     private CharacterController characterContoller;
 
@@ -24,11 +28,13 @@ public class Movement : MonoBehaviour
 
         // Changes the rigid bodyie's velocity to be the detected horizontal input multiplied by the player's speed allowing it to move left and right
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
-        float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed;
+        float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
+        float speed = inputMagnitude * maxSpeed;
+        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
         movementDirection.Normalize();
 
         //transform.Translate(movementDirection * magnitude * Time.deltaTime, Space.World);
-        characterContoller.SimpleMove(movementDirection * magnitude);
+        characterContoller.SimpleMove(movementDirection * speed);
 
         if (movementDirection != Vector3.zero)
         {
