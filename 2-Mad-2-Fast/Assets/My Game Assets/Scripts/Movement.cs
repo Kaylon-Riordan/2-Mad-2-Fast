@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
@@ -10,8 +11,20 @@ public class Movement : MonoBehaviour
     private float rotationSpeed;
     [SerializeField]
     private Transform cameraTransform;
+    [SerializeField]
+    private InputAction playerControls;
+
+    private void OnEnable()
+    {
+        playerControls.Enable();
+    }
+    private void OnDisable()
+    {
+        playerControls.Disable();
+    }
 
     private CharacterController characterContoller;
+    Vector2 inputDirection = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +36,12 @@ public class Movement : MonoBehaviour
     void FixedUpdate()
     {
         // Creates a variable that stores a float based on the players input on the horizontal and vertical axis, raw means there is no smoothing so is better fordigital input like keyboard
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
+        //float horizontalInput = Input.GetAxisRaw("Horizontal");
+        //float verticalInput = Input.GetAxisRaw("Vertical");
+        inputDirection = playerControls.ReadValue<Vector2>();
 
         // Changes the rigid bodyie's velocity to be the detected horizontal input multiplied by the player's speed allowing it to move left and right
-        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        Vector3 movementDirection = new Vector3(inputDirection.x, 0, inputDirection.y);
         float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
         float speed = inputMagnitude * maxSpeed;
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
@@ -42,11 +56,5 @@ public class Movement : MonoBehaviour
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
