@@ -92,7 +92,7 @@ public class Movement : MonoBehaviour
         // Constantly decelerate, faster if brakes are applied
         speed -= decelerationPerTick * decelerationMultiplier;
         // Stop speed from exceding max or becoming negative
-        speed = Mthf.Clamp(speed, 0, maxSpeed);
+        speed = Mathf.Clamp(speed, 0, maxSpeed);
 
         // Set movement to direction of camera
         movementDirection = Quaternion.AngleAxis(cameraTransform.
