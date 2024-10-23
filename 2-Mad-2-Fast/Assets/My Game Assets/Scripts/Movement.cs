@@ -83,22 +83,35 @@ public class Movement : MonoBehaviour
     // Fixed update is used for movement so that the players speed isn't affected by framerate
     void FixedUpdate()
     {
+        // Take input direction from user and store in vector 3
         inputDirection = steer.ReadValue<Vector2>();
         Vector3 movementDirection = new Vector3(inputDirection.x, 0, 1);
+        // Store magnitude without exceding 1 on diagnal inputs
         float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
 
+        // Constantly decelerate, faster if brakes are applied
         speed -= decelerationPerTick * decelerationMultiplier;
-        speed = Mathf.Clamp(speed, 0, maxSpeed);
+        // Stop speed from exceding max or becoming negative
+        speed = Mthf.Clamp(speed, 0, maxSpeed);
 
-        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
+        // Set movement to direction of camera
+        movementDirection = Quaternion.AngleAxis(cameraTransform.
+            rotation.eulerAngles.y, Vector3.up) * movementDirection;
+        // Remove magnitude, leaving only direction
         movementDirection.Normalize();
+        // Multiply by magnitude for horizontal analogue inputs
+        movementDirection.x *= inputMagnitude;
+        // Moves character using character contoller
         characterContoller.SimpleMove(movementDirection * speed);
 
         if (movementDirection != Vector3.zero)
         {
-            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            // Get direction character should face from movement
+            Quaternion toRotation = Quaternion.LookRotation
+                (movementDirection, Vector3.up);
+            // Rotate towards that direction at rotation speed
+            transform.rotation = Quaternion.RotateTowards(transform.
+                rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
     }
 
