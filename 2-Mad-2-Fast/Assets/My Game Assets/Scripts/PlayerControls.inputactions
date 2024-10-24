@@ -199,6 +199,28 @@
                 },
                 {
                     "name": "",
+                    "id": "f2eea6ea-4fd4-497a-9845-337dff083fbf",
+                    "path": "<XInputController>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7438b310-909b-4bcd-b380-e767f7cca720",
+                    "path": "<DualShockGamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fdcfc7f3-e2d8-4ed9-a3a2-af773b90d509",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -221,8 +243,41 @@
                 },
                 {
                     "name": "",
+                    "id": "4b0eed77-4212-432a-b719-58e4578b2ef9",
+                    "path": "<XInputController>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96d17897-bf99-473c-81ed-0e387962a5b8",
+                    "path": "<DualShockGamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e3213e47-a90e-4798-ade3-64576802de60",
-                    "path": "<Keyboard>/space",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1af6c798-8914-4426-9efc-a133d688a9dd",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
