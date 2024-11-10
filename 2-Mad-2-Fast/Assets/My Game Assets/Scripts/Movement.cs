@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Xml.Serialization;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,14 +20,32 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float brakeDecelerationMultiplier;
     [SerializeField]
-    private float rotationSpeed;
+    private float turningSpeed;
+    [SerializeField]
+    private float tiltLimit;
+    [SerializeField]
+    private float tiltRecovery;
+    [SerializeField]
+    private float tiltRate;
+    [SerializeField]
+    private float tiltLerpSpeed;
     [SerializeField]
     private Transform cameraTransform;
+    [SerializeField]
+    private Transform pivotPoint;
     [SerializeField]
     private PlayerControls playerControls;
 
     [SerializeField]
     private float speed;
+    [SerializeField]
+    private float tilt;
+    [SerializeField]
+    private bool stumble;
+    [SerializeField]
+    private Vector3 tiltShown;
+    
+
     private bool leftNext;
     private bool rightNext;
     private float decelerationMultiplier;
@@ -74,6 +94,7 @@ public class Movement : MonoBehaviour
     {
         characterContoller = GetComponent<CharacterController>();
 
+        stumble = false;
         leftNext = true;
         rightNext = true;
         decelerationMultiplier = 1;
@@ -83,38 +104,71 @@ public class Movement : MonoBehaviour
     // Fixed update is used for movement so that the players speed isn't affected by framerate
     void FixedUpdate()
     {
-        // Take input direction from user and store in vector 3
-        inputDirection = steer.ReadValue<Vector2>();
-        Vector3 movementDirection = new Vector3(inputDirection.x, 0, 1);
-        // Store magnitude without exceding 1 on diagnal inputs
-        float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
-
-        // Constantly decelerate, faster if brakes are applied
-        speed -= decelerationPerTick * decelerationMultiplier;
-        // Stop speed from exceding max or becoming negative
-        speed = Mathf.Clamp(speed, 0, maxSpeed);
-
-        // Set movement to direction of camera
-        movementDirection = Quaternion.AngleAxis(cameraTransform.
-            rotation.eulerAngles.y, Vector3.up) * movementDirection;
-        // Remove magnitude, leaving only direction
-        movementDirection.Normalize();
-        // Multiply by magnitude for horizontal analogue inputs
-        movementDirection.x *= inputMagnitude;
-        // Moves character using character contoller
-        characterContoller.SimpleMove(movementDirection * speed);
-
-        if (movementDirection != Vector3.zero)
+        if(!stumble)
         {
-            // Get direction character should face from movement
-            Quaternion toRotation = Quaternion.LookRotation
-                (movementDirection, Vector3.up);
-            // Rotate towards that direction at rotation speed
-            transform.rotation = Quaternion.RotateTowards(transform.
-                rotation, toRotation, rotationSpeed * Time.deltaTime);
+            // Take input direction from user and store in vector 3
+            inputDirection = steer.ReadValue<Vector2>();
+            Vector3 movementDirection = new Vector3(inputDirection.x, 0, 1);
+            // Store magnitude without exceding 1 on diagnal inputs
+            float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
+
+            // Constantly decelerate, faster if brakes are applied
+            speed -= decelerationPerTick * decelerationMultiplier;
+            // Stop speed from exceding max or becoming negative
+            speed = Mathf.Clamp(speed, 0, maxSpeed);
+            // Tilt the player in the direction of input, depending on speed
+            tilt += inputDirection.x * speed * tiltRate;
+
+            // Set movement to direction of camera
+            movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
+            // Remove magnitude, leaving only direction
+            movementDirection.Normalize();
+            // Multiply by magnitude for horizontal analogue inputs
+            movementDirection.x *= inputMagnitude;
+            // Moves character using character contoller
+            characterContoller.SimpleMove(movementDirection * speed);
+
+            if (movementDirection != Vector3.zero)
+            {
+                // Get direction character should face from movement
+                Quaternion toRotation = Quaternion.LookRotation
+                    (movementDirection, Vector3.up);
+                // Rotate towards that direction at rotation speed
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, turningSpeed * Time.deltaTime);
+            }
         }
+
+        if (tilt < 0)
+        {
+            tilt += tiltRecovery;
+            if (tilt < -tiltLimit)
+            {
+                StartCoroutine(Stumble());
+            }
+        }
+        else if (tilt > 0)
+        {
+            tilt -= tiltRecovery;
+            if (tilt > tiltLimit)
+            {
+                StartCoroutine(Stumble());
+            }
+        }
+
+        tiltShown = pivotPoint.localEulerAngles;
+        tiltShown.z = Mathf.Lerp(tiltShown.z, -tilt, tiltLerpSpeed * Time.deltaTime);
+        pivotPoint.localEulerAngles = tiltShown;
     }
 
+    IEnumerator Stumble()
+    {
+        stumble = true;
+        speed = 0;
+
+        yield return new WaitForSeconds(2f);
+
+        stumble = false;
+    }
 
     private void LeftPedal(InputAction.CallbackContext context)
     {
