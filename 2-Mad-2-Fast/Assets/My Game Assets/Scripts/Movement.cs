@@ -12,6 +12,16 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float maxSpeed;
     [SerializeField]
+    private float fastSpeed;
+    [SerializeField]
+    private float moderateSpeed;
+    [SerializeField]
+    private float largePenalty;
+    [SerializeField]
+    private float mediumPenalty;
+    [SerializeField]
+    private float smallPenalty;
+    [SerializeField]
     private float accelerationPerPedal;
     [SerializeField]
     private float decelerationPerMiss;
@@ -34,6 +44,10 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private Transform pivotPoint;
     [SerializeField]
+    private Bumper leftCollisionDetector;
+    [SerializeField]
+    private Bumper rightCollisionDetector;
+    [SerializeField]
     private PlayerControls playerControls;
 
     [SerializeField]
@@ -41,10 +55,10 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float tilt;
     [SerializeField]
-    private bool stumble;
+    private bool slowed;
     [SerializeField]
     private Vector3 tiltShown;
-    
+
 
     private bool leftNext;
     private bool rightNext;
@@ -94,7 +108,7 @@ public class Movement : MonoBehaviour
     {
         characterContoller = GetComponent<CharacterController>();
 
-        stumble = false;
+        slowed = false;
         leftNext = true;
         rightNext = true;
         decelerationMultiplier = 1;
@@ -104,38 +118,35 @@ public class Movement : MonoBehaviour
     // Fixed update is used for movement so that the players speed isn't affected by framerate
     void FixedUpdate()
     {
-        if(!stumble)
+        // Take input direction from user and store in vector 3
+        inputDirection = steer.ReadValue<Vector2>();
+        Vector3 movementDirection = new Vector3(inputDirection.x, 0, 1);
+        // Store magnitude without exceding 1 on diagnal inputs
+        float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
+
+        // Constantly decelerate, faster if brakes are applied
+        speed -= decelerationPerTick * decelerationMultiplier;
+        // Stop speed from exceding max or becoming negative
+        speed = Mathf.Clamp(speed, 0, maxSpeed);
+        // Tilt the player in the direction of input, depending on speed
+        tilt += inputDirection.x * speed * tiltRate;
+
+        // Set movement to direction of camera
+        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
+        // Remove magnitude, leaving only direction
+        movementDirection.Normalize();
+        // Multiply by magnitude for horizontal analogue inputs
+        movementDirection.x *= inputMagnitude;
+        // Moves character using character contoller
+        characterContoller.SimpleMove(movementDirection * speed);
+
+        if (movementDirection != Vector3.zero)
         {
-            // Take input direction from user and store in vector 3
-            inputDirection = steer.ReadValue<Vector2>();
-            Vector3 movementDirection = new Vector3(inputDirection.x, 0, 1);
-            // Store magnitude without exceding 1 on diagnal inputs
-            float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
-
-            // Constantly decelerate, faster if brakes are applied
-            speed -= decelerationPerTick * decelerationMultiplier;
-            // Stop speed from exceding max or becoming negative
-            speed = Mathf.Clamp(speed, 0, maxSpeed);
-            // Tilt the player in the direction of input, depending on speed
-            tilt += inputDirection.x * speed * tiltRate;
-
-            // Set movement to direction of camera
-            movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
-            // Remove magnitude, leaving only direction
-            movementDirection.Normalize();
-            // Multiply by magnitude for horizontal analogue inputs
-            movementDirection.x *= inputMagnitude;
-            // Moves character using character contoller
-            characterContoller.SimpleMove(movementDirection * speed);
-
-            if (movementDirection != Vector3.zero)
-            {
-                // Get direction character should face from movement
-                Quaternion toRotation = Quaternion.LookRotation
-                    (movementDirection, Vector3.up);
-                // Rotate towards that direction at rotation speed
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, turningSpeed * Time.deltaTime);
-            }
+            // Get direction character should face from movement
+            Quaternion toRotation = Quaternion.LookRotation
+                (movementDirection, Vector3.up);
+            // Rotate towards that direction at rotation speed
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, turningSpeed * Time.deltaTime);
         }
 
         if (tilt < 0)
@@ -143,7 +154,7 @@ public class Movement : MonoBehaviour
             tilt += tiltRecovery;
             if (tilt < -tiltLimit)
             {
-                StartCoroutine(Stumble());
+                StartCoroutine(Stumble(largePenalty));
             }
         }
         else if (tilt > 0)
@@ -151,23 +162,53 @@ public class Movement : MonoBehaviour
             tilt -= tiltRecovery;
             if (tilt > tiltLimit)
             {
-                StartCoroutine(Stumble());
+                StartCoroutine(Stumble(largePenalty));
             }
         }
 
         tiltShown = pivotPoint.localEulerAngles;
         tiltShown.z = Mathf.Lerp(tiltShown.z, -tilt, tiltLerpSpeed * Time.deltaTime);
         pivotPoint.localEulerAngles = tiltShown;
+
+        if (leftCollisionDetector.contact && rightCollisionDetector.contact)
+        {
+            if(speed >= fastSpeed)
+            {
+                StartCoroutine(Stumble(largePenalty));
+            }
+            else if(speed >= moderateSpeed)
+            {
+                StartCoroutine(Stumble(mediumPenalty));
+            }
+            else
+            {
+                StartCoroutine(Stumble(smallPenalty));
+            }
+        }
+        else if(leftCollisionDetector.contact || rightCollisionDetector.contact)
+        {
+            if (speed >= fastSpeed)
+            {
+                StartCoroutine(Stumble(mediumPenalty));
+            }
+            else if (speed >= moderateSpeed)
+            {
+                StartCoroutine(Stumble(smallPenalty));
+            }
+        }
     }
 
-    IEnumerator Stumble()
+    IEnumerator Stumble(float penalty)
     {
-        stumble = true;
-        speed = 0;
+        if (!slowed)
+        {
+            slowed = true;
+            speed *= penalty;
 
-        yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(2f);
 
-        stumble = false;
+            slowed = false;
+        }
     }
 
     private void LeftPedal(InputAction.CallbackContext context)
