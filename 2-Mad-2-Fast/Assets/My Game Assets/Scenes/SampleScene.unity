@@ -674,8 +674,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468920737}
-  - component: {fileID: 1468920736}
   - component: {fileID: 1468920740}
+  - component: {fileID: 1468920742}
+  - component: {fileID: 1468920741}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -683,26 +684,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1468920736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468920735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92612a3c657e7b1428db285553b81899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 50
-  accelerationPerPedal: 1
-  decelerationPerMiss: 2
-  decelerationPerTick: 0.04
-  brakeDecelerationMultiplier: 5
-  rotationSpeed: 250
-  cameraTransform: {fileID: 963194228}
-  speed: 0
 --- !u!4 &1468920737
 Transform:
   m_ObjectHideFlags: 0
@@ -746,6 +727,38 @@ CharacterController:
   m_SkinWidth: 0.05
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.05, z: 0}
+--- !u!114 &1468920741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468920735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82c43908405d5647927e9ea6a526187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1468920742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468920735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc0fccb1b764794b936dd4b519c45ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 50
+  accelerationPerPedal: 1
+  decelerationPerMiss: 2
+  decelerationPerTick: 0.04
+  brakeDecelerationMultiplier: 5
+  rotationSpeed: 250
+  cameraTransform: {fileID: 963194228}
+  speed: 0
 --- !u!1 &1472449163
 GameObject:
   m_ObjectHideFlags: 0
