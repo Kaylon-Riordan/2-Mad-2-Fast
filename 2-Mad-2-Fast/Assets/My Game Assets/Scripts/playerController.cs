@@ -23,9 +23,12 @@ public class playerController : MonoBehaviour
     private float rotationSpeed;
 
     [SerializeField]
-    private Transform cameraTransform;
+    public Vector3 playerSpawnPoint;
+    [SerializeField]
+    public Transform cameraTransform;
     [SerializeField]
     private PlayerControls playerControls;
+
 
     [SerializeField]
     private float speed;
@@ -48,6 +51,7 @@ public class playerController : MonoBehaviour
         leftNext = true;
         rightNext = true;
         decelerationMultiplier = 1;
+        //transform.position = playerSpawnPoint;
     }
 
     // Fixed update is used for movement so that the players speed isn't affected by framerate

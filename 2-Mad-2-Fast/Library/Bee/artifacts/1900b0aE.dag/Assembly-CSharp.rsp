@@ -393,6 +393,7 @@
 "Assets/My Game Assets/Scripts/playerController.cs"
 "Assets/My Game Assets/Scripts/PlayerControls.cs"
 "Assets/My Game Assets/Scripts/playerInputHandler.cs"
+"Assets/playerManager.cs"
 -langversion:9.0
 
 /deterministic

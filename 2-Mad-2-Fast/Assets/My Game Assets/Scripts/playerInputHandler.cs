@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class playerInputHandler : MonoBehaviour
 {
-    [SerializeField]
-    private PlayerControls playerControls;
+    private InputActionAsset playerActionAsset;
+    private InputActionMap playerControls;
 
     private InputAction steer;
     private InputAction leftPedal;
@@ -15,39 +15,35 @@ public class playerInputHandler : MonoBehaviour
 
     private void Awake()
     {
-        playerControls = new PlayerControls();
+        playerActionAsset = GetComponent<PlayerInput>().actions;
+        playerControls = playerActionAsset.FindActionMap("Player");
         controller = GetComponent<playerController>();
     }
 
     private void OnEnable()
     {
-        steer = playerControls.Player.Steer;
-        steer.Enable();
+        // Find Actions
+        steer = playerControls.FindAction("Steer");
+        leftPedal = playerControls.FindAction("LeftPedal");
+        rightPedal = playerControls.FindAction("RightPedal");
+        brake = playerControls.FindAction("Brake");
 
-        leftPedal = playerControls.Player.LeftPedal;
-        leftPedal.Enable();
+        // Execute methods if performed
         leftPedal.performed += controller.LeftPedal;
-
-        rightPedal = playerControls.Player.RightPedal;
-        rightPedal.Enable();
         rightPedal.performed += controller.RightPedal;
-
-        brake = playerControls.Player.Brake;
-        brake.Enable();
         brake.performed += controller.BrakePressed;
         brake.canceled += controller.BrakeReleased;
+
+        playerControls.Enable();
     }
 
     private void OnDisable()
     {
-        steer.Disable();
-        leftPedal.Disable();
-        rightPedal.Disable();
-        brake.Disable();
+        playerControls.Disable();
     }
 
     public Vector2 GetSteer()
     {
-        return steer.ReadValue<Vector2>();
+        return playerControls.FindAction("Steer").ReadValue<Vector2>();
     }
 }
