@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1738.8679
     height: 887.5472
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 379.4717
     height: 581.43396
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -340,9 +340,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 156.88678}
-    m_SelectedIDs: 9e800000
-    m_LastClickedID: 32926
-    m_ExpandedIDs: 000000002a8000002c8000002e80000030800000328000003480000036800000388000003a8000003c8000003e80000000ca9a3b
+    m_SelectedIDs: f2800000
+    m_LastClickedID: 33010
+    m_ExpandedIDs: 000000007e80000080800000828000008480000086800000888000008a8000008c8000008e800000908000009280000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -371,7 +371,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a8000002c8000002e80000030800000328000003480000036800000388000003a8000003c8000003e800000
+    m_ExpandedIDs: 000000007e80000080800000828000008480000086800000888000008a8000008c8000008e8000009080000092800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -468,9 +468,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d0faffff
+      m_SelectedIDs: 06800000
+      m_LastClickedID: 32774
+      m_ExpandedIDs: 86f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1098,9 +1098,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.10927715, y: 0.47316775, z: -0.059277423, w: -0.87215656}
   m_Size:
-    m_Target: 10
+    m_Target: 12.99623
     speed: 2
-    m_Value: 10
+    m_Value: 12.99623
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1310,7 +1310,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 131.32074
+  m_LastVerticalScrollValue: 218.26416
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

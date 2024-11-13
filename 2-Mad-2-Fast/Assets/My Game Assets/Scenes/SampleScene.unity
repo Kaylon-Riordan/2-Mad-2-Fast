@@ -555,6 +555,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1997271397}
   - {fileID: 1328429609}
+  leftHand: 1
+  selectedInputMethods: 0200000003000000
   controlSchemes: 0000000000000000
 --- !u!1 &1960054634
 GameObject:

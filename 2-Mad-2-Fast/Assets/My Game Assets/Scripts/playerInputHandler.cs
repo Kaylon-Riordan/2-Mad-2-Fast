@@ -77,7 +77,7 @@ public class playerInputHandler : MonoBehaviour
 
     public Vector2 GetSteer()
     {
-        if (playerManager.controlSchemes[playerNumber-1] == PlayerManager.ControlScheme.Shared)
+        if (playerManager.controlSchemes[playerNumber - 1] == PlayerManager.ControlScheme.Shared)
             return playerActions.FindAction("SteerP" + playerNumber).ReadValue<Vector2>();
         else
             return playerActions.FindAction("Steer").ReadValue<Vector2>();
