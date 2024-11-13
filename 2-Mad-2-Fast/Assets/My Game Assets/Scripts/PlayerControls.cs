@@ -199,111 +199,309 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c9da2dc0-b77a-41d6-a61c-3b211059425b"",
-                    ""path"": ""<Mouse>/rightButton"",
+                    ""id"": ""f3cfe5ca-d000-496e-aaff-0fe0ecdb931e"",
+                    ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightPedal"",
+                    ""groups"": ""OneHandL"",
+                    ""action"": ""Steer"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7604e96b-cc75-4f08-9a26-ed2741d3eb13"",
-                    ""path"": ""<Keyboard>/period"",
+                    ""id"": ""d8f58faf-fc57-44d9-b442-bfe3ac064fdc"",
+                    ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightPedal"",
+                    ""groups"": ""OneHandR"",
+                    ""action"": ""Steer"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f2eea6ea-4fd4-497a-9845-337dff083fbf"",
-                    ""path"": ""<XInputController>/rightShoulder"",
+                    ""id"": ""a2cac0a2-fc57-44f5-9349-2a4a81faa372"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightPedal"",
+                    ""groups"": ""OneHandL"",
+                    ""action"": ""LeftPedal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7438b310-909b-4bcd-b380-e767f7cca720"",
-                    ""path"": ""<DualShockGamepad>/rightShoulder"",
+                    ""id"": ""f993be37-ed0d-47de-aa8e-009cc500ff71"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightPedal"",
+                    ""groups"": ""OneHandR"",
+                    ""action"": ""LeftPedal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""fdcfc7f3-e2d8-4ed9-a3a2-af773b90d509"",
+                    ""id"": ""ab7277f8-e7f9-435a-b557-50d5a0c59a09"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Default"",
                     ""action"": ""LeftPedal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8f2a8ed3-3b80-420c-9082-36364d113f30"",
-                    ""path"": ""<Keyboard>/comma"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LeftPedal"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4b0eed77-4212-432a-b719-58e4578b2ef9"",
-                    ""path"": ""<XInputController>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LeftPedal"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""96d17897-bf99-473c-81ed-0e387962a5b8"",
-                    ""path"": ""<DualShockGamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LeftPedal"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e3213e47-a90e-4798-ade3-64576802de60"",
+                    ""id"": ""f1dd96d0-fc54-426a-869b-cf32868c6f43"",
                     ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""LeftPedal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""74d6ec88-96d4-4448-b69d-b6998bad9443"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""LeftPedal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6950239e-11e1-4ad6-a1aa-8f8e5aed8a07"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""OneHandL"",
+                    ""action"": ""RightPedal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b2ee3f00-1393-426e-8532-ed5abec8b6f6"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""OneHandR"",
+                    ""action"": ""RightPedal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""37b81b69-f1f1-48bc-98e3-cbd5fce5163c"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""RightPedal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2bc3bf92-ab96-43d1-9ec8-84335153b51e"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""RightPedal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""93f4babd-627d-4fb1-93b3-28552b226e2f"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""RightPedal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""181c2aef-b52f-4408-8c5a-9f2a75588bae"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""OneHandL"",
                     ""action"": ""Brake"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1af6c798-8914-4426-9efc-a133d688a9dd"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""id"": ""f494f116-7593-487b-876f-f52bdf14f2a0"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""OneHandR"",
+                    ""action"": ""Brake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d1b4eaf-075b-4906-91af-8f53e4c9bf3d"",
+                    ""path"": ""<Mouse>/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Brake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""48ac6a78-ac16-491d-a761-568f3f98b721"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Brake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7d708551-308f-4c70-b022-5975578f210c"",
+                    ""path"": ""<Mouse>/middleButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Brake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29491db8-0e85-40cd-bb18-9b2fb74c81ab"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""2cbe02b3-d787-4ed3-9b80-5e56f3c75b59"",
+                    ""path"": ""Dpad"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Brake"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""c33f9842-9d73-4227-8cca-4ba03c184b93"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""73658b61-ef29-4869-a59a-10e15a356d9d"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""483f366a-1f25-4e87-81fe-bb32dc34ddf7"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""b887a79e-11b2-411f-bd36-7f086179c0df"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""5f0bd2b6-57cf-4d3b-b20b-28019ef188a7"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ee45d1c8-9670-4d45-8d2b-f48a11222fbe"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""91812b9c-b4d5-4c26-ad16-1e6001c988c1"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a424e0df-7c40-41e4-9d00-cc00eedd49f8"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Default"",
+                    ""action"": ""Steer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d42b5e89-0ebc-49b8-a35e-b1f2da121db4"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Steer"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -824,6 +1022,174 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""PlayerShared"",
+            ""id"": ""d63a04da-1e49-4bc2-9d43-278f9df490c9"",
+            ""actions"": [
+                {
+                    ""name"": ""SteerP2"",
+                    ""type"": ""Value"",
+                    ""id"": ""15636f8f-d3ca-461e-85e8-ed1eb7f93d4c"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""LeftPedalP2"",
+                    ""type"": ""Button"",
+                    ""id"": ""45ca88c8-261a-49c4-8789-731121791ea2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightPedalP2"",
+                    ""type"": ""Button"",
+                    ""id"": ""893be46c-9884-48a6-9ab4-dbb34b17a2f1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""BrakeP2"",
+                    ""type"": ""Button"",
+                    ""id"": ""cf2daf8d-2b02-4943-ba64-ab03529ef9c5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SteerP1"",
+                    ""type"": ""Value"",
+                    ""id"": ""e8990fd7-8aff-4c73-9e36-fa5a38aeeb0a"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""LeftPedalP1"",
+                    ""type"": ""Button"",
+                    ""id"": ""922bbcd0-4db2-4912-9651-25dd8d6cd2ee"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightPedalP1"",
+                    ""type"": ""Button"",
+                    ""id"": ""fe365054-baf7-4802-8372-67faa2ebd37f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""BrakeP1"",
+                    ""type"": ""Button"",
+                    ""id"": ""c9e761e3-ab65-4a02-9aa1-f65cb94f53c9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""bf0ff9f5-d4da-4933-bffb-3734a6c044bd"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""SteerP2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""674d376c-cea1-4534-831a-feaf8ffd23a8"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BrakeP2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""32f042a9-7e47-4e6c-bc38-78670f14cd16"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftPedalP2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1b2e2cbf-bc78-4793-9f15-01a7ee6d98ca"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightPedalP2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b2b72c9f-992a-47b8-9a5c-5131ce2c779e"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftPedalP1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""902e81a3-16f7-44f3-903d-bda79a5e9cdf"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightPedalP1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba05bb60-f417-4f56-9593-a1db53db5d3f"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BrakeP1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bbba9606-0c78-4aa7-aef1-a7c795c8ad6a"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""SteerP1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -886,6 +1252,43 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isOR"": false
                 }
             ]
+        },
+        {
+            ""name"": ""OneHandL"",
+            ""bindingGroup"": ""OneHandL"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""OneHandR"",
+            ""bindingGroup"": ""OneHandR"",
+            ""devices"": []
+        },
+        {
+            ""name"": ""Default"",
+            ""bindingGroup"": ""Default"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                }
+            ]
         }
     ]
 }");
@@ -907,6 +1310,16 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+        // PlayerShared
+        m_PlayerShared = asset.FindActionMap("PlayerShared", throwIfNotFound: true);
+        m_PlayerShared_SteerP2 = m_PlayerShared.FindAction("SteerP2", throwIfNotFound: true);
+        m_PlayerShared_LeftPedalP2 = m_PlayerShared.FindAction("LeftPedalP2", throwIfNotFound: true);
+        m_PlayerShared_RightPedalP2 = m_PlayerShared.FindAction("RightPedalP2", throwIfNotFound: true);
+        m_PlayerShared_BrakeP2 = m_PlayerShared.FindAction("BrakeP2", throwIfNotFound: true);
+        m_PlayerShared_SteerP1 = m_PlayerShared.FindAction("SteerP1", throwIfNotFound: true);
+        m_PlayerShared_LeftPedalP1 = m_PlayerShared.FindAction("LeftPedalP1", throwIfNotFound: true);
+        m_PlayerShared_RightPedalP1 = m_PlayerShared.FindAction("RightPedalP1", throwIfNotFound: true);
+        m_PlayerShared_BrakeP1 = m_PlayerShared.FindAction("BrakeP1", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1152,6 +1565,108 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // PlayerShared
+    private readonly InputActionMap m_PlayerShared;
+    private List<IPlayerSharedActions> m_PlayerSharedActionsCallbackInterfaces = new List<IPlayerSharedActions>();
+    private readonly InputAction m_PlayerShared_SteerP2;
+    private readonly InputAction m_PlayerShared_LeftPedalP2;
+    private readonly InputAction m_PlayerShared_RightPedalP2;
+    private readonly InputAction m_PlayerShared_BrakeP2;
+    private readonly InputAction m_PlayerShared_SteerP1;
+    private readonly InputAction m_PlayerShared_LeftPedalP1;
+    private readonly InputAction m_PlayerShared_RightPedalP1;
+    private readonly InputAction m_PlayerShared_BrakeP1;
+    public struct PlayerSharedActions
+    {
+        private @PlayerControls m_Wrapper;
+        public PlayerSharedActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @SteerP2 => m_Wrapper.m_PlayerShared_SteerP2;
+        public InputAction @LeftPedalP2 => m_Wrapper.m_PlayerShared_LeftPedalP2;
+        public InputAction @RightPedalP2 => m_Wrapper.m_PlayerShared_RightPedalP2;
+        public InputAction @BrakeP2 => m_Wrapper.m_PlayerShared_BrakeP2;
+        public InputAction @SteerP1 => m_Wrapper.m_PlayerShared_SteerP1;
+        public InputAction @LeftPedalP1 => m_Wrapper.m_PlayerShared_LeftPedalP1;
+        public InputAction @RightPedalP1 => m_Wrapper.m_PlayerShared_RightPedalP1;
+        public InputAction @BrakeP1 => m_Wrapper.m_PlayerShared_BrakeP1;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerShared; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerSharedActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerSharedActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerSharedActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerSharedActionsCallbackInterfaces.Add(instance);
+            @SteerP2.started += instance.OnSteerP2;
+            @SteerP2.performed += instance.OnSteerP2;
+            @SteerP2.canceled += instance.OnSteerP2;
+            @LeftPedalP2.started += instance.OnLeftPedalP2;
+            @LeftPedalP2.performed += instance.OnLeftPedalP2;
+            @LeftPedalP2.canceled += instance.OnLeftPedalP2;
+            @RightPedalP2.started += instance.OnRightPedalP2;
+            @RightPedalP2.performed += instance.OnRightPedalP2;
+            @RightPedalP2.canceled += instance.OnRightPedalP2;
+            @BrakeP2.started += instance.OnBrakeP2;
+            @BrakeP2.performed += instance.OnBrakeP2;
+            @BrakeP2.canceled += instance.OnBrakeP2;
+            @SteerP1.started += instance.OnSteerP1;
+            @SteerP1.performed += instance.OnSteerP1;
+            @SteerP1.canceled += instance.OnSteerP1;
+            @LeftPedalP1.started += instance.OnLeftPedalP1;
+            @LeftPedalP1.performed += instance.OnLeftPedalP1;
+            @LeftPedalP1.canceled += instance.OnLeftPedalP1;
+            @RightPedalP1.started += instance.OnRightPedalP1;
+            @RightPedalP1.performed += instance.OnRightPedalP1;
+            @RightPedalP1.canceled += instance.OnRightPedalP1;
+            @BrakeP1.started += instance.OnBrakeP1;
+            @BrakeP1.performed += instance.OnBrakeP1;
+            @BrakeP1.canceled += instance.OnBrakeP1;
+        }
+
+        private void UnregisterCallbacks(IPlayerSharedActions instance)
+        {
+            @SteerP2.started -= instance.OnSteerP2;
+            @SteerP2.performed -= instance.OnSteerP2;
+            @SteerP2.canceled -= instance.OnSteerP2;
+            @LeftPedalP2.started -= instance.OnLeftPedalP2;
+            @LeftPedalP2.performed -= instance.OnLeftPedalP2;
+            @LeftPedalP2.canceled -= instance.OnLeftPedalP2;
+            @RightPedalP2.started -= instance.OnRightPedalP2;
+            @RightPedalP2.performed -= instance.OnRightPedalP2;
+            @RightPedalP2.canceled -= instance.OnRightPedalP2;
+            @BrakeP2.started -= instance.OnBrakeP2;
+            @BrakeP2.performed -= instance.OnBrakeP2;
+            @BrakeP2.canceled -= instance.OnBrakeP2;
+            @SteerP1.started -= instance.OnSteerP1;
+            @SteerP1.performed -= instance.OnSteerP1;
+            @SteerP1.canceled -= instance.OnSteerP1;
+            @LeftPedalP1.started -= instance.OnLeftPedalP1;
+            @LeftPedalP1.performed -= instance.OnLeftPedalP1;
+            @LeftPedalP1.canceled -= instance.OnLeftPedalP1;
+            @RightPedalP1.started -= instance.OnRightPedalP1;
+            @RightPedalP1.performed -= instance.OnRightPedalP1;
+            @RightPedalP1.canceled -= instance.OnRightPedalP1;
+            @BrakeP1.started -= instance.OnBrakeP1;
+            @BrakeP1.performed -= instance.OnBrakeP1;
+            @BrakeP1.canceled -= instance.OnBrakeP1;
+        }
+
+        public void RemoveCallbacks(IPlayerSharedActions instance)
+        {
+            if (m_Wrapper.m_PlayerSharedActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerSharedActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerSharedActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerSharedActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerSharedActions @PlayerShared => new PlayerSharedActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -1197,6 +1712,33 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_XRSchemeIndex];
         }
     }
+    private int m_OneHandLSchemeIndex = -1;
+    public InputControlScheme OneHandLScheme
+    {
+        get
+        {
+            if (m_OneHandLSchemeIndex == -1) m_OneHandLSchemeIndex = asset.FindControlSchemeIndex("OneHandL");
+            return asset.controlSchemes[m_OneHandLSchemeIndex];
+        }
+    }
+    private int m_OneHandRSchemeIndex = -1;
+    public InputControlScheme OneHandRScheme
+    {
+        get
+        {
+            if (m_OneHandRSchemeIndex == -1) m_OneHandRSchemeIndex = asset.FindControlSchemeIndex("OneHandR");
+            return asset.controlSchemes[m_OneHandRSchemeIndex];
+        }
+    }
+    private int m_DefaultSchemeIndex = -1;
+    public InputControlScheme DefaultScheme
+    {
+        get
+        {
+            if (m_DefaultSchemeIndex == -1) m_DefaultSchemeIndex = asset.FindControlSchemeIndex("Default");
+            return asset.controlSchemes[m_DefaultSchemeIndex];
+        }
+    }
     public interface IPlayerActions
     {
         void OnSteer(InputAction.CallbackContext context);
@@ -1216,5 +1758,16 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnRightClick(InputAction.CallbackContext context);
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+    }
+    public interface IPlayerSharedActions
+    {
+        void OnSteerP2(InputAction.CallbackContext context);
+        void OnLeftPedalP2(InputAction.CallbackContext context);
+        void OnRightPedalP2(InputAction.CallbackContext context);
+        void OnBrakeP2(InputAction.CallbackContext context);
+        void OnSteerP1(InputAction.CallbackContext context);
+        void OnLeftPedalP1(InputAction.CallbackContext context);
+        void OnRightPedalP1(InputAction.CallbackContext context);
+        void OnBrakeP1(InputAction.CallbackContext context);
     }
 }
