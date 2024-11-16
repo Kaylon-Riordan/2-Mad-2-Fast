@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float decelerationPerTick;
     [SerializeField]
-    private float brakeDecelerationMultiplier;
+    private float brakeMultiplier;
     [SerializeField]
     private float turningSpeed;
     [SerializeField]
@@ -40,6 +40,10 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float tiltLerpSpeed;
     [SerializeField]
+    private float rhythmMultiplier;
+    [SerializeField]
+    private float rhythmTolerance;
+    [SerializeField]
     private Transform cameraTransform;
     [SerializeField]
     private Transform pivotPoint;
@@ -50,20 +54,15 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private PlayerControls playerControls;
 
-    [SerializeField]
     private float speed;
-    [SerializeField]
     private float tilt;
-    [SerializeField]
     private bool slowed;
-    [SerializeField]
     private Vector3 tiltShown;
-
-
     private bool leftNext;
     private bool rightNext;
     private float decelerationMultiplier;
-    
+    private float[] pedalTiming = new float[6];
+    private float average;
 
     private InputAction steer;
     private InputAction leftPedal;
@@ -212,6 +211,28 @@ public class Movement : MonoBehaviour
         }
     }
 
+    private float CheckRhythm()
+    {
+        pedalTiming[5] = pedalTiming[4];
+        pedalTiming[4] = pedalTiming[3];
+        pedalTiming[3] = pedalTiming[2];
+        pedalTiming[2] = pedalTiming[1];
+        pedalTiming[1] = pedalTiming[0];
+        pedalTiming[0] = Time.time;
+
+        if (pedalTiming[5] != 0f)
+        {
+            average = ((pedalTiming[1] - pedalTiming[2]) + (pedalTiming[2] - pedalTiming[3]) + (pedalTiming[3] - pedalTiming[4]) + (pedalTiming[4] - pedalTiming[5])) / 4;
+
+            if ((pedalTiming[0] - pedalTiming[1]) < (average + average * rhythmTolerance) && (pedalTiming[0] - pedalTiming[1]) > (average - average * rhythmTolerance))
+            {
+                return rhythmMultiplier;
+            }
+        }
+
+        return 1;
+    }
+
     private void LeftPedal(InputAction.CallbackContext context)
     {
         if(leftNext)
@@ -219,7 +240,7 @@ public class Movement : MonoBehaviour
             leftNext = false;
             rightNext = true;
 
-            speed += accelerationPerPedal;
+            speed += accelerationPerPedal * CheckRhythm();
         }
         else
         {
@@ -234,7 +255,7 @@ public class Movement : MonoBehaviour
             rightNext = false;
             leftNext = true;
 
-            speed += accelerationPerPedal;
+            speed += accelerationPerPedal * CheckRhythm();
         }
         else
         {
@@ -244,7 +265,7 @@ public class Movement : MonoBehaviour
 
     private void BrakePressed(InputAction.CallbackContext context)
     {
-        decelerationMultiplier = brakeDecelerationMultiplier;
+        decelerationMultiplier = brakeMultiplier;
     }
     private void BrakeReleased(InputAction.CallbackContext context)
     {

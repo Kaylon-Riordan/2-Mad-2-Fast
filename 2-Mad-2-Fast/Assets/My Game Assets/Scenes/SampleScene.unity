@@ -701,23 +701,21 @@ MonoBehaviour:
   largePenalty: 0
   mediumPenalty: 0.3
   smallPenalty: 0.7
-  accelerationPerPedal: 1.2
+  accelerationPerPedal: 1
   decelerationPerMiss: 2.5
   decelerationPerTick: 0.04
-  brakeDecelerationMultiplier: 10
+  brakeMultiplier: 5
   turningSpeed: 300
   tiltLimit: 30
   tiltRecovery: 0.6
   tiltRate: 0.04
   tiltLerpSpeed: 100
+  rhythmMultiplier: 1.5
+  rhythmTolerance: 0.5
   cameraTransform: {fileID: 963194228}
   pivotPoint: {fileID: 2022715822}
   leftCollisionDetector: {fileID: 1537421416}
   rightCollisionDetector: {fileID: 1593798078}
-  speed: 0
-  tilt: 0
-  slowed: 0
-  tiltShown: {x: 0, y: 0, z: 0}
 --- !u!4 &1468920737
 Transform:
   m_ObjectHideFlags: 0
