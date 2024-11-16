@@ -154,7 +154,7 @@ public class Movement : MonoBehaviour
             tilt += tiltRecovery;
             if (tilt < -tiltLimit)
             {
-                StartCoroutine(Stumble(largePenalty));
+                StartCoroutine(Stumble(largePenalty, 0));
             }
         }
         else if (tilt > 0)
@@ -162,7 +162,7 @@ public class Movement : MonoBehaviour
             tilt -= tiltRecovery;
             if (tilt > tiltLimit)
             {
-                StartCoroutine(Stumble(largePenalty));
+                StartCoroutine(Stumble(largePenalty, 0));
             }
         }
 
@@ -174,32 +174,33 @@ public class Movement : MonoBehaviour
         {
             if(speed >= fastSpeed)
             {
-                StartCoroutine(Stumble(largePenalty));
+                StartCoroutine(Stumble(largePenalty, 0));
             }
             else if(speed >= moderateSpeed)
             {
-                StartCoroutine(Stumble(mediumPenalty));
+                StartCoroutine(Stumble(mediumPenalty, 0));
             }
             else
             {
-                StartCoroutine(Stumble(smallPenalty));
+                StartCoroutine(Stumble(smallPenalty, 0));
             }
         }
         else if(leftCollisionDetector.contact || rightCollisionDetector.contact)
         {
             if (speed >= fastSpeed)
             {
-                StartCoroutine(Stumble(mediumPenalty));
+                StartCoroutine(Stumble(mediumPenalty, 0.05f));
             }
             else if (speed >= moderateSpeed)
             {
-                StartCoroutine(Stumble(smallPenalty));
+                StartCoroutine(Stumble(smallPenalty,0.05f));
             }
         }
     }
 
-    IEnumerator Stumble(float penalty)
+    IEnumerator Stumble(float penalty, float delay)
     {
+        yield return new WaitForSeconds(delay);
         if (!slowed)
         {
             slowed = true;

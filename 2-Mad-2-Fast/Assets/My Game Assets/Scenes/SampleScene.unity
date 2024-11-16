@@ -701,8 +701,8 @@ MonoBehaviour:
   largePenalty: 0
   mediumPenalty: 0.3
   smallPenalty: 0.7
-  accelerationPerPedal: 1
-  decelerationPerMiss: 2
+  accelerationPerPedal: 1.2
+  decelerationPerMiss: 2.5
   decelerationPerTick: 0.04
   brakeDecelerationMultiplier: 10
   turningSpeed: 300
