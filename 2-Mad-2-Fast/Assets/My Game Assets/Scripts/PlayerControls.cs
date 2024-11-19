@@ -287,6 +287,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""37fe8e59-36cb-45f7-97e0-af1bd661ebcd"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Brake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""e3213e47-a90e-4798-ade3-64576802de60"",
                     ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",

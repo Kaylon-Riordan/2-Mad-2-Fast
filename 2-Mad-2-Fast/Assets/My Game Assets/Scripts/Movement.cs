@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Xml.Serialization;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,26 +12,57 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float maxSpeed;
     [SerializeField]
+    private float fastSpeed;
+    [SerializeField]
+    private float moderateSpeed;
+    [SerializeField]
+    private float largePenalty;
+    [SerializeField]
+    private float mediumPenalty;
+    [SerializeField]
+    private float smallPenalty;
+    [SerializeField]
     private float accelerationPerPedal;
     [SerializeField]
     private float decelerationPerMiss;
     [SerializeField]
     private float decelerationPerTick;
     [SerializeField]
-    private float brakeDecelerationMultiplier;
+    private float brakeMultiplier;
     [SerializeField]
-    private float rotationSpeed;
+    private float turningSpeed;
+    [SerializeField]
+    private float tiltLimit;
+    [SerializeField]
+    private float tiltRecovery;
+    [SerializeField]
+    private float tiltRate;
+    [SerializeField]
+    private float tiltLerpSpeed;
+    [SerializeField]
+    private float rhythmMultiplier;
+    [SerializeField]
+    private float rhythmTolerance;
     [SerializeField]
     private Transform cameraTransform;
     [SerializeField]
+    private Transform pivotPoint;
+    [SerializeField]
+    private Bumper leftCollisionDetector;
+    [SerializeField]
+    private Bumper rightCollisionDetector;
+    [SerializeField]
     private PlayerControls playerControls;
 
-    [SerializeField]
     private float speed;
+    private float tilt;
+    private bool slowed;
+    private Vector3 tiltShown;
     private bool leftNext;
     private bool rightNext;
     private float decelerationMultiplier;
-    
+    private float[] pedalTiming = new float[6];
+    private float average;
 
     private InputAction steer;
     private InputAction leftPedal;
@@ -74,6 +107,7 @@ public class Movement : MonoBehaviour
     {
         characterContoller = GetComponent<CharacterController>();
 
+        slowed = false;
         leftNext = true;
         rightNext = true;
         decelerationMultiplier = 1;
@@ -93,10 +127,11 @@ public class Movement : MonoBehaviour
         speed -= decelerationPerTick * decelerationMultiplier;
         // Stop speed from exceding max or becoming negative
         speed = Mathf.Clamp(speed, 0, maxSpeed);
+        // Tilt the player in the direction of input, depending on speed
+        tilt += inputDirection.x * speed * tiltRate;
 
         // Set movement to direction of camera
-        movementDirection = Quaternion.AngleAxis(cameraTransform.
-            rotation.eulerAngles.y, Vector3.up) * movementDirection;
+        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
         // Remove magnitude, leaving only direction
         movementDirection.Normalize();
         // Multiply by magnitude for horizontal analogue inputs
@@ -110,11 +145,93 @@ public class Movement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation
                 (movementDirection, Vector3.up);
             // Rotate towards that direction at rotation speed
-            transform.rotation = Quaternion.RotateTowards(transform.
-                rotation, toRotation, rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, turningSpeed * Time.deltaTime);
+        }
+
+        if (tilt < 0)
+        {
+            tilt += tiltRecovery;
+            if (tilt < -tiltLimit)
+            {
+                StartCoroutine(Stumble(largePenalty, 0));
+            }
+        }
+        else if (tilt > 0)
+        {
+            tilt -= tiltRecovery;
+            if (tilt > tiltLimit)
+            {
+                StartCoroutine(Stumble(largePenalty, 0));
+            }
+        }
+
+        tiltShown = pivotPoint.localEulerAngles;
+        tiltShown.z = Mathf.Lerp(tiltShown.z, -tilt, tiltLerpSpeed * Time.deltaTime);
+        pivotPoint.localEulerAngles = tiltShown;
+
+        if (leftCollisionDetector.contact && rightCollisionDetector.contact)
+        {
+            if(speed >= fastSpeed)
+            {
+                StartCoroutine(Stumble(largePenalty, 0));
+            }
+            else if(speed >= moderateSpeed)
+            {
+                StartCoroutine(Stumble(mediumPenalty, 0));
+            }
+            else
+            {
+                StartCoroutine(Stumble(smallPenalty, 0));
+            }
+        }
+        else if(leftCollisionDetector.contact || rightCollisionDetector.contact)
+        {
+            if (speed >= fastSpeed)
+            {
+                StartCoroutine(Stumble(mediumPenalty, 0.05f));
+            }
+            else if (speed >= moderateSpeed)
+            {
+                StartCoroutine(Stumble(smallPenalty,0.05f));
+            }
         }
     }
 
+    IEnumerator Stumble(float penalty, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (!slowed)
+        {
+            slowed = true;
+            speed *= penalty;
+
+            yield return new WaitForSeconds(2f);
+
+            slowed = false;
+        }
+    }
+
+    private float CheckRhythm()
+    {
+        pedalTiming[5] = pedalTiming[4];
+        pedalTiming[4] = pedalTiming[3];
+        pedalTiming[3] = pedalTiming[2];
+        pedalTiming[2] = pedalTiming[1];
+        pedalTiming[1] = pedalTiming[0];
+        pedalTiming[0] = Time.time;
+
+        if (pedalTiming[5] != 0f)
+        {
+            average = ((pedalTiming[1] - pedalTiming[2]) + (pedalTiming[2] - pedalTiming[3]) + (pedalTiming[3] - pedalTiming[4]) + (pedalTiming[4] - pedalTiming[5])) / 4;
+
+            if ((pedalTiming[0] - pedalTiming[1]) < (average + average * rhythmTolerance) && (pedalTiming[0] - pedalTiming[1]) > (average - average * rhythmTolerance))
+            {
+                return rhythmMultiplier;
+            }
+        }
+
+        return 1;
+    }
 
     private void LeftPedal(InputAction.CallbackContext context)
     {
@@ -123,7 +240,7 @@ public class Movement : MonoBehaviour
             leftNext = false;
             rightNext = true;
 
-            speed += accelerationPerPedal;
+            speed += accelerationPerPedal * CheckRhythm();
         }
         else
         {
@@ -138,7 +255,7 @@ public class Movement : MonoBehaviour
             rightNext = false;
             leftNext = true;
 
-            speed += accelerationPerPedal;
+            speed += accelerationPerPedal * CheckRhythm();
         }
         else
         {
@@ -148,7 +265,7 @@ public class Movement : MonoBehaviour
 
     private void BrakePressed(InputAction.CallbackContext context)
     {
-        decelerationMultiplier = brakeDecelerationMultiplier;
+        decelerationMultiplier = brakeMultiplier;
     }
     private void BrakeReleased(InputAction.CallbackContext context)
     {
