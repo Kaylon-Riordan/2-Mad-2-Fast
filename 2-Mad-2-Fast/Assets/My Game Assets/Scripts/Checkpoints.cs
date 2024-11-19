@@ -157,7 +157,7 @@ public class Checkpoints : MonoBehaviour
                 //not going through the right checkpoint -> in our case that means going backwards so reduce the current checkpoint by 1
                 else if (thisCheckpoint == checkpoints[i] && i != currentCheckpoint)
                 {
-                    print("Incorrect checkpoint");
+                    print("Incorrect checkpoint - wrong direction, turn around"); //In our case, because you shouldn't be able to leave the track and miss one it has to mean that the player turned and is driving the wrong direction
                     currentCheckpoint--;
                 }
             }
