@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Checkpoints : MonoBehaviour
+public class CheckpointManager : MonoBehaviour
 {
     [Header("Checkpoints")]
     public GameObject start; //defines the start checkpoint
@@ -21,6 +21,28 @@ public class Checkpoints : MonoBehaviour
     private float currentLapTime; //time of the current lap
     private float bestLapTime; //time of the best lap
     private float bestLap; //number of the lap with the best time
+
+    // https://github.com/Ben-Keev/Tower/blob/main/Assets/Scripts/GameManager.cs.cs
+    public static CheckpointManager instance;
+
+    private void initSingleton()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    private void Awake()
+    {
+        initSingleton();
+    }
 
     /**
      * Start method, called on start, sets all the variables to their default value in the beginning.
