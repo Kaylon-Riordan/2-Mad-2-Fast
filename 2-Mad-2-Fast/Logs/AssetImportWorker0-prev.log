@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2023.2/staging' branch; Version is '2023.2.20f1 (0e25a174756c) revision 927137'; Using compiler version '193431935'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16085 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 8077 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Johnc/Documents/Unity Games/2-Mad-2-Fast/2-Mad-2-Fast
+C:/Users/eoinh/Desktop/VideoGame/2-Mad-2-Fast/2-Mad-2-Fast
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58080
+58897
 -job-worker-count
-5
+1
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: C:/Users/Johnc/Documents/Unity Games/2-Mad-2-Fast/2-Mad-2-Fast
-C:/Users/Johnc/Documents/Unity Games/2-Mad-2-Fast/2-Mad-2-Fast
+Successfully changed project path to: C:/Users/eoinh/Desktop/VideoGame/2-Mad-2-Fast/2-Mad-2-Fast
+C:/Users/eoinh/Desktop/VideoGame/2-Mad-2-Fast/2-Mad-2-Fast
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -58,64 +58,64 @@ C:/Users/Johnc/Documents/Unity Games/2-Mad-2-Fast/2-Mad-2-Fast
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27732] Host "[IP] 26.213.53.46 [Port] 0 [Flags] 2 [Guid] 253896604 [EditorId] 253896604 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [27732] Host "[IP] 26.213.53.46 [Port] 0 [Flags] 2 [Guid] 253896604 [EditorId] 253896604 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
-[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Player connection [15404] Host "[IP] 172.20.10.6 [Port] 0 [Flags] 2 [Guid] 1943130527 [EditorId] 1943130527 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-L1LTD2Q) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [15404] Host "[IP] 172.20.10.6 [Port] 0 [Flags] 2 [Guid] 1943130527 [EditorId] 1943130527 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-L1LTD2Q) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 1
+[Physics::Module] Initialized MultithreadedJobDispatcher with 1 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 7.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Johnc/Documents/Unity Games/2-Mad-2-Fast/2-Mad-2-Fast/Assets
+[Subsystems] Discovering subsystems at path C:/Users/eoinh/Desktop/VideoGame/2-Mad-2-Fast/2-Mad-2-Fast/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
     Vendor:   NVIDIA
-    VRAM:     5921 MB
-    Driver:   32.0.15.5599
+    VRAM:     8059 MB
+    Driver:   32.0.15.6094
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004203 seconds.
-- Loaded All Assemblies, in  0.624 seconds
+Registered in 0.026351 seconds.
+- Loaded All Assemblies, in  1.064 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.442 seconds
-Domain Reload Profiling: 1063ms
-	BeginReloadAssembly (226ms)
+- Finished resetting the current domain, in  0.548 seconds
+Domain Reload Profiling: 1589ms
+	BeginReloadAssembly (448ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (245ms)
-		LoadAssemblies (226ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (178ms)
+	LoadAllAssembliesAndSetupDomain (305ms)
+		LoadAssemblies (426ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (237ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (214ms)
+		AnalyzeDomain (299ms)
+			TypeCache.Refresh (297ms)
+				TypeCache.ScanAssembly (270ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (443ms)
+	FinalizeReload (548ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (377ms)
+		SetupLoadedEditorAssemblies (451ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (55ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (14ms)
-			ProcessInitializeOnLoadAttributes (241ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (336ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,166 +124,286 @@ Domain Reload Profiling: 1063ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Johnc\Documents\Unity Games\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Johnc\Documents\Unity Games\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.084 seconds
-Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\eoinh\Desktop\VideoGame\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\eoinh\Desktop\VideoGame\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.893 seconds
+Refreshing native plugins compatible for Editor in 5.11 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.880 seconds
-Domain Reload Profiling: 1961ms
-	BeginReloadAssembly (463ms)
+- Finished resetting the current domain, in  1.245 seconds
+Domain Reload Profiling: 4093ms
+	BeginReloadAssembly (1266ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (107ms)
+	LoadAllAssembliesAndSetupDomain (1386ms)
+		LoadAssemblies (1306ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (371ms)
+			TypeCache.Refresh (314ms)
+				TypeCache.ScanAssembly (281ms)
+			BuildScriptInfoCaches (43ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1245ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (936ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (195ms)
+			ProcessInitializeOnLoadAttributes (655ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (42ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 5.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4042 unused Assets / (0.7 MB). Loaded Objects now: 4638.
+Memory consumption went from 112.7 MB to 112.0 MB.
+Total: 10.014300 ms (FindLiveObjects: 0.759000 ms CreateObjectMapping: 1.199400 ms MarkObjects: 6.712400 ms  DeleteObjects: 1.342000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 231005.294504 seconds.
+  path: Assets/My Game Assets/Meshes
+  artifactKey: Guid(abe15e652f5a4f242ab4cdace5a1365d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes using Guid(abe15e652f5a4f242ab4cdace5a1365d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a9c6bee370ccc7a5154d0e94a1fdb15') in 0.0238973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/3rd Party Assets
+  artifactKey: Guid(f7c0d58af6ef84f49a8c32eda71301b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3rd Party Assets using Guid(f7c0d58af6ef84f49a8c32eda71301b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0c49c19163d50b10dcb8602ce8e4166') in 0.0016768 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.676656 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterModel.fbx
+  artifactKey: Guid(005da159900958c4a843835848ed71cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterModel.fbx using Guid(005da159900958c4a843835848ed71cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '824bce7a9bcece380bf98ab99fa709cc') in 1.2937246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 284
+
+========================================================================
+Received Import Request.
+  Time since last request: 268.820487 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike.fbx
+  artifactKey: Guid(a9827bf449838474d9d15836fd0c6792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike.fbx using Guid(a9827bf449838474d9d15836fd0c6792) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43c09945d4e99eb9bb1301121f23d25d') in 0.2875231 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 274
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\eoinh\Desktop\VideoGame\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\eoinh\Desktop\VideoGame\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.691 seconds
+Refreshing native plugins compatible for Editor in 8.70 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.476 seconds
+Domain Reload Profiling: 3133ms
+	BeginReloadAssembly (375ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (512ms)
-		LoadAssemblies (429ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (1137ms)
+		LoadAssemblies (1076ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (212ms)
-			TypeCache.Refresh (177ms)
-				TypeCache.ScanAssembly (161ms)
-			BuildScriptInfoCaches (26ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (881ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (633ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (536ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3686 unused Assets / (1.0 MB). Loaded Objects now: 4279.
-Memory consumption went from 106.6 MB to 105.6 MB.
-Total: 8.879500 ms (FindLiveObjects: 0.583600 ms CreateObjectMapping: 0.644600 ms MarkObjects: 6.578900 ms  DeleteObjects: 1.070400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 136794.496863 seconds.
-  path: Assets/My Game Assets/Scenes
-  artifactKey: Guid(0f7bf1f63cff6dd40ac7f9c31ed143c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/My Game Assets/Scenes using Guid(0f7bf1f63cff6dd40ac7f9c31ed143c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abbc05e07af4f40ce11dfff18ca66812') in 0.0063812 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/My Game Assets
-  artifactKey: Guid(056d1707d036ad7449952d4e8a9f9bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/My Game Assets using Guid(056d1707d036ad7449952d4e8a9f9bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6f6b2963fb3e60c246ef913f89535cf') in 0.0007048 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Johnc\Documents\Unity Games\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Johnc\Documents\Unity Games\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.973 seconds
-Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.833 seconds
-Domain Reload Profiling: 1803ms
-	BeginReloadAssembly (305ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (130ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (480ms)
-		LoadAssemblies (526ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (148ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (6ms)
-			BuildScriptInfoCaches (127ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (833ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (619ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (498ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4059 unused Assets / (3.3 MB). Loaded Objects now: 4638.
-Memory consumption went from 115.5 MB to 112.2 MB.
-Total: 8.342600 ms (FindLiveObjects: 0.428400 ms CreateObjectMapping: 0.290100 ms MarkObjects: 5.335300 ms  DeleteObjects: 2.287400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Johnc\Documents\Unity Games\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Johnc\Documents\Unity Games\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.756 seconds
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.922 seconds
-Domain Reload Profiling: 1676ms
-	BeginReloadAssembly (227ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (437ms)
-		LoadAssemblies (397ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (158ms)
-			TypeCache.Refresh (10ms)
+		AnalyzeDomain (289ms)
+			TypeCache.Refresh (9ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (137ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (923ms)
+			BuildScriptInfoCaches (267ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1477ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (681ms)
+		SetupLoadedEditorAssemblies (1093ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (561ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (244ms)
+			ProcessInitializeOnLoadAttributes (749ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (52ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 4.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4059 unused Assets / (3.6 MB). Loaded Objects now: 4638.
-Memory consumption went from 117.2 MB to 113.6 MB.
-Total: 8.937400 ms (FindLiveObjects: 0.484600 ms CreateObjectMapping: 0.318600 ms MarkObjects: 5.389200 ms  DeleteObjects: 2.742800 ms)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4040 unused Assets / (1.1 MB). Loaded Objects now: 4685.
+Memory consumption went from 119.5 MB to 118.4 MB.
+Total: 8.420400 ms (FindLiveObjects: 0.583600 ms CreateObjectMapping: 0.416600 ms MarkObjects: 5.830400 ms  DeleteObjects: 1.588700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\eoinh\Desktop\VideoGame\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\eoinh\Desktop\VideoGame\2-Mad-2-Fast\2-Mad-2-Fast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.682 seconds
+Refreshing native plugins compatible for Editor in 5.30 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.398 seconds
+Domain Reload Profiling: 3050ms
+	BeginReloadAssembly (374ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (1132ms)
+		LoadAssemblies (1080ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (257ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1398ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1085ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (241ms)
+			ProcessInitializeOnLoadAttributes (761ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (41ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 4.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4040 unused Assets / (1.1 MB). Loaded Objects now: 4685.
+Memory consumption went from 121.4 MB to 120.3 MB.
+Total: 8.954800 ms (FindLiveObjects: 0.559700 ms CreateObjectMapping: 0.538900 ms MarkObjects: 6.198800 ms  DeleteObjects: 1.655900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 686.266378 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike1.fbx
+  artifactKey: Guid(8e1680b69841a034fbe865cd4b951bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike1.fbx using Guid(8e1680b69841a034fbe865cd4b951bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99a49c0d76a66dfd6a2dcc814fac6944') in 0.5287324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 243
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.460380 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike2.fbx
+  artifactKey: Guid(b7ee82ab03bc4294c9acd0638ec8f6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike2.fbx using Guid(b7ee82ab03bc4294c9acd0638ec8f6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd62c12f0ecbb2a535c53c193d14b1e39') in 0.3000872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 243
+
+========================================================================
+Received Import Request.
+  Time since last request: 350.628307 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike3.fbx
+  artifactKey: Guid(1e65b4ccaf5c87a4c87d413864fa7f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike3.fbx using Guid(1e65b4ccaf5c87a4c87d413864fa7f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e868284b003e0eab553d302f7679607e') in 0.0104064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.102176 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike4.fbx
+  artifactKey: Guid(c19e77ae4805b954aadb786f2c02b1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike4.fbx using Guid(c19e77ae4805b954aadb786f2c02b1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09d1f973bbe348ccfaadde4ae428bed5') in 0.2511677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 243
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.872212 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike5.fbx
+  artifactKey: Guid(2c6d4a91679899747abea902cdbc578e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike5.fbx using Guid(2c6d4a91679899747abea902cdbc578e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '526ffccb939aa64fff03d4434ffae439') in 0.2555574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 243
+
+========================================================================
+Received Import Request.
+  Time since last request: 819.443697 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike6.fbx
+  artifactKey: Guid(2f5f92b520e75ff42b75805d0ef0f9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike6.fbx using Guid(2f5f92b520e75ff42b75805d0ef0f9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5dfa46e93fb4bc7a93682733ef25950b') in 0.3955354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 246
+
+========================================================================
+Received Import Request.
+  Time since last request: 167.906494 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike7.fbx
+  artifactKey: Guid(18a7ec53cdbcd2f44a90dfb9f58f2d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike7.fbx using Guid(18a7ec53cdbcd2f44a90dfb9f58f2d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05e42789f403f6ee4849778c17bc4e0c') in 0.0055125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.779397 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike8.fbx
+  artifactKey: Guid(b0acfe5a67c529947bcce09f6659bef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike8.fbx using Guid(b0acfe5a67c529947bcce09f6659bef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83d6e7687654b43bc2feb4e2555817c6') in 0.2757018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 246
+
+========================================================================
+Received Import Request.
+  Time since last request: 540.694374 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike9.fbx
+  artifactKey: Guid(e7d9aedd4aa9ee34382ab59b5f219bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike9.fbx using Guid(e7d9aedd4aa9ee34382ab59b5f219bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16fdc05b1e578a400b8dc1447fc62307') in 0.3818852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 249
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.921391 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike10.fbx
+  artifactKey: Guid(b7b7baa01c3620c48a6e0afa68563f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike10.fbx using Guid(b7b7baa01c3620c48a6e0afa68563f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54bda22224d44450587d2586616167da') in 0.2784722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 249
+
+========================================================================
+Received Import Request.
+  Time since last request: 588.773721 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike8.fbx
+  artifactKey: Guid(b0acfe5a67c529947bcce09f6659bef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike8.fbx using Guid(b0acfe5a67c529947bcce09f6659bef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8fcc6afcee8de22801005dba416a3931') in 1.5232005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 241
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.337015 seconds.
+  path: Assets/My Game Assets/Meshes/CharacterAndBike10.fbx
+  artifactKey: Guid(b7b7baa01c3620c48a6e0afa68563f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/CharacterAndBike10.fbx using Guid(b7b7baa01c3620c48a6e0afa68563f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1b6ab86803fa7e03e7598a5ab322c3b') in 0.5014262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 244
+
+========================================================================
+Received Import Request.
+  Time since last request: 268.127038 seconds.
+  path: Assets/My Game Assets/Meshes/FixingMesh1.fbx
+  artifactKey: Guid(541360b333e55004fb691f68cfd9c269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/My Game Assets/Meshes/FixingMesh1.fbx using Guid(541360b333e55004fb691f68cfd9c269) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef1eeb28bc6b471261cf43c7f7bf695b') in 0.8817611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 263
+
