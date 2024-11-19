@@ -14,8 +14,6 @@ public class playerInputHandler : MonoBehaviour
     private playerController controller;
 
     [SerializeField]
-    private PlayerManager playerManager;
-    [SerializeField]
     private int playerNumber;
 
     private void Awake()
@@ -23,10 +21,7 @@ public class playerInputHandler : MonoBehaviour
         controller = GetComponent<playerController>();
         playerActionAsset = GetComponent<PlayerInput>().actions;
 
-        // Find the playerManager singleton gameObject and get its component
-        playerManager = GameObject.FindGameObjectsWithTag("playerManager")[0].GetComponent<PlayerManager>();
-
-        if (playerManager.controlSchemes[playerNumber-1] == PlayerManager.ControlScheme.Shared)
+        if (InputManager.instance.controlSchemes[playerNumber-1] == InputManager.ControlScheme.Shared)
             playerActions = playerActionAsset.FindActionMap("PlayerShared");
         else
             playerActions = playerActionAsset.FindActionMap("Player");
@@ -34,7 +29,7 @@ public class playerInputHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        if (playerManager.controlSchemes[playerNumber-1] == PlayerManager.ControlScheme.Shared)
+        if (InputManager.instance.controlSchemes[playerNumber-1] == InputManager.ControlScheme.Shared)
             getSharedInputDeviceInputs();
         else
             getIndependentInputDeviceInputs();
@@ -66,8 +61,6 @@ public class playerInputHandler : MonoBehaviour
         leftPedal = playerActions.FindAction("LeftPedalP" + playerNumber);
         rightPedal = playerActions.FindAction("RightPedalP" + playerNumber);
         brake = playerActions.FindAction("BrakeP" + playerNumber);
-
-        
     }
 
     private void OnDisable()
@@ -77,7 +70,7 @@ public class playerInputHandler : MonoBehaviour
 
     public Vector2 GetSteer()
     {
-        if (playerManager.controlSchemes[playerNumber - 1] == PlayerManager.ControlScheme.Shared)
+        if (InputManager.instance.controlSchemes[playerNumber - 1] == InputManager.ControlScheme.Shared)
             return playerActions.FindAction("SteerP" + playerNumber).ReadValue<Vector2>();
         else
             return playerActions.FindAction("Steer").ReadValue<Vector2>();
