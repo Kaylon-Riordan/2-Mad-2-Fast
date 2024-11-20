@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 7792450620478264958}
   - component: {fileID: 2863649489725379362}
   - component: {fileID: 2520594980274975028}
+  - component: {fileID: 3699412494393922618}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -329,7 +330,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4322015159832351722}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c8e043e2dce80e43ba405e225181588, type: 3}
   m_Name: 
@@ -344,7 +345,7 @@ MonoBehaviour:
   decelerationPerMiss: 2.5
   decelerationPerTick: 0.04
   brakeMultiplier: 5
-  turningSpeed: 10
+  turningSpeed: 300
   tiltLimit: 30
   tiltRecovery: 0.6
   tiltRate: 0.04
@@ -398,6 +399,39 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3699412494393922618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92612a3c657e7b1428db285553b81899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 50
+  fastSpeed: 30
+  moderateSpeed: 15
+  largePenalty: 0
+  mediumPenalty: 0.3
+  smallPenalty: 0.7
+  accelerationPerPedal: 1
+  decelerationPerMiss: 2.5
+  decelerationPerTick: 0.04
+  brakeMultiplier: 5
+  turningSpeed: 300
+  tiltLimit: 30
+  tiltRecovery: 0.6
+  tiltRate: 0.04
+  tiltLerpSpeed: 100
+  rhythmMultiplier: 1.5
+  rhythmTolerance: 0.5
+  cameraTransform: {fileID: 0}
+  pivotPoint: {fileID: 0}
+  leftCollisionDetector: {fileID: 7226949310459533414}
+  rightCollisionDetector: {fileID: 4427209845482196826}
 --- !u!1001 &1307242983732880159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -458,10 +492,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5462145263795242078, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: -4343630576404103004, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: -4110496095887219779, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: -3599143603091790270, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: -3378966326609485118, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: -803405088876591012, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
     - target: {fileID: 919132149155446097, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
       propertyPath: m_Name
       value: CharacterAndBike10
       objectReference: {fileID: 0}
+    - target: {fileID: 1512191506632812556, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: 7087055291955805683, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: 7339356831882890532, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: 7713606575737546641, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
+    - target: {fileID: 8492611562670542576, guid: 168e1a1af2a4c4c488e208d533d08c0b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a1907e6e9dae9042b0210907e40dced, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
