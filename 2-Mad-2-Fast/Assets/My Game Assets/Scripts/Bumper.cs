@@ -14,7 +14,10 @@ public class Bumper : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        contact = true;
+        if (!other.isTrigger)
+        {
+            contact = true;
+        }
     }
     void OnTriggerExit(Collider other)
     {
