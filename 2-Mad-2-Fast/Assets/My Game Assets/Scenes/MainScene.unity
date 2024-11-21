@@ -2552,7 +2552,7 @@ GameObject:
   - component: {fileID: 332744348}
   - component: {fileID: 332744347}
   - component: {fileID: 332744346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2842,7 +2842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftHand: 0000
-  selectedInputMethods: 0100000000000000
+  selectedInputMethods: 0200000003000000
   controlSchemes: 0000000000000000
 --- !u!4 &566027716
 Transform:
@@ -4253,7 +4253,7 @@ GameObject:
   - component: {fileID: 704377677}
   - component: {fileID: 704377676}
   - component: {fileID: 704377675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4646,7 +4646,7 @@ GameObject:
   - component: {fileID: 900621789}
   - component: {fileID: 900621788}
   - component: {fileID: 900621787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7117,7 +7117,7 @@ GameObject:
   - component: {fileID: 1101262672}
   - component: {fileID: 1101262671}
   - component: {fileID: 1101262670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9737,7 +9737,7 @@ GameObject:
   - component: {fileID: 1472449166}
   - component: {fileID: 1472449165}
   - component: {fileID: 1472449164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11918,7 +11918,7 @@ GameObject:
   - component: {fileID: 1960054637}
   - component: {fileID: 1960054636}
   - component: {fileID: 1960054635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

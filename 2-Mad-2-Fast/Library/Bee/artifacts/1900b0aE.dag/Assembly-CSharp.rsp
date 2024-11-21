@@ -397,7 +397,6 @@
 "Assets/My Game Assets/Scripts/CheckpointManager.cs"
 "Assets/My Game Assets/Scripts/Managers/InputManager.cs"
 "Assets/My Game Assets/Scripts/Managers/playerManager.cs"
-"Assets/My Game Assets/Scripts/Movement.cs"
 "Assets/My Game Assets/Scripts/playerController.cs"
 "Assets/My Game Assets/Scripts/PlayerControls.cs"
 "Assets/My Game Assets/Scripts/playerInputHandler.cs"

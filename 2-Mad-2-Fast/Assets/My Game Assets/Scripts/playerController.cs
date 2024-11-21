@@ -76,11 +76,14 @@ public class playerController : MonoBehaviour
         decelerationMultiplier = 1;
     }
 
+    // Basic movement code in fixed update and calculate direction based off first 5 videos of this playlist https://www.youtube.com/playlist?list=PLx7AKmQhxJFaj0IcdjGJzIq5KwrIfB1m9
+
     // Fixed update is used for movement so that the players speed isn't affected by framerate
     void FixedUpdate()
     {
         Vector3 movementDirection = calculateDirection(inputHandler.GetSteer());
         tiltBike(inputHandler.GetSteer());
+        handleCollision();
 
         // Moves character using character contoller
         characterContoller.SimpleMove(movementDirection * speed);
@@ -124,14 +127,18 @@ public class playerController : MonoBehaviour
         // Tilt the player in the direction of input, depending on speed
         tilt += inputDirection.x * speed * tiltRate;
 
+        // Handle negative tilt
         if (tilt < 0)
         {
+            //gradually return tilt to 0
             tilt += tiltRecovery;
+            // If tilt passes the limit, cause the player to stumble
             if (tilt < -tiltLimit)
             {
                 StartCoroutine(Stumble(largePenalty, 0));
             }
         }
+        // Handle positive tilt
         else if (tilt > 0)
         {
             tilt -= tiltRecovery;
@@ -141,10 +148,17 @@ public class playerController : MonoBehaviour
             }
         }
 
+        // Get current roatation of model
         tiltShown = pivotPoint.localEulerAngles;
+        // Gradually shift the models rotation towards the tilt variable
         tiltShown.z = Mathf.Lerp(tiltShown.z, -tilt, tiltLerpSpeed * Time.deltaTime);
         pivotPoint.localEulerAngles = tiltShown;
+    }
 
+    // Uses 2 colliders on the front left and front right of the boke to determin how it contacted other objects
+    private void handleCollision()
+    {
+        // If both colliders make contact, a front on collision, apply a harsh penalty dependant on speed
         if (leftCollisionDetector.contact && rightCollisionDetector.contact)
         {
             if (speed >= fastSpeed)
@@ -160,6 +174,7 @@ public class playerController : MonoBehaviour
                 StartCoroutine(Stumble(smallPenalty, 0));
             }
         }
+        // If one collider makes contact, a side swipe, apply a light penalty dependant on speed
         else if (leftCollisionDetector.contact || rightCollisionDetector.contact)
         {
             if (speed >= fastSpeed)
@@ -175,20 +190,25 @@ public class playerController : MonoBehaviour
 
     IEnumerator Stumble(float penalty, float delay)
     {
-        yield return new WaitForSeconds(delay);
+        // Wait a short period before triggering code, this delay is to check if a side
+        // swipe will become a front on collision and one collider was just slightly first.
+        yield return new WaitForSeconds(delay); 
+        // Don't run the code if the player has already been slowed recently
         if (!slowed)
         {
+            // Set slow to true and, decrese speed
             slowed = true;
             speed *= penalty;
 
+            // Briefly wait before turning slowed back to false
             yield return new WaitForSeconds(2f);
-
             slowed = false;
         }
     }
 
     private float CheckRhythm()
     {
+        // Keep track of the last 6 times pedals were pressed
         pedalTiming[5] = pedalTiming[4];
         pedalTiming[4] = pedalTiming[3];
         pedalTiming[3] = pedalTiming[2];
@@ -196,28 +216,36 @@ public class playerController : MonoBehaviour
         pedalTiming[1] = pedalTiming[0];
         pedalTiming[0] = Time.time;
 
+        // After pedals have been pressed 6 times start this code
         if (pedalTiming[5] != 0f)
         {
+            // Get average time between the last 5 pedals before the most recent
             average = ((pedalTiming[1] - pedalTiming[2]) + (pedalTiming[2] - pedalTiming[3]) + (pedalTiming[3] - pedalTiming[4]) + (pedalTiming[4] - pedalTiming[5])) / 4;
 
+            // Give rhythm bonus if the time between the 2 most recent pedals was within the tolerance rating of the average
             if ((pedalTiming[0] - pedalTiming[1]) < (average + average * rhythmTolerance) && (pedalTiming[0] - pedalTiming[1]) > (average - average * rhythmTolerance))
             {
                 return rhythmMultiplier;
             }
         }
 
+        // Otherwise give no speed bonus
         return 1;
     }
 
     public void LeftPedal(InputAction.CallbackContext context)
     {
+        // Increase speed if the right pedal was pressed
         if(leftNext)
         {
+            // Swap next expected petal
             leftNext = false;
             rightNext = true;
 
+            // Increase speed and apply rhythym multiplier if earned
             speed += accelerationPerPedal * CheckRhythm();
         }
+        // Decrease speed if the wrong pedal was pressed
         else
         {
             speed -= decelerationPerMiss;
@@ -239,10 +267,12 @@ public class playerController : MonoBehaviour
         }
     }
 
+    // When brake is pressed decelaerate quickly
     public void BrakePressed(InputAction.CallbackContext context)
     {
         decelerationMultiplier = brakeMultiplier;
     }
+    // When brake is released decelaerate normally
     public void BrakeReleased(InputAction.CallbackContext context)
     {
         decelerationMultiplier = 1;
