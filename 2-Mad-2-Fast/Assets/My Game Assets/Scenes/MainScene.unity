@@ -12163,9 +12163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2abe9a6648342498b505ee298f35f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: {fileID: 0}
-  end: {fileID: 0}
-  checkpoints: []
+  start: {fileID: 2038661753}
+  end: {fileID: 2038661753}
+  checkpoints:
+  - {fileID: 1106187368}
+  - {fileID: 1056695856}
+  - {fileID: 1905653935}
+  - {fileID: 662960870}
   laps: 2
 --- !u!4 &2051152808
 Transform:
