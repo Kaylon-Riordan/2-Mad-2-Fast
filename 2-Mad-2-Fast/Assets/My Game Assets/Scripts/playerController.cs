@@ -8,6 +8,8 @@ public class playerController : MonoBehaviour
     [SerializeField]
     private float maxSpeed;
     [SerializeField]
+    private float maxReverseSpeed;
+    [SerializeField]
     private float fastSpeed;
     [SerializeField]
     private float moderateSpeed;
@@ -49,6 +51,7 @@ public class playerController : MonoBehaviour
     private Bumper rightCollisionDetector;
 
     private float speed;
+    private float minSpeed;
     private float tilt;
     private bool slowed;
     private Vector3 tiltShown;
@@ -70,6 +73,8 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = 0;
+        minSpeed = 0;
         slowed = false;
         leftNext = true;
         rightNext = true;
@@ -109,7 +114,7 @@ public class playerController : MonoBehaviour
         // Constantly decelerate, faster if brakes are applied
         speed -= decelerationPerTick * decelerationMultiplier;
         // Stop speed from exceding max or becoming negative
-        speed = Mathf.Clamp(speed, 0, maxSpeed);
+        speed = Mathf.Clamp(speed, minSpeed, maxSpeed);
 
         // Set movement to direction of camera
         movementDirection = Quaternion.AngleAxis(cameraTransform.
@@ -271,10 +276,12 @@ public class playerController : MonoBehaviour
     public void BrakePressed(InputAction.CallbackContext context)
     {
         decelerationMultiplier = brakeMultiplier;
+        minSpeed = -maxReverseSpeed;
     }
     // When brake is released decelaerate normally
     public void BrakeReleased(InputAction.CallbackContext context)
     {
         decelerationMultiplier = 1;
+        minSpeed = 0;
     }
 }

@@ -309,6 +309,17 @@
                 },
                 {
                     "name": "",
+                    "id": "4ae76fe0-86f8-482f-8b72-6e2d9a42e5ee",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "LeftPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6950239e-11e1-4ad6-a1aa-8f8e5aed8a07",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
@@ -419,6 +430,17 @@
                 },
                 {
                     "name": "",
+                    "id": "2275c9ac-8407-4eb2-8be7-5587c230dfa9",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "RightPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "181c2aef-b52f-4408-8c5a-9f2a75588bae",
                     "path": "<Gamepad>/leftStickPress",
                     "interactions": "",
@@ -501,17 +523,6 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "OneHandRK",
-                    "action": "Brake",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7afe7d08-0712-41be-a8c2-8760bfa1f8fa",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false

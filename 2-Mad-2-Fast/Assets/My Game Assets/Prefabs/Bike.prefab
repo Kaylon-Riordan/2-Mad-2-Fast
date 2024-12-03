@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 50
+  maxReverseSpeed: 5
   fastSpeed: 30
   moderateSpeed: 15
   largePenalty: 0
@@ -347,14 +348,10 @@ MonoBehaviour:
   turningSpeed: 300
   tiltLimit: 30
   tiltRecovery: 0.6
-  tiltRate: 0.04
+  tiltRate: 0.06
   tiltLerpSpeed: 100
   rhythmMultiplier: 1.5
   rhythmTolerance: 0.5
-  rayCastLength: 1.2
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
   cameraTransform: {fileID: 0}
   pivotPoint: {fileID: 6367927215099575524}
   leftCollisionDetector: {fileID: 7226949310459533414}
