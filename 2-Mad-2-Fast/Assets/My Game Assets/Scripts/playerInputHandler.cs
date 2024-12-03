@@ -68,6 +68,11 @@ public class playerInputHandler : MonoBehaviour
         playerActions.Disable();
     }
 
+    private void OnDestroy()
+    {
+        Debug.Log("AAHHH MY LIFE");
+    }
+
     public Vector2 GetSteer()
     {
         if (InputManager.instance.controlSchemes[playerNumber - 1] == InputManager.ControlScheme.Shared)
