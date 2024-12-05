@@ -2842,8 +2842,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftHand: 0000
-  selectedInputMethods: 0000000001000000
-  controlSchemes: 0000000000000000
+  selectedInputMethods: 0000000000000000
+  controlSchemes: 0200000002000000
 --- !u!4 &566027716
 Transform:
   m_ObjectHideFlags: 0
