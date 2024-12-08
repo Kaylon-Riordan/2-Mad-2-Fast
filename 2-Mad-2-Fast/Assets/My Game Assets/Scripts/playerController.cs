@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class playerController : MonoBehaviour
 {
     // Physics Attributes
+    [Header("Movement")]
     [SerializeField]
     private float maxSpeed;
     [SerializeField]
@@ -41,6 +42,7 @@ public class playerController : MonoBehaviour
     private float rhythmMultiplier;
     [SerializeField]
     private float rhythmTolerance;
+    [Header("Objects")]
     [SerializeField]
     private Transform cameraTransform;
     [SerializeField]
@@ -49,6 +51,13 @@ public class playerController : MonoBehaviour
     private Bumper leftCollisionDetector;
     [SerializeField]
     private Bumper rightCollisionDetector;
+    [Header("Audio Clips")]
+    [SerializeField]
+    private AudioClip pedalSound;
+    [SerializeField]
+    private AudioClip crashSound;
+    [SerializeField]
+    private AudioClip brakeSound;
 
     private float speed;
     private float minSpeed;
@@ -140,7 +149,7 @@ public class playerController : MonoBehaviour
             // If tilt passes the limit, cause the player to stumble
             if (tilt < -tiltLimit)
             {
-                StartCoroutine(Stumble(largePenalty, 0));
+                StartCoroutine(Stumble(largePenalty, 0, false));
             }
         }
         // Handle positive tilt
@@ -149,7 +158,7 @@ public class playerController : MonoBehaviour
             tilt -= tiltRecovery;
             if (tilt > tiltLimit)
             {
-                StartCoroutine(Stumble(largePenalty, 0));
+                StartCoroutine(Stumble(largePenalty, 0, false));
             }
         }
 
@@ -168,15 +177,15 @@ public class playerController : MonoBehaviour
         {
             if (speed >= fastSpeed)
             {
-                StartCoroutine(Stumble(largePenalty, 0));
+                StartCoroutine(Stumble(largePenalty, 0, true));
             }
             else if (speed >= moderateSpeed)
             {
-                StartCoroutine(Stumble(mediumPenalty, 0));
+                StartCoroutine(Stumble(mediumPenalty, 0, true));
             }
             else
             {
-                StartCoroutine(Stumble(smallPenalty, 0));
+                StartCoroutine(Stumble(smallPenalty, 0, true));
             }
         }
         // If one collider makes contact, a side swipe, apply a light penalty dependant on speed
@@ -184,16 +193,16 @@ public class playerController : MonoBehaviour
         {
             if (speed >= fastSpeed)
             {
-                StartCoroutine(Stumble(mediumPenalty, 0.05f));
+                StartCoroutine(Stumble(mediumPenalty, 0.05f, true));
             }
             else if (speed >= moderateSpeed)
             {
-                StartCoroutine(Stumble(smallPenalty, 0.05f));
+                StartCoroutine(Stumble(smallPenalty, 0.05f, true));
             }
         }
     }
 
-    IEnumerator Stumble(float penalty, float delay)
+    IEnumerator Stumble(float penalty, float delay, bool collision)
     {
         // Wait a short period before triggering code, this delay is to check if a side
         // swipe will become a front on collision and one collider was just slightly first.
@@ -201,6 +210,10 @@ public class playerController : MonoBehaviour
         // Don't run the code if the player has already been slowed recently
         if (!slowed)
         {
+            if(collision)
+            {
+                AudioManager.instance.PlaySound(crashSound, AudioMixerGroupName.SFX, false, transform.position);
+            }
             // Set slow to true and, decrese speed
             slowed = true;
             speed *= penalty;
@@ -243,6 +256,7 @@ public class playerController : MonoBehaviour
         // Increase speed if the right pedal was pressed
         if(leftNext)
         {
+            AudioManager.instance.PlaySound(pedalSound, AudioMixerGroupName.SFX, false, transform.position);
             // Swap next expected petal
             leftNext = false;
             rightNext = true;
@@ -261,6 +275,7 @@ public class playerController : MonoBehaviour
     {
         if (rightNext)
         {
+            AudioManager.instance.PlaySound(pedalSound, AudioMixerGroupName.SFX, false, transform.position);
             rightNext = false;
             leftNext = true;
 
@@ -275,6 +290,7 @@ public class playerController : MonoBehaviour
     // When brake is pressed decelaerate quickly
     public void BrakePressed(InputAction.CallbackContext context)
     {
+        AudioManager.instance.PlaySound(brakeSound, AudioMixerGroupName.SFX, false, transform.position);
         decelerationMultiplier = brakeMultiplier;
         minSpeed = -maxReverseSpeed;
     }

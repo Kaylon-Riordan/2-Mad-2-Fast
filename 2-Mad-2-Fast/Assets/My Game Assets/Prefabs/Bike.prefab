@@ -356,6 +356,9 @@ MonoBehaviour:
   pivotPoint: {fileID: 6367927215099575524}
   leftCollisionDetector: {fileID: 7226949310459533414}
   rightCollisionDetector: {fileID: 4427209845482196826}
+  pedalSound: {fileID: 8300000, guid: 3058b7f07a03635478d16b6c5cb7e9ca, type: 3}
+  crashSound: {fileID: 8300000, guid: 82580471947ac284a833907192aae43e, type: 3}
+  brakeSound: {fileID: 8300000, guid: 2da5f551619199c44afe84229e4b1c39, type: 3}
 --- !u!114 &2863649489725379362
 MonoBehaviour:
   m_ObjectHideFlags: 0
