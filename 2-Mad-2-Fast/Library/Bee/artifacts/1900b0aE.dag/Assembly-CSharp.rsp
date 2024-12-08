@@ -401,14 +401,36 @@
 "Assets/playerManager.cs"
 =======
 "Assets/My Game Assets/Scripts/Bumper.cs"
-"Assets/My Game Assets/Scripts/CheckpointManager.cs"
-"Assets/My Game Assets/Scripts/Managers/InputManager.cs"
+"Assets/My Game Assets/Scripts/enum/ControlScheme.cs"
+"Assets/My Game Assets/Scripts/enum/InputMethod.cs"
+"Assets/My Game Assets/Scripts/enum/Penalty.cs"
+"Assets/My Game Assets/Scripts/Managers/CheckpointManager.cs"
+"Assets/My Game Assets/Scripts/Managers/Input Management Components/ControlSchemePlayerMatcher.cs"
+"Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDeviceChecker.cs"
+"Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDeviceGetter.cs"
+"Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDevicePlayerMatcher.cs"
+"Assets/My Game Assets/Scripts/Managers/Input Management Components/InputPreferenceValidator.cs"
 "Assets/My Game Assets/Scripts/Managers/playerManager.cs"
+<<<<<<< Updated upstream
 "Assets/My Game Assets/Scripts/Movement.cs"
 "Assets/My Game Assets/Scripts/playerController.cs"
 "Assets/My Game Assets/Scripts/PlayerControls.cs"
 "Assets/My Game Assets/Scripts/playerInputHandler.cs"
 >>>>>>> main
+=======
+"Assets/My Game Assets/Scripts/Managers/SingletonInitialiser.cs"
+"Assets/My Game Assets/Scripts/Player/Movement/Player Collider.cs"
+"Assets/My Game Assets/Scripts/Player/Movement/PlayerRhythmTracker.cs"
+"Assets/My Game Assets/Scripts/Player/Movement/PlayerSteeringCalculator.cs"
+"Assets/My Game Assets/Scripts/Player/Movement/PlayerStumbler.cs"
+"Assets/My Game Assets/Scripts/Player/Movement/PlayerTilting.cs"
+"Assets/My Game Assets/Scripts/Player/Physics/PlayerController.cs"
+"Assets/My Game Assets/Scripts/Player/Physics/PlayerPhysics.cs"
+"Assets/My Game Assets/Scripts/Player/Player Input/PlayerControls.cs"
+"Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputBinder.cs"
+"Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputHandler.cs"
+"Assets/My Game Assets/Scripts/Scriptable Objects/Inputs/InputPrefences.cs"
+>>>>>>> Stashed changes
 -langversion:9.0
 
 /deterministic

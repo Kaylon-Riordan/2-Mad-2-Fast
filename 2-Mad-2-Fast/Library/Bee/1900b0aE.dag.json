@@ -51644,8 +51644,12 @@
       "PayloadLength": 36767,
 =======
       "PayloadOffset": 2272261,
+<<<<<<< Updated upstream
       "PayloadLength": 37278,
 >>>>>>> main
+=======
+      "PayloadLength": 38507,
+>>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "InputFlags": [],
@@ -51661,11 +51665,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       "PayloadOffset": 1897163,
 =======
       "PayloadOffset": 2309626,
 >>>>>>> main
+=======
+      "PayloadOffset": 2310855,
+>>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -51956,14 +51964,36 @@
         "Assets/playerManager.cs",
 =======
         "Assets/My Game Assets/Scripts/Bumper.cs",
-        "Assets/My Game Assets/Scripts/CheckpointManager.cs",
-        "Assets/My Game Assets/Scripts/Managers/InputManager.cs",
+        "Assets/My Game Assets/Scripts/enum/ControlScheme.cs",
+        "Assets/My Game Assets/Scripts/enum/InputMethod.cs",
+        "Assets/My Game Assets/Scripts/enum/Penalty.cs",
+        "Assets/My Game Assets/Scripts/Managers/CheckpointManager.cs",
+        "Assets/My Game Assets/Scripts/Managers/Input Management Components/ControlSchemePlayerMatcher.cs",
+        "Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDeviceChecker.cs",
+        "Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDeviceGetter.cs",
+        "Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDevicePlayerMatcher.cs",
+        "Assets/My Game Assets/Scripts/Managers/Input Management Components/InputPreferenceValidator.cs",
         "Assets/My Game Assets/Scripts/Managers/playerManager.cs",
+<<<<<<< Updated upstream
         "Assets/My Game Assets/Scripts/Movement.cs",
         "Assets/My Game Assets/Scripts/playerController.cs",
         "Assets/My Game Assets/Scripts/PlayerControls.cs",
         "Assets/My Game Assets/Scripts/playerInputHandler.cs",
 >>>>>>> main
+=======
+        "Assets/My Game Assets/Scripts/Managers/SingletonInitialiser.cs",
+        "Assets/My Game Assets/Scripts/Player/Movement/Player Collider.cs",
+        "Assets/My Game Assets/Scripts/Player/Movement/PlayerRhythmTracker.cs",
+        "Assets/My Game Assets/Scripts/Player/Movement/PlayerSteeringCalculator.cs",
+        "Assets/My Game Assets/Scripts/Player/Movement/PlayerStumbler.cs",
+        "Assets/My Game Assets/Scripts/Player/Movement/PlayerTilting.cs",
+        "Assets/My Game Assets/Scripts/Player/Physics/PlayerController.cs",
+        "Assets/My Game Assets/Scripts/Player/Physics/PlayerPhysics.cs",
+        "Assets/My Game Assets/Scripts/Player/Player Input/PlayerControls.cs",
+        "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputBinder.cs",
+        "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputHandler.cs",
+        "Assets/My Game Assets/Scripts/Scriptable Objects/Inputs/InputPrefences.cs",
+>>>>>>> Stashed changes
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll",
@@ -52248,7 +52278,25 @@
         0,
         0,
         0,
+<<<<<<< Updated upstream
 >>>>>>> main
+=======
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+>>>>>>> Stashed changes
         8
       ],
       "Outputs": [
@@ -52564,11 +52612,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       "PayloadOffset": 1897259,
       "PayloadLength": 11782,
 =======
       "PayloadOffset": 2309722,
+=======
+      "PayloadOffset": 2310951,
+>>>>>>> Stashed changes
       "PayloadLength": 12135,
 >>>>>>> main
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",

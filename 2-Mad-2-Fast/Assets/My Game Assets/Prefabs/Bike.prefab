@@ -267,10 +267,16 @@ GameObject:
   m_Component:
   - component: {fileID: 7748054755034978197}
   - component: {fileID: 4808663848687936437}
-  - component: {fileID: 7792450620478264958}
-  - component: {fileID: 2863649489725379362}
   - component: {fileID: 2520594980274975028}
-  - component: {fileID: 3699412494393922618}
+  - component: {fileID: 1189363684898023854}
+  - component: {fileID: 4434028185177899238}
+  - component: {fileID: 37983053127519941}
+  - component: {fileID: 6358663629541637336}
+  - component: {fileID: 2646501727410088995}
+  - component: {fileID: 5073994743489831537}
+  - component: {fileID: 8130037691459656073}
+  - component: {fileID: 7599277875611694684}
+  - component: {fileID: 4683957971762201358}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -323,52 +329,6 @@ CharacterController:
   m_SkinWidth: 0.05
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.05, z: 0}
---- !u!114 &7792450620478264958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4322015159832351722}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8e043e2dce80e43ba405e225181588, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 50
-  fastSpeed: 30
-  moderateSpeed: 15
-  largePenalty: 0
-  mediumPenalty: 0.3
-  smallPenalty: 0.7
-  accelerationPerPedal: 1
-  decelerationPerMiss: 2.5
-  decelerationPerTick: 0.04
-  brakeMultiplier: 5
-  turningSpeed: 300
-  tiltLimit: 30
-  tiltRecovery: 0.6
-  tiltRate: 0.04
-  tiltLerpSpeed: 100
-  rhythmMultiplier: 1.5
-  rhythmTolerance: 0.5
-  cameraTransform: {fileID: 0}
-  pivotPoint: {fileID: 6367927215099575524}
-  leftCollisionDetector: {fileID: 7226949310459533414}
-  rightCollisionDetector: {fileID: 4427209845482196826}
---- !u!114 &2863649489725379362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4322015159832351722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eae2aa56ac5893499274082c8604112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerNumber: 1
 --- !u!114 &2520594980274975028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +359,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &3699412494393922618
+--- !u!114 &1189363684898023854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,30 +368,173 @@ MonoBehaviour:
   m_GameObject: {fileID: 4322015159832351722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92612a3c657e7b1428db285553b81899, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ca1fbf8bbf84474885ff0d61724c156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerActions:
+    m_Name: Player Actions
+    m_Id: 75363bd3-455b-43c1-aeac-d74c19d13a53
+    m_Asset: {fileID: 0}
+    m_Actions: []
+    m_Bindings: []
+  steer:
+    m_Name: Steer
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0372d406-c776-441f-b903-4514da48ab01
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  leftPedal:
+    m_Name: Left Pedal
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e2fdaf16-df3e-4be7-b482-858c0f8ef838
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rightPedal:
+    m_Name: Right Pedal
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5796e05e-27c8-4bb0-9a87-83c7e1c9cf1f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  brake:
+    m_Name: Brake
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 56ade51b-5efd-49b1-85b9-10c7dd5f7e96
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  PlayerNo: 1
+--- !u!114 &4434028185177899238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eae2aa56ac5893499274082c8604112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &37983053127519941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8e043e2dce80e43ba405e225181588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 50
-  fastSpeed: 30
-  moderateSpeed: 15
+  turningSpeed: 300
+  decelerationPerTick: 0.04
+  speed: 0
+  tilt: 0
+  tiltShown: {x: 0, y: 0, z: 0}
+  decelerationMultiplier: 0
+--- !u!114 &6358663629541637336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66833d8a16ecbe946ac5c32d474780ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 0}
+--- !u!114 &2646501727410088995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1a4c9bcf39e7746b97e5a09ba3137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rhythmMultiplier: 1.5
+  rhythmTolerance: 0.5
+--- !u!114 &5073994743489831537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de19f8c1df0ba2a4cbc353e077924f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiltLimit: 30
+  tiltRecovery: 0.6
+  tiltRate: 0.06
+  tiltLerpSpeed: 100
+  pivotPoint: {fileID: 6367927215099575524}
+--- !u!114 &8130037691459656073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b111bf65b6493c549b914e6b4f1d7715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   largePenalty: 0
   mediumPenalty: 0.3
   smallPenalty: 0.7
-  accelerationPerPedal: 1
-  decelerationPerMiss: 2.5
-  decelerationPerTick: 0.04
-  brakeMultiplier: 5
-  turningSpeed: 300
-  tiltLimit: 30
-  tiltRecovery: 0.6
-  tiltRate: 0.04
-  tiltLerpSpeed: 100
-  rhythmMultiplier: 1.5
-  rhythmTolerance: 0.5
-  cameraTransform: {fileID: 0}
-  pivotPoint: {fileID: 0}
+--- !u!114 &7599277875611694684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aecec6c313c050e49a842656b278f8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   leftCollisionDetector: {fileID: 7226949310459533414}
   rightCollisionDetector: {fileID: 4427209845482196826}
+  fastSpeed: 30
+  moderateSpeed: 15
+--- !u!114 &4683957971762201358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8581a9864fc3e0f4a973e6c35c8ab1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accelerationPerPedal: 1
+  decelerationPerMiss: 2.5
+  brakeMultiplier: 10
 --- !u!1001 &1307242983732880159
 PrefabInstance:
   m_ObjectHideFlags: 0
