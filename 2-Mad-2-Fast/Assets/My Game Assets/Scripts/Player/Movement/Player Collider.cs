@@ -14,9 +14,9 @@ public class PlayerCollider : MonoBehaviour
     [Header("Speed Thresholds")]
 
     [SerializeField]
-    private float fastSpeed;
+    public float fastSpeed;
     [SerializeField]
-    private float moderateSpeed;
+    public float moderateSpeed;
 
     PlayerPhysics pp;
     PlayerStumbler s;

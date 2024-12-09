@@ -498,11 +498,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51ccb9bd1d19a37469867b887c01d2c7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51ccb9bd1d19a37469867b887c01d2c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.5999947
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51ccb9bd1d19a37469867b887c01d2c7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -510,7 +510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51ccb9bd1d19a37469867b887c01d2c7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -60.272552
+      value: -61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51ccb9bd1d19a37469867b887c01d2c7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1479,6 +1479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1049105838}
   - component: {fileID: 1049105839}
+  - component: {fileID: 1049105841}
   - component: {fileID: 1049105840}
   m_Layer: 0
   m_Name: Audio Manager
@@ -1520,7 +1521,6 @@ MonoBehaviour:
   masterGroup: {fileID: 24300002, guid: c3d35c9b700e30f498b67414cafb8bbd, type: 2}
   sfxGroup: {fileID: -4447791485666403162, guid: c3d35c9b700e30f498b67414cafb8bbd, type: 2}
   musicGroup: {fileID: -8032027993361980260, guid: c3d35c9b700e30f498b67414cafb8bbd, type: 2}
-  backgroundMusic: {fileID: 8300000, guid: e540176d9c45f4346b9911a1247658c8, type: 3}
 --- !u!81 &1049105840
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1529,6 +1529,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049105837}
   m_Enabled: 1
+--- !u!114 &1049105841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049105837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad232414cbc1c064491b36a5db95678b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 8300000, guid: 453304414909c674b9ce62ca7fde42ec, type: 3}
 --- !u!1 &1056695856
 GameObject:
   m_ObjectHideFlags: 0
