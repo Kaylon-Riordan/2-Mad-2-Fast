@@ -352,10 +352,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 23869f360b14d5848852a33ee5bc229f, type: 2}
+    - target: {fileID: 882512493308367471, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 5675636501583036413}
     - target: {fileID: 2520594980274975028, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5638282415031686954}
+    - target: {fileID: 2520594980274975028, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 720bc62e180aa5645994f72a22e9b43e, type: 3}
     - target: {fileID: 2863649489725379362, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
       propertyPath: playerNumber
       value: 1
@@ -452,6 +460,10 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 2474340353086110206}
+    - target: {fileID: 8194267381252614937, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
+      propertyPath: PlayerNo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8203264028251035072, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

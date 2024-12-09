@@ -6,13 +6,6 @@ using Game.Pool;
 using Unity.VisualScripting;
 
 // Code based on Niall McGuinness's https://github.com/nmcguinness/2024-25-GD3A-IntroToUnity
-// creates an enum to store the different audio mixer groups
-public enum AudioMixerGroupName : sbyte
-{
-    Master,
-    SFX,
-    Music
-}
 
 public class AudioManager : MonoBehaviour
 {
@@ -52,20 +45,8 @@ public class AudioManager : MonoBehaviour
         // Initialize the AudioSource pool
         audioSourcePool = new GameObjectPool<AudioSource>(audioSourcePrefab, initialPoolSize, transform);
 
-        // This if statement follows the singleton design philosophy, so only one instance of this file can exist at a time
-        // If there is no instance of this script currently set instance to be this instance of the script, set game object not to be destroyed when loading different scene
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        // If there is already an instance of this game, destroy the current one trying to be made
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-        // play music on loop from start
+        instance = Singleton<AudioManager>.get();
+
         PlaySound(backgroundMusic, AudioMixerGroupName.Music, true, transform.position);
     }
 

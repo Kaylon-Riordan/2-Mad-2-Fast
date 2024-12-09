@@ -13,22 +13,10 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class PlayerManager : MonoBehaviour
 {
 
-    // https://github.com/Ben-Keev/Tower/blob/main/Assets/Scripts/GameManager.cs.cs
     public static PlayerManager instance;
 
-    private void initSingleton()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-    }
+    private static InputPreferenceValidator validator;
+    public InputPreferences ip;
 
     [SerializeField]
     private List<PlayerInput> players = new List<PlayerInput>();
@@ -37,21 +25,24 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
-        initSingleton();
+        instance = Singleton<PlayerManager>.get();
+        validator = GetComponent<InputPreferenceValidator>();
     }
 
     private void Start()
     {
-        instantiatePlayer(1);
-        instantiatePlayer(2);
+        // Ensure all input schemes are valid
+        ip = validator.validateParameters();
+
+        instantiatePlayer(1); instantiatePlayer(2);
     }
 
     private void instantiatePlayer(int PlayerNo)
     {
-        InputDevice device = InputManager.instance.getInputDevice(PlayerNo);
+        InputDevice device = GetComponent<InputDevicePlayerMatcher>().getInputDeviceByPlayerNumber(PlayerNo);
 
         // If the control scheme is set to default or onehanded for a player, determine whether it's keyboard or mouse
-        string controlSchemeName = InputManager.instance.getControlSchemeName(PlayerNo);
+        string controlSchemeName = GetComponent<ControlSchemePlayerMatcher>().getControlSchemeByPlayerNumber(PlayerNo);
 
         // https://discussions.unity.com/t/multiple-players-on-keyboard-new-input-system/754028
         players[PlayerNo - 1] = PlayerInput.Instantiate(playerPrefabs[PlayerNo - 1], controlScheme: controlSchemeName, pairWithDevice: device);
