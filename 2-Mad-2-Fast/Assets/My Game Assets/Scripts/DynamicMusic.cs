@@ -33,7 +33,7 @@ public class DynamicMusic : MonoBehaviour
         AudioManager.instance.PlayMusic(medium, ref mediumSource);
         AudioManager.instance.PlayMusic(fast, ref fastSource);
         AudioManager.instance.PlayMusic(final, ref finalSource);
-        mainSource.volume = 1;
+        mainSource.mute = false;
     }
 
     //Update is called once per frame
