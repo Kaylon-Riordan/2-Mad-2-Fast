@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b68369b622acf499feb94c90bfd5ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ip: {fileID: 11400000, guid: 0b58a3b8fce57e34fa0938b4f74c4c42, type: 2}
+  ip: {fileID: 11400000, guid: 3a712e490b111c847a5dbd20f391c4f8, type: 2}
   players:
   - {fileID: 0}
   - {fileID: 0}
@@ -1541,7 +1541,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad232414cbc1c064491b36a5db95678b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioFadeSpeed: 0.001
   main: {fileID: 8300000, guid: 453304414909c674b9ce62ca7fde42ec, type: 3}
+  medium: {fileID: 8300000, guid: 83310d7fba290a545a4e7520a3f450bd, type: 3}
+  fast: {fileID: 8300000, guid: 4827418ac2e434f44872ffb95a8b28ed, type: 3}
+  final: {fileID: 8300000, guid: e80188c66e3ec354bb4bba7c6d0d12b4, type: 3}
 --- !u!1 &1056695856
 GameObject:
   m_ObjectHideFlags: 0

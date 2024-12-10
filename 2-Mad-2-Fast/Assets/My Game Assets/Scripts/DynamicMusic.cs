@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.Audio;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
+using static UnityEngine.SpriteMask;
 
 public class DynamicMusic : MonoBehaviour
 {
@@ -16,40 +18,44 @@ public class DynamicMusic : MonoBehaviour
     [SerializeField]
     private AudioClip final;
 
-    Boolean always = true;
-    Boolean mediumBool = false;
-    Boolean fastBool = false;
-    Boolean finalBool = false;
-
+    AudioSource mainSource;
+    AudioSource mediumSource;
+    AudioSource fastSource;
+    AudioSource finalSource;
     void Start()
     {
-        always = true;
-        mediumBool = false;
-        fastBool = false;
-        finalBool = false;
-        AudioManager.instance.PlayMusic(main, AudioMixerGroupName.Music,ref always, transform.position);
+        mainSource = new GameObject().AddComponent<AudioSource>();
+        mediumSource = new GameObject().AddComponent<AudioSource>();
+        fastSource = new GameObject().AddComponent<AudioSource>();
+        finalSource = new GameObject().AddComponent<AudioSource>();
+
+        AudioManager.instance.PlayMusic(main, ref mainSource);
+        AudioManager.instance.PlayMusic(medium, ref mediumSource);
+        AudioManager.instance.PlayMusic(fast, ref fastSource);
+        AudioManager.instance.PlayMusic(final, ref finalSource);
+        mainSource.volume = 1;
     }
 
-    // Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
-        //foreach (PlayerInput player in PlayerManager.instance.players)
-        //{
-        //    if (player.gameObject.GetComponent<PlayerPhysics>().speed >= player.gameObject.GetComponent<PlayerCollider>().fastSpeed)
-        //    {
-        //        fastBool = true;
-        //        AudioManager.instance.PlayMusic(fast, AudioMixerGroupName.Music, ref fastBool, transform.position);
-        //        while (player.gameObject.GetComponent<PlayerPhysics>().speed >= player.gameObject.GetComponent<PlayerCollider>().fastSpeed) {}
-        //        fastBool = false;
-        //    }
-        //    else if (player.gameObject.GetComponent<PlayerPhysics>().speed >= player.gameObject.GetComponent<PlayerCollider>().moderateSpeed)
-        //    {
-        //        mediumBool = true;
-        //        AudioManager.instance.PlayMusic(medium, AudioMixerGroupName.Music, ref mediumBool, transform.position);
-        //        while (player.gameObject.GetComponent<PlayerPhysics>().speed >= player.gameObject.GetComponent<PlayerCollider>().moderateSpeed) {}
-        //        mediumBool = false;
-        //    }
-        //}
+        StartCoroutine(checkSpeed(PlayerManager.instance.players[0].gameObject, PlayerManager.instance.players[1].gameObject));
     }
 
+    private IEnumerator checkSpeed(GameObject player1, GameObject player2)
+    {
+        if (player1.GetComponent<PlayerPhysics>().speed >= player1.GetComponent<PlayerCollider>().fastSpeed || player2.GetComponent<PlayerPhysics>().speed >= player2.GetComponent<PlayerCollider>().fastSpeed)
+        {
+            fastSource.mute = false;
+            yield return new WaitUntil(() => (player1.GetComponent<PlayerPhysics>().speed < player1.GetComponent<PlayerCollider>().fastSpeed && player2.GetComponent<PlayerPhysics>().speed < player2.GetComponent<PlayerCollider>().fastSpeed));
+            fastSource.mute = true;
+        }
+        else if (player1.GetComponent<PlayerPhysics>().speed >= player1.GetComponent<PlayerCollider>().moderateSpeed || player2.GetComponent<PlayerPhysics>().speed >= player2.GetComponent<PlayerCollider>().moderateSpeed)
+        {
+            mediumSource.mute = false;
+            yield return new WaitUntil(() => ((player1.GetComponent<PlayerPhysics>().speed < player1.GetComponent<PlayerCollider>().moderateSpeed && player2.GetComponent<PlayerPhysics>().speed < player2.GetComponent<PlayerCollider>().moderateSpeed) || 
+                (player1.GetComponent<PlayerPhysics>().speed >= player1.GetComponent<PlayerCollider>().fastSpeed || player2.GetComponent<PlayerPhysics>().speed >= player2.GetComponent<PlayerCollider>().fastSpeed)));
+            mediumSource.mute = true;
+        }
+    }
 }

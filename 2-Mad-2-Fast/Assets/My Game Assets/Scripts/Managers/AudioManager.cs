@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
     [Header("Prefab")]
     [SerializeField]
     [Tooltip("The prefab used to instantiate AudioSources.")]
-    private AudioSource audioSourcePrefab;
+    public AudioSource audioSourcePrefab;
 
     [SerializeField]
     [Range(1, 32)]
@@ -74,22 +74,21 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void PlayMusic(AudioClip clip, AudioMixerGroupName groupName, ref bool loop, Vector3 position = default)
+    public void PlayMusic(AudioClip clip, ref AudioSource audioSource)
     {
-        AudioSource audioSource = audioSourcePool.Get();
-        audioSource.transform.position = position;
         audioSource.clip = clip;
-        audioSource.loop = loop;
-        audioSource.outputAudioMixerGroup = GetAudioMixerGroup(groupName);
+        audioSource.loop = true;
+        audioSource.mute = true;
+        audioSource.outputAudioMixerGroup = AudioManager.instance.GetAudioMixerGroup(AudioMixerGroupName.Music);
         audioSource.Play();
-
-        while (loop) {}
-        StartCoroutine(ReturnAudioSourceAfterPlaying(audioSource));
     }
 
     private IEnumerator ReturnAudioSourceAfterPlaying(AudioSource audioSource)
     {
-        yield return new WaitForSeconds(audioSource.clip.length);
+        if (audioSource.outputAudioMixerGroup != GetAudioMixerGroup(AudioMixerGroupName.Music))
+        {
+            yield return new WaitForSeconds(audioSource.clip.length);
+        }
         audioSourcePool.ReturnToPool(audioSource);
     }
 }
