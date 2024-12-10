@@ -218,6 +218,10 @@ public class InputManager : MonoBehaviour
             string hand = leftHand[PlayerNo-1] ? "L" : "R";
             string isKeyboard = inputMethod == InputMethod.Keyboard ? "K" : "";
 
+            Debug.Log("Couldn't assign a control scheme, ControlScheme: " + "OneHand" + hand + isKeyboard
+            + " inputMethod: " + inputMethod);
+
+
             return "OneHand" + hand + isKeyboard;
             // It's not possible to use Keyboard&Mouse one handed. An exception should be thrown above if this is attempted.
         }
