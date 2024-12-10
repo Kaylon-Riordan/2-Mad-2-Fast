@@ -388,6 +388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bike
       objectReference: {fileID: 0}
+    - target: {fileID: 4322015159832351722, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
+      propertyPath: m_TagString
+      value: Bike
+      objectReference: {fileID: 0}
     - target: {fileID: 5731081100414928173, guid: 343068b7dedc5154bbf9b76f0e787dc7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
