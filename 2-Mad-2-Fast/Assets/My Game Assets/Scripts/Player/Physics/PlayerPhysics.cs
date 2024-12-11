@@ -23,6 +23,11 @@ public class PlayerPhysics : MonoBehaviour
     [SerializeField]
     private PlayerControls playerControls;
 
+    [Header("Animation")]
+
+    [SerializeField]
+    private Animator animator;
+
     // These traits change dynamically in other scripts
     [HideInInspector]
     public float speed;
@@ -74,6 +79,9 @@ public class PlayerPhysics : MonoBehaviour
 
         // Moves character using character contoller
         characterContoller.SimpleMove(movementDirection * speed);
+
+        // Set pedal animation speed to be relative to player speed
+        animator.speed = speed/5;
 
         if (movementDirection != Vector3.zero)
         {
