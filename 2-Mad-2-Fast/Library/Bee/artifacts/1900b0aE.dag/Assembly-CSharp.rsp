@@ -422,6 +422,7 @@
 "Assets/My Game Assets/Scripts/Player/Player Input/PlayerControls.cs"
 "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputBinder.cs"
 "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputHandler.cs"
+"Assets/My Game Assets/Scripts/Player/PlayerFactory.cs"
 "Assets/My Game Assets/Scripts/Scriptable Objects/Inputs/InputPrefences.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
