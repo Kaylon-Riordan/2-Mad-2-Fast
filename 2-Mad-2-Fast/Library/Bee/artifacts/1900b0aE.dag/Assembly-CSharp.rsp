@@ -410,6 +410,7 @@
 "Assets/My Game Assets/Scripts/Managers/SingletonInitialiser.cs"
 "Assets/My Game Assets/Scripts/ObjectPools.cs"
 "Assets/My Game Assets/Scripts/Player/Movement/Player Collider.cs"
+"Assets/My Game Assets/Scripts/Player/Movement/PlayerCountdown.cs"
 "Assets/My Game Assets/Scripts/Player/Movement/PlayerRhythmTracker.cs"
 "Assets/My Game Assets/Scripts/Player/Movement/PlayerSteeringCalculator.cs"
 "Assets/My Game Assets/Scripts/Player/Movement/PlayerStumbler.cs"

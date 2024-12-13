@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 7758349974889757442}
   - component: {fileID: 8194267381252614937}
   - component: {fileID: 2502385529562730529}
+  - component: {fileID: 6163086841399630023}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -396,7 +397,7 @@ MonoBehaviour:
   decelerationPerMiss: 2.5
   brakeMultiplier: 10
   maxReverseSpeed: 5
-  brakeSound: {fileID: 8300000, guid: 2da5f551619199c44afe84229e4b1c39, type: 3}
+  brakeSound: {fileID: 8300000, guid: 737180ad8f46d7049b03eac8b2978e51, type: 3}
   pedalSound: {fileID: 8300000, guid: 3058b7f07a03635478d16b6c5cb7e9ca, type: 3}
 --- !u!114 &1603337932439231619
 MonoBehaviour:
@@ -456,7 +457,7 @@ MonoBehaviour:
   largePenalty: 0
   mediumPenalty: 0.3
   smallPenalty: 0.7
-  crashSound: {fileID: 8300000, guid: 82580471947ac284a833907192aae43e, type: 3}
+  crashSound: {fileID: 8300000, guid: 934da82f8bd4d964e9a60c8a5fe43ee6, type: 3}
 --- !u!114 &7758349974889757442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +542,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e507893570a9147918eb3e20f0fa5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6163086841399630023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322015159832351722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa96bc76d3e9014a99a52a6d752c3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownSound: {fileID: 8300000, guid: 2518ac6f77fb49b4ab240a867af040e1, type: 3}
 --- !u!1001 &2040958701014725245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -567,7 +581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aab0f0e9cf86fb34abf8b1fd2912fe77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aab0f0e9cf86fb34abf8b1fd2912fe77, type: 3}
       propertyPath: m_LocalPosition.z
