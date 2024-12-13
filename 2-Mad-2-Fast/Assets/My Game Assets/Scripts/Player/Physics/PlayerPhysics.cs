@@ -27,6 +27,8 @@ public class PlayerPhysics : MonoBehaviour
     [HideInInspector]
     public float speed;
     [HideInInspector]
+    public float minSpeed;
+    [HideInInspector]
     public float tilt;
     [HideInInspector]
     public Vector3 tiltShown;
@@ -41,6 +43,8 @@ public class PlayerPhysics : MonoBehaviour
 
     private PlayerTilting tilting;
 
+    private PlayerCollider collider;
+
     private void Awake()
     {
         inputHandler = GetComponent<PlayerInputHandler>();
@@ -48,6 +52,7 @@ public class PlayerPhysics : MonoBehaviour
 
         steering = GetComponent<PlayerSteeringCalculator>();
         tilting = GetComponent<PlayerTilting>();
+        collider = GetComponent<PlayerCollider>();
     }
 
     // Start is called before the first frame update
@@ -61,11 +66,12 @@ public class PlayerPhysics : MonoBehaviour
     {
         Vector3 movementDirection = steering.calculateDirection();
         tilting.tiltBike(steering.GetSteer());
+        collider.checkForContact();
 
         // Constantly decelerate, faster if brakes are applied
         speed -= decelerationPerTick * decelerationMultiplier;
         // Stop speed from exceding max or becoming negative
-        speed = Mathf.Clamp(speed, 0, maxSpeed);
+        speed = Mathf.Clamp(speed, minSpeed, maxSpeed);
 
         // Moves character using character contoller
         characterContoller.SimpleMove(movementDirection * speed);

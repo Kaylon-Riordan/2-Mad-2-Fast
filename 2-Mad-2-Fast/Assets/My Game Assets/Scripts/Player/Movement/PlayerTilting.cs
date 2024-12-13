@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.ProBuilder;
 
 public class PlayerTilting : MonoBehaviour
 {
@@ -36,13 +33,13 @@ public class PlayerTilting : MonoBehaviour
         {
             pp.tilt += tiltRecovery;
             if (pp.tilt < -tiltLimit)
-                StartCoroutine(s.Stumble(Penalty.Large, 0));
+                StartCoroutine(s.Stumble(Penalty.Large, 0, false));
         }
         else if (pp.tilt > 0)
         {
             pp.tilt -= tiltRecovery;
             if (pp.tilt > tiltLimit)
-                StartCoroutine(s.Stumble(Penalty.Large, 0));
+                StartCoroutine(s.Stumble(Penalty.Large, 0, false));
         }
 
         pp.tiltShown = pivotPoint.localEulerAngles;

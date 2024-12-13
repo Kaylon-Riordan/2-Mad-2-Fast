@@ -13,6 +13,8 @@ public class PlayerStumbler : MonoBehaviour
     private float mediumPenalty;
     [SerializeField]
     private float smallPenalty;
+    [SerializeField]
+    private AudioClip crashSound;
 
     private bool slowed;
 
@@ -43,13 +45,17 @@ public class PlayerStumbler : MonoBehaviour
         }
     }
 
-    public IEnumerator Stumble(Penalty penalty, float delay)
+    public IEnumerator Stumble(Penalty penalty, float delay, bool collision)
     {
         float multiplier = PenaltyToFloat(penalty);
 
         yield return new WaitForSeconds(delay);
         if (!slowed)
         {
+            if (collision && multiplier <= mediumPenalty)
+            {
+                AudioManager.instance.PlaySound(crashSound, AudioMixerGroupName.SFX, false, transform.position);
+            }
             slowed = true;
             pp.speed *= multiplier;
 

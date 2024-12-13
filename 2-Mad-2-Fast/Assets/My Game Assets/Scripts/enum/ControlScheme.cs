@@ -1,6 +1,6 @@
 public enum ControlScheme
 {
-    Default,
-    OneHand,
-    Shared
+    Default = 0,
+    OneHand = 1,
+    Shared = 2
 }

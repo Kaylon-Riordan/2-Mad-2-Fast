@@ -493,13 +493,8 @@
       "DisplayName": "Writing UnityEngine.TestRunner.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
       "PayloadOffset": 107,
-<<<<<<< HEAD
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -514,11 +509,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.rsp",
       "DisplayName": "Writing UnityEngine.TestRunner.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 234,
-=======
       "PayloadOffset": 242,
->>>>>>> main
       "PayloadLength": 49532,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -535,13 +526,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.rsp2",
       "DisplayName": "Writing UnityEngine.TestRunner.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 49860,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 49868,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -3986,11 +3972,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.TestRunner.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 50010,
-=======
       "PayloadOffset": 50026,
->>>>>>> main
       "PayloadLength": 9514,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -4362,15 +4344,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.UI.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 59629,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 59645,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -4385,11 +4361,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.rsp",
       "DisplayName": "Writing UnityEngine.UI.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 59748,
-=======
       "PayloadOffset": 59772,
->>>>>>> main
       "PayloadLength": 43374,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -4406,13 +4378,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.rsp2",
       "DisplayName": "Writing UnityEngine.UI.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 103208,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 103232,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -5308,11 +5275,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.UI.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 103350,
-=======
       "PayloadOffset": 103382,
->>>>>>> main
       "PayloadLength": 10226,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -5708,15 +5671,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEditor.TestRunner.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 113689,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 113721,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -5731,11 +5688,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.rsp",
       "DisplayName": "Writing UnityEditor.TestRunner.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 113816,
-=======
       "PayloadOffset": 113856,
->>>>>>> main
       "PayloadLength": 59335,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -5752,13 +5705,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.rsp2",
       "DisplayName": "Writing UnityEditor.TestRunner.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 173245,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 173285,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -6758,11 +6706,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEditor.TestRunner.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 173395,
-=======
       "PayloadOffset": 173443,
->>>>>>> main
       "PayloadLength": 9854,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -7146,15 +7090,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEditor.UI.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 183354,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 183402,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -7169,11 +7107,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.rsp",
       "DisplayName": "Writing UnityEditor.UI.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 183473,
-=======
       "PayloadOffset": 183529,
->>>>>>> main
       "PayloadLength": 40203,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -7190,13 +7124,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.rsp2",
       "DisplayName": "Writing UnityEditor.UI.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 223762,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 223818,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -7889,11 +7818,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEditor.UI.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 223904,
-=======
       "PayloadOffset": 223968,
->>>>>>> main
       "PayloadLength": 10552,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -8301,15 +8226,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.EditorCoroutines.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 234576,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 234640,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -8324,11 +8243,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.rsp",
       "DisplayName": "Writing Unity.EditorCoroutines.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 234710,
-=======
       "PayloadOffset": 234782,
->>>>>>> main
       "PayloadLength": 37437,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -8345,13 +8260,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.rsp2",
       "DisplayName": "Writing Unity.EditorCoroutines.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 272248,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 272320,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -8956,11 +8866,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.EditorCoroutines.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 272405,
-=======
       "PayloadOffset": 272485,
->>>>>>> main
       "PayloadLength": 10628,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -9371,15 +9277,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.InputSystem.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 283141,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 283221,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -9394,11 +9294,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.rsp",
       "DisplayName": "Writing Unity.InputSystem.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 283263,
-=======
       "PayloadOffset": 283351,
->>>>>>> main
       "PayloadLength": 73370,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -9415,13 +9311,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.rsp2",
       "DisplayName": "Writing Unity.InputSystem.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 356722,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 356810,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -10719,11 +10610,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.InputSystem.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 356867,
-=======
       "PayloadOffset": 356963,
->>>>>>> main
       "PayloadLength": 10378,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -11125,15 +11012,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Performance.Profile-Analyzer.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 367377,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 367473,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -11148,11 +11029,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.rsp",
       "DisplayName": "Writing Unity.Performance.Profile-Analyzer.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 367523,
-=======
       "PayloadOffset": 367627,
->>>>>>> main
       "PayloadLength": 40210,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -11169,13 +11046,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.rsp2",
       "DisplayName": "Writing Unity.Performance.Profile-Analyzer.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 407846,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 407950,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -11813,11 +11685,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Performance.Profile-Analyzer.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 408015,
-=======
       "PayloadOffset": 408127,
->>>>>>> main
       "PayloadLength": 10628,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -12228,15 +12096,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 418757,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 418869,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -12251,11 +12113,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 418885,
-=======
       "PayloadOffset": 419005,
->>>>>>> main
       "PayloadLength": 68789,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -12272,13 +12130,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp2",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 487769,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 487889,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -13446,11 +13299,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 487920,
-=======
       "PayloadOffset": 488048,
->>>>>>> main
       "PayloadLength": 10177,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -18962,15 +18811,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Rider.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 498206,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 739480,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -18985,11 +18828,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.rsp",
       "DisplayName": "Writing Unity.Rider.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 498329,
-=======
       "PayloadOffset": 739611,
->>>>>>> main
       "PayloadLength": 39737,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -19006,13 +18845,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.rsp2",
       "DisplayName": "Writing Unity.Rider.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 538156,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 779438,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -19646,11 +19480,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Rider.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 538302,
-=======
       "PayloadOffset": 779592,
->>>>>>> main
       "PayloadLength": 10090,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -20043,15 +19873,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Settings.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 548504,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 789794,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -20066,11 +19890,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.rsp",
       "DisplayName": "Writing Unity.Settings.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 548630,
-=======
       "PayloadOffset": 789928,
->>>>>>> main
       "PayloadLength": 38153,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -20087,13 +19907,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.rsp2",
       "DisplayName": "Writing Unity.Settings.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 586876,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 828174,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -20691,11 +20506,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Settings.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 587025,
-=======
       "PayloadOffset": 828331,
->>>>>>> main
       "PayloadLength": 10628,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -21106,15 +20917,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 597795,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 839101,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -21129,11 +20934,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.rsp",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 597951,
-=======
       "PayloadOffset": 839265,
->>>>>>> main
       "PayloadLength": 38914,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -21150,13 +20951,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.rsp2",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 636988,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 878302,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -21758,11 +21554,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 637167,
-=======
       "PayloadOffset": 878489,
->>>>>>> main
       "PayloadLength": 10628,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -22173,15 +21965,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 647947,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 889269,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -22196,11 +21982,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.rsp",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 648113,
-=======
       "PayloadOffset": 889443,
->>>>>>> main
       "PayloadLength": 37687,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -22217,13 +21999,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.rsp2",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 685933,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 927263,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -22803,11 +22580,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 686122,
-=======
       "PayloadOffset": 927460,
->>>>>>> main
       "PayloadLength": 10628,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -23218,15 +22991,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TextMeshPro.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 696858,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 938196,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -23241,11 +23008,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 696980,
-=======
       "PayloadOffset": 938326,
->>>>>>> main
       "PayloadLength": 40545,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -23262,13 +23025,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.rsp2",
       "DisplayName": "Writing Unity.TextMeshPro.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 737614,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 978960,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -23946,11 +23704,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 737759,
-=======
       "PayloadOffset": 979113,
->>>>>>> main
       "PayloadLength": 10378,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -24352,15 +24106,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Timeline.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 748242,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 989596,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -24375,11 +24123,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.rsp",
       "DisplayName": "Writing Unity.Timeline.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 748361,
-=======
       "PayloadOffset": 989723,
->>>>>>> main
       "PayloadLength": 42092,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -24396,13 +24140,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.rsp2",
       "DisplayName": "Writing Unity.Timeline.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 790539,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1031901,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -25104,11 +24843,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Timeline.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 790681,
-=======
       "PayloadOffset": 1032051,
->>>>>>> main
       "PayloadLength": 10378,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -25510,15 +25245,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualStudio.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 801175,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1042545,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -25533,11 +25262,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.rsp",
       "DisplayName": "Writing Unity.VisualStudio.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 801305,
-=======
       "PayloadOffset": 1042683,
->>>>>>> main
       "PayloadLength": 40023,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -25554,13 +25279,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.rsp2",
       "DisplayName": "Writing Unity.VisualStudio.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 841425,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1082803,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -26204,11 +25924,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualStudio.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 841578,
-=======
       "PayloadOffset": 1082964,
->>>>>>> main
       "PayloadLength": 10090,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -26601,15 +26317,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Cinemachine.UnityAdditionalFile.txt",
       "DisplayName": "Writing Cinemachine.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 851770,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1093156,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -26624,11 +26334,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Cinemachine.rsp",
       "DisplayName": "Writing Cinemachine.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 851886,
-=======
       "PayloadOffset": 1093280,
->>>>>>> main
       "PayloadLength": 43678,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -26645,13 +26351,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Cinemachine.rsp2",
       "DisplayName": "Writing Cinemachine.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 895647,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1137041,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -27423,11 +27124,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Cinemachine.dll.mvfrm.rsp",
       "DisplayName": "Writing Cinemachine.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 895786,
-=======
       "PayloadOffset": 1137188,
->>>>>>> main
       "PayloadLength": 10533,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -27835,15 +27532,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.CollabProxy.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 906434,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1147836,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -27858,11 +27549,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.rsp",
       "DisplayName": "Writing Unity.CollabProxy.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 906563,
-=======
       "PayloadOffset": 1147973,
->>>>>>> main
       "PayloadLength": 37232,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -27879,13 +27566,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.rsp2",
       "DisplayName": "Writing Unity.CollabProxy.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 943891,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1185301,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -28487,11 +28169,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.CollabProxy.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 944043,
-=======
       "PayloadOffset": 1185461,
->>>>>>> main
       "PayloadLength": 10713,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -28905,15 +28583,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.InputSystem.ForUI.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 954870,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1196288,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -28928,11 +28600,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.rsp",
       "DisplayName": "Writing Unity.InputSystem.ForUI.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 954998,
-=======
       "PayloadOffset": 1196424,
->>>>>>> main
       "PayloadLength": 36062,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -28949,13 +28617,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.rsp2",
       "DisplayName": "Writing Unity.InputSystem.ForUI.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 991155,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1232581,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -29518,11 +29181,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.InputSystem.ForUI.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 991306,
-=======
       "PayloadOffset": 1232740,
->>>>>>> main
       "PayloadLength": 10457,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -29927,15 +29586,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.TestFramework.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.InputSystem.TestFramework.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1001885,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1243319,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -29950,11 +29603,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.TestFramework.rsp",
       "DisplayName": "Writing Unity.InputSystem.TestFramework.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1002021,
-=======
       "PayloadOffset": 1243463,
->>>>>>> main
       "PayloadLength": 35055,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -29971,13 +29620,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.TestFramework.rsp2",
       "DisplayName": "Writing Unity.InputSystem.TestFramework.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1037179,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1278621,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -30528,11 +30172,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.InputSystem.TestFramework.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1037338,
-=======
       "PayloadOffset": 1278788,
->>>>>>> main
       "PayloadLength": 9913,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -32198,15 +31838,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1047377,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1345003,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -32221,11 +31855,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.rsp",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1047517,
-=======
       "PayloadOffset": 1345151,
->>>>>>> main
       "PayloadLength": 41425,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -32242,13 +31872,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.rsp2",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1089049,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1386683,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -32984,11 +32609,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TestTools.CodeCoverage.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1089212,
-=======
       "PayloadOffset": 1386854,
->>>>>>> main
       "PayloadLength": 10409,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -33390,15 +33011,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1099736,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1397378,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -33413,11 +33028,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1099865,
-=======
       "PayloadOffset": 1397515,
->>>>>>> main
       "PayloadLength": 41965,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -33434,13 +33045,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.rsp2",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1141926,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1439576,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -34150,11 +33756,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1142078,
-=======
       "PayloadOffset": 1439736,
->>>>>>> main
       "PayloadLength": 10707,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -34568,15 +34170,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Timeline.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1152897,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1450555,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -34591,11 +34187,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.rsp",
       "DisplayName": "Writing Unity.Timeline.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1153023,
-=======
       "PayloadOffset": 1450689,
->>>>>>> main
       "PayloadLength": 61436,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -34612,13 +34204,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.rsp2",
       "DisplayName": "Writing Unity.Timeline.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1214552,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1512218,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -35737,11 +35324,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Timeline.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1214701,
-=======
       "PayloadOffset": 1512375,
->>>>>>> main
       "PayloadLength": 10704,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -36155,15 +35738,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.Core.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1225522,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1523196,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -36178,11 +35755,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Core.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1225653,
-=======
       "PayloadOffset": 1523335,
->>>>>>> main
       "PayloadLength": 89851,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -36199,13 +35772,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.Core.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1315602,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1613284,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -37618,11 +37186,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Core.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1315756,
-=======
       "PayloadOffset": 1613446,
->>>>>>> main
       "PayloadLength": 10457,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -39533,15 +39097,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.Core.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1326337,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1689545,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -39556,11 +39114,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Core.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1326475,
-=======
       "PayloadOffset": 1689691,
->>>>>>> main
       "PayloadLength": 94101,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -39577,13 +39131,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.Core.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1420681,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1783897,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -41123,11 +40672,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Core.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1420842,
-=======
       "PayloadOffset": 1784066,
->>>>>>> main
       "PayloadLength": 10716,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -41541,15 +41086,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.Flow.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1431675,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1794899,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -41564,11 +41103,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Flow.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1431806,
-=======
       "PayloadOffset": 1795038,
->>>>>>> main
       "PayloadLength": 85380,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -41585,13 +41120,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.Flow.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1517284,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1880516,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -42957,11 +42487,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Flow.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1517438,
-=======
       "PayloadOffset": 1880678,
->>>>>>> main
       "PayloadLength": 10545,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -43369,15 +42895,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing com.unity.cinemachine.editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1528102,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1891342,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -43392,11 +42912,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.rsp",
       "DisplayName": "Writing com.unity.cinemachine.editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1528235,
-=======
       "PayloadOffset": 1891483,
->>>>>>> main
       "PayloadLength": 44443,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -43413,13 +42929,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.rsp2",
       "DisplayName": "Writing com.unity.cinemachine.editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1572778,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 1936026,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -44164,11 +43675,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.dll.mvfrm.rsp",
       "DisplayName": "Writing com.unity.cinemachine.editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1572934,
-=======
       "PayloadOffset": 1936190,
->>>>>>> main
       "PayloadLength": 10866,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -45645,15 +45152,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.Flow.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1583924,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 1995788,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -45668,11 +45169,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Flow.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1584062,
-=======
       "PayloadOffset": 1995934,
->>>>>>> main
       "PayloadLength": 57708,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -45689,13 +45186,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.Flow.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1641875,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 2053747,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -46665,11 +46157,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Flow.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1642036,
-=======
       "PayloadOffset": 2053916,
->>>>>>> main
       "PayloadLength": 10978,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -47092,15 +46580,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.State.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1653132,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 2065012,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -47115,11 +46597,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.rsp",
       "DisplayName": "Writing Unity.VisualScripting.State.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1653264,
-=======
       "PayloadOffset": 2065152,
->>>>>>> main
       "PayloadLength": 39228,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -47136,13 +46614,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.State.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1692591,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 2104479,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -47766,11 +47239,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.State.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1692746,
-=======
       "PayloadOffset": 2104642,
->>>>>>> main
       "PayloadLength": 10554,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -48178,15 +47647,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.SettingsProvider.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1703436,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 2115332,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -48201,11 +47664,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.rsp",
       "DisplayName": "Writing Unity.VisualScripting.SettingsProvider.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1703586,
-=======
       "PayloadOffset": 2115490,
->>>>>>> main
       "PayloadLength": 38578,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -48222,13 +47681,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.SettingsProvider.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1742281,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 2154185,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -48883,11 +48337,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.SettingsProvider.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1742454,
-=======
       "PayloadOffset": 2154366,
->>>>>>> main
       "PayloadLength": 11083,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -49313,15 +48763,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.State.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1753662,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 2165574,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -49336,11 +48780,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.rsp",
       "DisplayName": "Writing Unity.VisualScripting.State.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1753801,
-=======
       "PayloadOffset": 2165721,
->>>>>>> main
       "PayloadLength": 45535,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -49357,13 +48797,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.State.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1799442,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 2211362,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -50086,11 +49521,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.State.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1799604,
-=======
       "PayloadOffset": 2211532,
->>>>>>> main
       "PayloadLength": 11083,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -50516,15 +49947,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.Shared.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1810813,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 2222741,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -50539,11 +49964,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Shared.Editor.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1810953,
-=======
       "PayloadOffset": 2222889,
->>>>>>> main
       "PayloadLength": 37681,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -50560,13 +49981,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.Shared.Editor.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1848741,
-      "PayloadLength": 47,
-=======
       "PayloadOffset": 2260677,
       "PayloadLength": 55,
->>>>>>> main
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Unity\\2-Mad-2-Fas",
       "Inputs": [],
       "InputFlags": [],
@@ -51183,11 +50599,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Shared.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1848904,
-=======
       "PayloadOffset": 2260848,
->>>>>>> main
       "PayloadLength": 11179,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -51616,15 +51028,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt",
       "DisplayName": "Writing Assembly-CSharp.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1860189,
-      "PayloadLength": 34,
-      "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-",
-=======
       "PayloadOffset": 2272133,
       "PayloadLength": 42,
       "PayloadDebugContentSnippet": "C:\\Unity\\2-Mad-2-Fast-(Fixed)\\",
->>>>>>> main
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -51639,17 +51045,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1860309,
-      "PayloadLength": 36767,
-=======
       "PayloadOffset": 2272261,
-<<<<<<< Updated upstream
-      "PayloadLength": 37278,
->>>>>>> main
-=======
-      "PayloadLength": 38507,
->>>>>>> Stashed changes
+      "PayloadLength": 41274,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "InputFlags": [],
@@ -51665,15 +51062,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-      "PayloadOffset": 1897163,
-=======
-      "PayloadOffset": 2309626,
->>>>>>> main
-=======
-      "PayloadOffset": 2310855,
->>>>>>> Stashed changes
+      "PayloadOffset": 2313622,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -51956,17 +51345,12 @@
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
-<<<<<<< HEAD
-        "Assets/InputManager.cs",
-        "Assets/My Game Assets/Scripts/playerController.cs",
-        "Assets/My Game Assets/Scripts/PlayerControls.cs",
-        "Assets/My Game Assets/Scripts/playerInputHandler.cs",
-        "Assets/playerManager.cs",
-=======
         "Assets/My Game Assets/Scripts/Bumper.cs",
+        "Assets/My Game Assets/Scripts/enum/AudioMixerGroupName.cs",
         "Assets/My Game Assets/Scripts/enum/ControlScheme.cs",
         "Assets/My Game Assets/Scripts/enum/InputMethod.cs",
         "Assets/My Game Assets/Scripts/enum/Penalty.cs",
+        "Assets/My Game Assets/Scripts/Managers/AudioManager.cs",
         "Assets/My Game Assets/Scripts/Managers/CheckpointManager.cs",
         "Assets/My Game Assets/Scripts/Managers/Input Management Components/ControlSchemePlayerMatcher.cs",
         "Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDeviceChecker.cs",
@@ -51974,14 +51358,12 @@
         "Assets/My Game Assets/Scripts/Managers/Input Management Components/InputDevicePlayerMatcher.cs",
         "Assets/My Game Assets/Scripts/Managers/Input Management Components/InputPreferenceValidator.cs",
         "Assets/My Game Assets/Scripts/Managers/playerManager.cs",
-<<<<<<< Updated upstream
-        "Assets/My Game Assets/Scripts/Movement.cs",
-        "Assets/My Game Assets/Scripts/playerController.cs",
-        "Assets/My Game Assets/Scripts/PlayerControls.cs",
-        "Assets/My Game Assets/Scripts/playerInputHandler.cs",
->>>>>>> main
-=======
         "Assets/My Game Assets/Scripts/Managers/SingletonInitialiser.cs",
+        "Assets/My Game Assets/Scripts/Menu/MainMenu.cs",
+        "Assets/My Game Assets/Scripts/Menu/Options Menu/InputPreferenceReader.cs",
+        "Assets/My Game Assets/Scripts/Menu/Options Menu/OptionsMenu.cs",
+        "Assets/My Game Assets/Scripts/Menu/Options Menu/PlayerPanel.cs",
+        "Assets/My Game Assets/Scripts/ObjectPools.cs",
         "Assets/My Game Assets/Scripts/Player/Movement/Player Collider.cs",
         "Assets/My Game Assets/Scripts/Player/Movement/PlayerRhythmTracker.cs",
         "Assets/My Game Assets/Scripts/Player/Movement/PlayerSteeringCalculator.cs",
@@ -51993,7 +51375,40 @@
         "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputBinder.cs",
         "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputHandler.cs",
         "Assets/My Game Assets/Scripts/Scriptable Objects/Inputs/InputPrefences.cs",
->>>>>>> Stashed changes
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs",
+        "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs",
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll",
@@ -52269,18 +51684,6 @@
         0,
         0,
         0,
-<<<<<<< HEAD
-=======
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-<<<<<<< Updated upstream
->>>>>>> main
-=======
         0,
         0,
         0,
@@ -52296,7 +51699,54 @@
         0,
         0,
         0,
->>>>>>> Stashed changes
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         8
       ],
       "Outputs": [
@@ -52612,17 +52062,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-      "PayloadOffset": 1897259,
-      "PayloadLength": 11782,
-=======
-      "PayloadOffset": 2309722,
-=======
-      "PayloadOffset": 2310951,
->>>>>>> Stashed changes
+      "PayloadOffset": 2313718,
       "PayloadLength": 12135,
->>>>>>> main
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
       "InputFlags": [],
@@ -54759,11 +54200,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "Extracting script serialization layouts",
-<<<<<<< HEAD
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Cinemachine.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.InputSystem.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.InputSystem.ForUI.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.InputSystem.TestFramework.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\ScriptAssemblies\" -s=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\" -s=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\" -s=\"C:\\Unity\\2-Mad-2-Fast\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
-=======
       "Action": "\"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Cinemachine.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.InputSystem.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.InputSystem.ForUI.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.InputSystem.TestFramework.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.ProBuilder.Csg.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.ProBuilder.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.ProBuilder.KdTree.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.ProBuilder.Poly2Tri.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.ProBuilder.Stl.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\ScriptAssemblies\" -s=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\" -s=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\" -s=\"C:\\Unity\\2-Mad-2-Fast-(Fixed)\\2-Mad-2-Fast\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
->>>>>>> main
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -55135,10 +54572,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aE.dag.json",
-<<<<<<< HEAD
-  "PayloadsFile": "C:/Unity/2-Mad-2-Fast/2-Mad-2-Fast/Library/Bee/1900b0aE.dag.payloads",
-=======
   "PayloadsFile": "C:/Unity/2-Mad-2-Fast-(Fixed)/2-Mad-2-Fast/Library/Bee/1900b0aE.dag.payloads",
->>>>>>> main
   "RelativePathToRoot": "../.."
 }

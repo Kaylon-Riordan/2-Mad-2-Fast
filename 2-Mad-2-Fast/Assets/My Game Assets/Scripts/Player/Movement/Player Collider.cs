@@ -33,18 +33,18 @@ public class PlayerCollider : MonoBehaviour
         if (leftCollisionDetector.contact && rightCollisionDetector.contact)
         {
             if (pp.speed >= fastSpeed)
-                StartCoroutine(s.Stumble(Penalty.Large, 0));
+                StartCoroutine(s.Stumble(Penalty.Large, 0, true));
             else if (pp.speed >= moderateSpeed)
-                StartCoroutine(s.Stumble(Penalty.Medium, 0));
+                StartCoroutine(s.Stumble(Penalty.Medium, 0, true));
             else
-                StartCoroutine(s.Stumble(Penalty.Small, 0));
+                StartCoroutine(s.Stumble(Penalty.Small, 0, true));
         }
         else if (leftCollisionDetector.contact || rightCollisionDetector.contact)
         {
             if (pp.speed >= fastSpeed)
-                StartCoroutine(s.Stumble(Penalty.Medium, 0.05f));
+                StartCoroutine(s.Stumble(Penalty.Medium, 0.05f, true));
             else if (pp.speed >= moderateSpeed)
-                StartCoroutine(s.Stumble(Penalty.Small, 0.05f));
+                StartCoroutine(s.Stumble(Penalty.Small, 0.05f, true));
         }
     }
 }
