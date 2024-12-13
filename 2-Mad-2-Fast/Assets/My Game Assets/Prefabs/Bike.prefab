@@ -373,10 +373,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 50
+  fastSpeed: 30
+  mediumSpeed: 15
   turningSpeed: 280
   decelerationPerTick: 0.04
   animator: {fileID: 2117378783093054075}
   speed: 0
+  speedBracket: 0
   minSpeed: 0
   tilt: 0
   tiltShown: {x: 0, y: 0, z: 0}
@@ -413,8 +416,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftCollisionDetector: {fileID: 4363785542703280881}
   rightCollisionDetector: {fileID: 2222807871515109833}
-  fastSpeed: 30
-  moderateSpeed: 15
 --- !u!114 &2241240920516356792
 MonoBehaviour:
   m_ObjectHideFlags: 0

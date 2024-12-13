@@ -399,6 +399,7 @@
 "Assets/My Game Assets/Scripts/enum/ControlScheme.cs"
 "Assets/My Game Assets/Scripts/enum/InputMethod.cs"
 "Assets/My Game Assets/Scripts/enum/Penalty.cs"
+"Assets/My Game Assets/Scripts/enum/Speed.cs"
 "Assets/My Game Assets/Scripts/Managers/AudioManager.cs"
 "Assets/My Game Assets/Scripts/Managers/CheckpointManager.cs"
 "Assets/My Game Assets/Scripts/Managers/Input Management Components/ControlSchemePlayerMatcher.cs"

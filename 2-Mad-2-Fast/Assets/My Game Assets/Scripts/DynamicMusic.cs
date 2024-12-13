@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 using static UnityEngine.SpriteMask;
 
+//  Learned how to use delegates for observer https://youtu.be/J01z1F-du-E
 public class DynamicMusic : MonoBehaviour
 {
     [Header("Audio Clips")]
@@ -22,8 +23,15 @@ public class DynamicMusic : MonoBehaviour
     AudioSource mediumSource;
     AudioSource fastSource;
     AudioSource finalSource;
+
+    private PlayerPhysics pp1;
+    private PlayerPhysics pp2;
+
     void Start()
     {
+        pp1 = PlayerManager.instance.players[0].GetComponent<PlayerPhysics>();
+        pp2 = PlayerManager.instance.players[1].GetComponent<PlayerPhysics>();
+
         mainSource = new GameObject().AddComponent<AudioSource>();
         mediumSource = new GameObject().AddComponent<AudioSource>();
         fastSource = new GameObject().AddComponent<AudioSource>();
@@ -34,27 +42,25 @@ public class DynamicMusic : MonoBehaviour
         AudioManager.instance.PlayMusic(fast, ref fastSource);
         AudioManager.instance.PlayMusic(final, ref finalSource);
         mainSource.mute = false;
+
+        PlayerPhysics.changeSpeed += CheckSpeed;
     }
 
-    //Update is called once per frame
-    void Update()
+    void CheckSpeed()
     {
-        StartCoroutine(checkSpeed(PlayerManager.instance.players[0].gameObject, PlayerManager.instance.players[1].gameObject));
-    }
-
-    private IEnumerator checkSpeed(GameObject player1, GameObject player2)
-    {
-        if (player1.GetComponent<PlayerPhysics>().speed >= player1.GetComponent<PlayerCollider>().fastSpeed || player2.GetComponent<PlayerPhysics>().speed >= player2.GetComponent<PlayerCollider>().fastSpeed)
+        if (pp1.speedBracket == Speed.Fast || pp2.speedBracket == Speed.Fast)
         {
             fastSource.mute = false;
-            yield return new WaitUntil(() => (player1.GetComponent<PlayerPhysics>().speed < player1.GetComponent<PlayerCollider>().fastSpeed && player2.GetComponent<PlayerPhysics>().speed < player2.GetComponent<PlayerCollider>().fastSpeed));
-            fastSource.mute = true;
+            mediumSource.mute = true;
         }
-        else if (player1.GetComponent<PlayerPhysics>().speed >= player1.GetComponent<PlayerCollider>().moderateSpeed || player2.GetComponent<PlayerPhysics>().speed >= player2.GetComponent<PlayerCollider>().moderateSpeed)
+        else if (pp1.speedBracket == Speed.Medium || pp2.speedBracket == Speed.Medium)
         {
+            fastSource.mute = true;
             mediumSource.mute = false;
-            yield return new WaitUntil(() => ((player1.GetComponent<PlayerPhysics>().speed < player1.GetComponent<PlayerCollider>().moderateSpeed && player2.GetComponent<PlayerPhysics>().speed < player2.GetComponent<PlayerCollider>().moderateSpeed) || 
-                (player1.GetComponent<PlayerPhysics>().speed >= player1.GetComponent<PlayerCollider>().fastSpeed || player2.GetComponent<PlayerPhysics>().speed >= player2.GetComponent<PlayerCollider>().fastSpeed)));
+        }
+        else
+        {
+            fastSource.mute = true;
             mediumSource.mute = true;
         }
     }

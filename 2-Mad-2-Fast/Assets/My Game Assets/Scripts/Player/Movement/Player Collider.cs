@@ -11,13 +11,6 @@ public class PlayerCollider : MonoBehaviour
     [SerializeField]
     private Bumper rightCollisionDetector;
 
-    [Header("Speed Thresholds")]
-
-    [SerializeField]
-    public float fastSpeed;
-    [SerializeField]
-    public float moderateSpeed;
-
     PlayerPhysics pp;
     PlayerStumbler s;
 
@@ -32,18 +25,18 @@ public class PlayerCollider : MonoBehaviour
     {
         if (leftCollisionDetector.contact && rightCollisionDetector.contact)
         {
-            if (pp.speed >= fastSpeed)
+            if (pp.speedBracket == Speed.Fast)
                 StartCoroutine(s.Stumble(Penalty.Large, 0, true));
-            else if (pp.speed >= moderateSpeed)
+            else if (pp.speedBracket == Speed.Medium)
                 StartCoroutine(s.Stumble(Penalty.Medium, 0, true));
             else
                 StartCoroutine(s.Stumble(Penalty.Small, 0, true));
         }
         else if (leftCollisionDetector.contact || rightCollisionDetector.contact)
         {
-            if (pp.speed >= fastSpeed)
+            if (pp.speedBracket == Speed.Fast)
                 StartCoroutine(s.Stumble(Penalty.Medium, 0.05f, true));
-            else if (pp.speed >= moderateSpeed)
+            else if (pp.speedBracket == Speed.Medium)
                 StartCoroutine(s.Stumble(Penalty.Small, 0.05f, true));
         }
     }
