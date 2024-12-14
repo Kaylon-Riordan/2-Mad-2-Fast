@@ -19,7 +19,7 @@ public class PlayerManager : MonoBehaviour
     public InputPreferences ip;
 
     [SerializeField]
-    private List<PlayerInput> players = new List<PlayerInput>();
+    public List<PlayerInput> players = new List<PlayerInput>();
     [SerializeField]
     private List<GameObject> playerPrefabs = new List<GameObject>();
 

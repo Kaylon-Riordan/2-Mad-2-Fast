@@ -54,7 +54,7 @@ public class PlayerStumbler : MonoBehaviour
         {
             if (collision && multiplier <= mediumPenalty)
             {
-                AudioManager.instance.PlaySound(crashSound, AudioMixerGroupName.SFX, false, transform.position);
+                AudioManager.instance.PlaySound(crashSound, AudioMixerGroupName.SFX, transform.position);
             }
             slowed = true;
             pp.speed *= multiplier;

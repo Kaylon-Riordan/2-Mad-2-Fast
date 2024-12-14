@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
     [Header("Prefab")]
     [SerializeField]
     [Tooltip("The prefab used to instantiate AudioSources.")]
-    private AudioSource audioSourcePrefab;
+    public AudioSource audioSourcePrefab;
 
     [SerializeField]
     [Range(1, 32)]
@@ -34,10 +34,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioMixerGroup musicGroup;
 
-    [Header("Audio Clips")]
-    [SerializeField]
-    private AudioClip backgroundMusic;
-
     private GameObjectPool<AudioSource> audioSourcePool;
 
     void Awake()
@@ -46,8 +42,6 @@ public class AudioManager : MonoBehaviour
         audioSourcePool = new GameObjectPool<AudioSource>(audioSourcePrefab, initialPoolSize, transform);
 
         instance = Singleton<AudioManager>.get();
-
-        PlaySound(backgroundMusic, AudioMixerGroupName.Music, true, transform.position);
     }
 
     /// <summary>
@@ -68,25 +62,33 @@ public class AudioManager : MonoBehaviour
         };
     }
 
-    public void PlaySound(AudioClip clip, AudioMixerGroupName groupName, bool loop, Vector3 position = default)
+    public void PlaySound(AudioClip clip, AudioMixerGroupName groupName, Vector3 position = default)
     {
         AudioSource audioSource = audioSourcePool.Get();
         audioSource.transform.position = position;
         audioSource.clip = clip;
-        audioSource.loop = loop;
         audioSource.outputAudioMixerGroup = GetAudioMixerGroup(groupName);
         audioSource.Play();
 
-        // only return sound to pool if its not looping
-        if (!loop)
-        {
-            StartCoroutine(ReturnAudioSourceAfterPlaying(audioSource));
-        }
+        StartCoroutine(ReturnAudioSourceAfterPlaying(audioSource));
+
+    }
+
+    public void PlayMusic(AudioClip clip, ref AudioSource audioSource)
+    {
+        audioSource.clip = clip;
+        audioSource.loop = true;
+        audioSource.mute = true;
+        audioSource.outputAudioMixerGroup = AudioManager.instance.GetAudioMixerGroup(AudioMixerGroupName.Music);
+        audioSource.Play();
     }
 
     private IEnumerator ReturnAudioSourceAfterPlaying(AudioSource audioSource)
     {
-        yield return new WaitForSeconds(audioSource.clip.length);
+        if (audioSource.outputAudioMixerGroup != GetAudioMixerGroup(AudioMixerGroupName.Music))
+        {
+            yield return new WaitForSeconds(audioSource.clip.length);
+        }
         audioSourcePool.ReturnToPool(audioSource);
     }
 }

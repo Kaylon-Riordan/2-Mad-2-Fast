@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 
 public class PlayerPhysics : MonoBehaviour
@@ -9,6 +10,10 @@ public class PlayerPhysics : MonoBehaviour
     // Physics Attributes
     [SerializeField]
     private float maxSpeed;
+    [SerializeField]
+    public float fastSpeed;
+    [SerializeField]
+    public float mediumSpeed;
 
     [SerializeField]
     private float turningSpeed;
@@ -23,9 +28,16 @@ public class PlayerPhysics : MonoBehaviour
     [SerializeField]
     private PlayerControls playerControls;
 
+    [Header("Animation")]
+
+    [SerializeField]
+    private Animator animator;
+
     // These traits change dynamically in other scripts
     [HideInInspector]
     public float speed;
+    [HideInInspector]
+    public Speed speedBracket;
     [HideInInspector]
     public float minSpeed;
     [HideInInspector]
@@ -35,6 +47,7 @@ public class PlayerPhysics : MonoBehaviour
     [HideInInspector]
     public float decelerationMultiplier;
 
+
     private PlayerInputHandler inputHandler;
     private CharacterController characterContoller;
 
@@ -43,6 +56,9 @@ public class PlayerPhysics : MonoBehaviour
 
     private PlayerTilting tilting;
     private PlayerCollider collider;
+
+    public delegate void ChangeSpeed();
+    public static ChangeSpeed changeSpeed;
 
     private void Awake()
     {
@@ -58,6 +74,7 @@ public class PlayerPhysics : MonoBehaviour
     void Start()
     {
         decelerationMultiplier = 1;
+        speedBracket = Speed.Slow;
     }
 
     // Fixed update is used for movement so that the players speed isn't affected by framerate
@@ -72,8 +89,36 @@ public class PlayerPhysics : MonoBehaviour
         // Stop speed from exceding max or becoming negative
         speed = Mathf.Clamp(speed, minSpeed, maxSpeed);
 
+        // update speed bracket
+        if (speed >= fastSpeed && speedBracket != Speed.Fast)
+        {
+            speedBracket = Speed.Fast;
+            if (changeSpeed != null) {
+                changeSpeed();
+            }
+        }
+        else if (speed >= mediumSpeed && speed < fastSpeed && speedBracket != Speed.Medium)
+        {
+            speedBracket = Speed.Medium;
+            if (changeSpeed != null)
+            {
+                changeSpeed();
+            }
+        }
+        else if (speed < mediumSpeed && speedBracket != Speed.Slow)
+        {
+            speedBracket = Speed.Slow;
+            if (changeSpeed != null)
+            {
+                changeSpeed();
+            }
+        }
+
         // Moves character using character contoller
         characterContoller.SimpleMove(movementDirection * speed);
+
+        // Set pedal animation speed to be relative to player speed
+        animator.speed = Mathf.Abs(speed / 5);
 
         if (movementDirection != Vector3.zero)
         {
@@ -85,12 +130,4 @@ public class PlayerPhysics : MonoBehaviour
                 rotation, toRotation, turningSpeed * Time.deltaTime);
         }
     }
-
-
-
-
-
-
-
-
 }
