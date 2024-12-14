@@ -26,11 +26,13 @@ public class DynamicMusic : MonoBehaviour
 
     private PlayerPhysics pp1;
     private PlayerPhysics pp2;
+    private LapManager lm;
 
     void Start()
     {
         pp1 = PlayerManager.instance.players[0].GetComponent<PlayerPhysics>();
         pp2 = PlayerManager.instance.players[1].GetComponent<PlayerPhysics>();
+        lm = LapManager.instance;
 
         mainSource = new GameObject().AddComponent<AudioSource>();
         mediumSource = new GameObject().AddComponent<AudioSource>();
@@ -44,6 +46,7 @@ public class DynamicMusic : MonoBehaviour
         mainSource.mute = false;
 
         PlayerPhysics.changeSpeed += CheckSpeed;
+        LapManager.lastLap += LastLap;
     }
 
     void CheckSpeed()
@@ -63,5 +66,10 @@ public class DynamicMusic : MonoBehaviour
             fastSource.mute = true;
             mediumSource.mute = true;
         }
+    }
+
+    void LastLap()
+    {
+        finalSource.mute = false;
     }
 }

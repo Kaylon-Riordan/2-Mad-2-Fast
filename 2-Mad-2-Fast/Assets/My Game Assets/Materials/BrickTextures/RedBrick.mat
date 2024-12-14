@@ -28,8 +28,8 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     m_Colors:
-    - _ShineColour: {r: 1, g: 0.23113209, b: 0.23113209, a: 0}
-    - _SineColour2: {r: 1, g: 0, b: 0, a: 0}
+    - _ShineColour: {r: 1, g: 0.0990566, b: 0.0990566, a: 0}
+    - _SineColour2: {r: 0.6886792, g: 0.07471521, b: 0.07471521, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7321494174992758802
