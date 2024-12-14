@@ -92,7 +92,6 @@ public class PlayerPhysics : MonoBehaviour
         // update speed bracket
         if (speed >= fastSpeed && speedBracket != Speed.Fast)
         {
-            Debug.Log("111" + speed);
             speedBracket = Speed.Fast;
             if (changeSpeed != null) {
                 changeSpeed();
@@ -100,7 +99,6 @@ public class PlayerPhysics : MonoBehaviour
         }
         else if (speed >= mediumSpeed && speed < fastSpeed && speedBracket != Speed.Medium)
         {
-            Debug.Log("222" + speed);
             speedBracket = Speed.Medium;
             if (changeSpeed != null)
             {
@@ -109,7 +107,6 @@ public class PlayerPhysics : MonoBehaviour
         }
         else if (speed < mediumSpeed && speedBracket != Speed.Slow)
         {
-            Debug.Log("333" + speed);
             speedBracket = Speed.Slow;
             if (changeSpeed != null)
             {
@@ -121,7 +118,7 @@ public class PlayerPhysics : MonoBehaviour
         characterContoller.SimpleMove(movementDirection * speed);
 
         // Set pedal animation speed to be relative to player speed
-        animator.speed = speed / 5;
+        animator.speed = Mathf.Abs(speed / 5);
 
         if (movementDirection != Vector3.zero)
         {
