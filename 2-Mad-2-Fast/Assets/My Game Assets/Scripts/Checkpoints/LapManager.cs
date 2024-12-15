@@ -16,6 +16,11 @@ public class LapManager : MonoBehaviour, ICheckpointObserver
     [Header("Settings")]
     public float laps = 1; //amount of laps
 
+    [Header("Sound")]
+
+    [SerializeField]
+    private AudioClip lapSound;
+
     public delegate void LastLap();
     public static LastLap lastLap;
     #endregion
@@ -72,6 +77,8 @@ public class LapManager : MonoBehaviour, ICheckpointObserver
             //if all laps are not finished, start a new lap
             else if (playerstats.currentLap < laps)
             {
+                // Play the lap sound when a lap is finished
+                AudioManager.instance.PlaySound(lapSound, AudioMixerGroupName.SFX, transform.position);
                 //check again if the currentCheckpoint matches the checkpoints length, if so then start a new lap
                 if (playerstats.currentCheckpoint == checkpoints.Length)
                 {
@@ -86,6 +93,7 @@ public class LapManager : MonoBehaviour, ICheckpointObserver
                     playerstats.currentCheckpoint = 0; //reset checkpoints 
                     playerstats.currentLapTime = 0; //reset time
 
+                    // If a player starts the last lap, play the alst alp music
                     if(playerstats.currentLap == laps && lastLap != null)
                     {
                         lastLap();

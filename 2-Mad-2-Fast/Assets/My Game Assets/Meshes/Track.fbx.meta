@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f54c5907727879e42b451113631ac22e
+guid: 94a0c2d2eea3b204793cccf7bc3c908d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,62 +8,67 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BedCover
-    second: {fileID: 2100000, guid: e501e9db332a4b148b9b116468a83dc8, type: 2}
+    second: {fileID: 2100000, guid: 7f605381f74666d4d9a34bcc91e7a7fd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BlackRoad
-    second: {fileID: 2100000, guid: 60ae544b9f9497a4f8b36cee89eea320, type: 2}
+    second: {fileID: 2100000, guid: 31eabf87447947142a2a4b7facd04ac3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Blue
-    second: {fileID: 2100000, guid: 6de181b85b1f30e4b98a47925a6ae679, type: 2}
+    second: {fileID: 2100000, guid: c4454c1e416261944a3cfed3679c17b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FixedCubeTexture
+    second: {fileID: 2100000, guid: aaae136360e812b46bf7da90c61d1c91, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Green
-    second: {fileID: 2100000, guid: b4315b7461923174584a9f1211e8ffce, type: 2}
+    second: {fileID: 2100000, guid: 3e728291a088ccd4485141fec09a8e43, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.005
-    second: {fileID: 2100000, guid: 5aa7bba0006dd484ab3076f7fa8696d6, type: 2}
+    second: {fileID: 2100000, guid: c5d27675764aa304fa1d8bcd31e59183, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.006
-    second: {fileID: 2100000, guid: e9e4f908850348741ae53c6ea0b83afa, type: 2}
+    second: {fileID: 2100000, guid: d806638b52b22724a97f9ec27ef50d78, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Orange
-    second: {fileID: 2100000, guid: e0c81f2e1420ef042a05140de816e337, type: 2}
+    second: {fileID: 2100000, guid: 69ca3ed5b6d2bee43b3c6bc9e6673bee, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: RedBrick
-    second: {fileID: 2100000, guid: b7bec6303d8c4ab46af314eec1c6670d, type: 2}
+    second: {fileID: 2100000, guid: d57907236b411114cbf144e989763ed3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Room Wallpaper
-    second: {fileID: 2100000, guid: 1925e88206b7dcd4aa76e051005bfc7a, type: 2}
+    second: {fileID: 2100000, guid: 06b8db5832c832e4a8210ef6289f140b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: White
-    second: {fileID: 2100000, guid: ca4df90c9fac09a4782644a523bcf61e, type: 2}
+    second: {fileID: 2100000, guid: 33eec17281df13f42a861041ff9fa79c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WoodenFloor
-    second: {fileID: 2100000, guid: 0495a4a03e6175f46a05acc580aa1d2f, type: 2}
+    second: {fileID: 2100000, guid: cee58f75669810f49a666eb83833621c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Yellow
-    second: {fileID: 2100000, guid: f005648e9ec386d4babea7f5fc213f2d, type: 2}
+    second: {fileID: 2100000, guid: a5ceeb514bcb8784ba438a7a9d90960b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -378,6 +378,7 @@ MonoBehaviour:
   turningSpeed: 280
   decelerationPerTick: 0.04
   animator: {fileID: 2117378783093054075}
+  windSound: {fileID: 8300000, guid: 83f42f3faf167944e8c12150a092b39f, type: 3}
   speed: 0
   speedBracket: 0
   minSpeed: 0
@@ -401,7 +402,7 @@ MonoBehaviour:
   brakeMultiplier: 10
   maxReverseSpeed: 5
   brakeSound: {fileID: 8300000, guid: 737180ad8f46d7049b03eac8b2978e51, type: 3}
-  pedalSound: {fileID: 8300000, guid: 3058b7f07a03635478d16b6c5cb7e9ca, type: 3}
+  pedalSound: {fileID: 8300000, guid: f49f866055ba5714183de149ae8f9c07, type: 3}
 --- !u!114 &1603337932439231619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +477,7 @@ MonoBehaviour:
   tiltRate: 0.06
   tiltLerpSpeed: 100
   pivotPoint: {fileID: 6367927215099575524}
+  stumbleSound: {fileID: 8300000, guid: b58a3664416f3ed40b6795165580ce73, type: 3}
 --- !u!114 &8194267381252614937
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -22,6 +22,10 @@ public class PlayerSteeringCalculator : MonoBehaviour
             return b.playerActions.FindAction("Steer").ReadValue<Vector2>();
     }
 
+    /// <summary>
+    /// Take players input and calculate the movement direction from that and the camera direction
+    /// </summary>
+    /// <returns> Direction bike should move </returns>
     public Vector3 calculateDirection()
     {
         Vector3 movementDirection = new Vector3(GetSteer().x, 0, 1);
@@ -29,8 +33,7 @@ public class PlayerSteeringCalculator : MonoBehaviour
         float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
 
         // Set movement to direction of camera
-        movementDirection = Quaternion.AngleAxis(cameraTransform.
-            rotation.eulerAngles.y, Vector3.up) * movementDirection;
+        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
         // Remove magnitude, leaving only direction (i.e create a unit vector)
         movementDirection.Normalize();
         // Multiply by magnitude for horizontal analogue inputs

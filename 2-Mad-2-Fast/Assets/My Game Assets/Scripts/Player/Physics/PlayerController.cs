@@ -51,26 +51,33 @@ public class PlayerController : MonoBehaviour
         PlayerCountdown.afterCountdown -= Go;
     }
 
-
+    /// <summary>
+    /// increase players speed if they hit the correct pedal and decrease if they hit the wrong one
+    /// </summary>
+    /// <param name="context"> Signals the left pedal input was given </param>
     public void LeftPedal(InputAction.CallbackContext context)
     {
+        // Only allow pedaling if the starting countdown has finished
         if (go)
         {
+            // Increase speed if the right pedal was pressed
             if (leftNext)
             {
+                // Play pedal sound
                 AudioManager.instance.PlaySound(pedalSound, AudioMixerGroupName.SFX, transform.position);
+                // Swap next expected petal
                 leftNext = false;
                 rightNext = true;
-
+                // Increase speed and apply rhythym multiplier if earned
                 pp.speed += accelerationPerPedal * rhythm.CheckRhythm();
             }
+            // Decrease speed if the wrong pedal was pressed
             else
             {
                 pp.speed -= decelerationPerMiss;
             }
         }
     }
-
     public void RightPedal(InputAction.CallbackContext context)
     {
         if (go)
@@ -90,20 +97,32 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // When brake is pressed decelaerate quickly
+    /// <summary>
+    /// When brake is pressed decelaerate quickly or reverse if at a stop
+    /// </summary>
+    /// <param name="context"> Signals the brake input was given </param>
     public void BrakePressed(InputAction.CallbackContext context)
     {
+        // Only allow braking if the starting countdown has finished
         if (go)
         {
+            // Play brake sound
             AudioManager.instance.PlaySound(brakeSound, AudioMixerGroupName.SFX, transform.position);
+            // Decelerate Faster
             pp.decelerationMultiplier = brakeMultiplier;
+            // Allow negative speed for reversing
             pp.minSpeed = -maxReverseSpeed;
         }
     }
-    // When brake is released decelaerate normally
+    /// <summary>
+    /// When brake is released decelaerate normally
+    /// </summary>
+    /// <param name="context"> Signals the brake input was given </param>
     public void BrakeReleased(InputAction.CallbackContext context)
     {
+        // Decelerate normally
         pp.decelerationMultiplier = 1;
+        // Stop reversing
         pp.minSpeed = 0;
     }
 }

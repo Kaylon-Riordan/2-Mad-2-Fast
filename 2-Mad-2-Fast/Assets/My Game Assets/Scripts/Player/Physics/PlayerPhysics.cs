@@ -33,6 +33,11 @@ public class PlayerPhysics : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [Header("Sound")]
+
+    [SerializeField]
+    private AudioClip windSound;
+
     // These traits change dynamically in other scripts
     [HideInInspector]
     public float speed;
@@ -77,7 +82,9 @@ public class PlayerPhysics : MonoBehaviour
         speedBracket = Speed.Slow;
     }
 
-    // Fixed update is used for movement so that the players speed isn't affected by framerate
+    /// <summary>
+    /// Main movement method that calls all the others and updates the players character contoller
+    /// </summary>
     void FixedUpdate()
     {
         Vector3 movementDirection = steering.calculateDirection();
@@ -92,13 +99,21 @@ public class PlayerPhysics : MonoBehaviour
         // update speed bracket
         if (speed >= fastSpeed && speedBracket != Speed.Fast)
         {
+            AudioManager.instance.PlaySound(windSound, AudioMixerGroupName.SFX, transform.position);
+            // If the bike is fast but its enum isn't set to fast, update it
             speedBracket = Speed.Fast;
+            // run the change speed delegate which will be ran inside the music script
             if (changeSpeed != null) {
                 changeSpeed();
             }
         }
         else if (speed >= mediumSpeed && speed < fastSpeed && speedBracket != Speed.Medium)
         {
+            // If player was slow and has moved up to medium, play wind sound
+            if (speedBracket == Speed.Slow)
+            {
+                AudioManager.instance.PlaySound(windSound, AudioMixerGroupName.SFX, transform.position);
+            }
             speedBracket = Speed.Medium;
             if (changeSpeed != null)
             {
