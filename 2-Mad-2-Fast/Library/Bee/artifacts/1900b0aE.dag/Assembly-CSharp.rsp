@@ -422,6 +422,7 @@
 "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputHandler.cs"
 "Assets/My Game Assets/Scripts/Scriptable Objects/Inputs/InputPrefences.cs"
 "Assets/My Game Assets/Scripts/Scriptable Objects/Player/PedalUIParameters.cs"
+"Assets/PedalSwitcher.cs"
 -langversion:9.0
 
 /deterministic
