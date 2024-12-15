@@ -410,6 +410,7 @@
 "Assets/My Game Assets/Scripts/Managers/SingletonInitialiser.cs"
 "Assets/My Game Assets/Scripts/Managers/UIManager.cs"
 "Assets/My Game Assets/Scripts/ObjectPools.cs"
+"Assets/My Game Assets/Scripts/PedalSwitcher.cs"
 "Assets/My Game Assets/Scripts/Player/Movement/Player Collider.cs"
 "Assets/My Game Assets/Scripts/Player/Movement/PlayerRhythmTracker.cs"
 "Assets/My Game Assets/Scripts/Player/Movement/PlayerSteeringCalculator.cs"
@@ -422,7 +423,7 @@
 "Assets/My Game Assets/Scripts/Player/Player Input/PlayerInputHandler.cs"
 "Assets/My Game Assets/Scripts/Scriptable Objects/Inputs/InputPrefences.cs"
 "Assets/My Game Assets/Scripts/Scriptable Objects/Player/PedalUIParameters.cs"
-"Assets/PedalSwitcher.cs"
+"Assets/My Game Assets/Scripts/TIltOMeter.cs"
 -langversion:9.0
 
 /deterministic
