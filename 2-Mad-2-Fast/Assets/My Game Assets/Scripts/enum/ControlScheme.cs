@@ -1,3 +1,6 @@
+/// <summary>
+/// Possible control schemes, default, onehand and shared
+/// </summary>
 public enum ControlScheme
 {
     Default = 0,

@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class PlayerTilting : MonoBehaviour
 {
-
-
     [SerializeField]
     private float tiltLimit;
     [SerializeField]

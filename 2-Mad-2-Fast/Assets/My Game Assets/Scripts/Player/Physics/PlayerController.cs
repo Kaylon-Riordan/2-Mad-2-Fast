@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     public void LeftPedal(InputAction.CallbackContext context)
     {
+
         if (leftNext)
         {
             AudioManager.instance.PlaySound(pedalSound, AudioMixerGroupName.SFX, false, transform.position);

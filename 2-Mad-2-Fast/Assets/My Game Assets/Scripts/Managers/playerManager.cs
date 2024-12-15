@@ -24,11 +24,15 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         // Ensure all input schemes are valid
-        ip = validator.validateParameters();
+        validator.validateParameters();
 
         spawnPlayer(1); spawnPlayer(2);
     }
 
+    /// <summary>
+    /// Gets all necessary data to instantiate player and calls PlayerFactory to instantiate it
+    /// </summary>
+    /// <param name="PlayerNo">An int of value 1 or 2 denoting whether it's player 1 or player 2 to be spawned</param>
     private void spawnPlayer(int PlayerNo)
     {
         InputDevice device = GetComponent<InputDevicePlayerMatcher>().getInputDeviceByPlayerNumber(PlayerNo);

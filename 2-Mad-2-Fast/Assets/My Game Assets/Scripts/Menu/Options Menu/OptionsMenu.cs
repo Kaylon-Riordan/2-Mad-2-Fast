@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
+/// <summary>
+/// Manages the options menu panel
+/// </summary>
 public class OptionsMenu : MonoBehaviour
 {
     [SerializeField]
@@ -19,13 +18,15 @@ public class OptionsMenu : MonoBehaviour
 
     public GameObject eventSystem;
 
-
     private void Awake()
     {
         player1Panel = player1Obj.GetComponent<PlayerPanel>();
         player2Panel = player2Obj.GetComponent<PlayerPanel>();
     }
 
+    /// <summary>
+    /// Hides player 2's options if either scheme is set to shared.
+    /// </summary>
     public void changeLayout()
     {
         // 2 is the index of shared on the drop down
@@ -49,6 +50,9 @@ public class OptionsMenu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Highlights the leftHandToggle button. Allowes controllers and keyboards to function.
+    /// </summary>
     public void highlightP1LeftHandToggle()
     {
         eventSystem.GetComponent<EventSystem>().SetSelectedGameObject(player1Panel.leftHandToggle);

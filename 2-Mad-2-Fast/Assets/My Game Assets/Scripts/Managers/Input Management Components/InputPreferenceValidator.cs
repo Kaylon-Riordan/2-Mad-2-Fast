@@ -1,15 +1,34 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// Ensures inputPreferences given are valid
+/// </summary>
 public class InputPreferenceValidator : MonoBehaviour
 {
     private InputPreferences ip;
 
-    // Ensures that input devices arguments are set correctly. Either corrects them or throws an exception if they aren't
-    public InputPreferences validateParameters()
+    /// <summary>
+    /// Runs each check in sequence to ensure there are no invalid parameters.
+    /// </summary>
+    public void validateParameters()
     {
         ip = PlayerManager.instance.ip;
 
+        correctSharedInconsistencies();
+        configureSameInputMethod();
+
+        for (int i = 1; i <= 2; i++)
+        {
+            validateKBM(i);
+        }
+    }
+
+    /// <summary>
+    /// Ensures sharing players have both of their control schemes set to shared and are using the same device.
+    /// </summary>
+    private void correctSharedInconsistencies()
+    {
         // If one scheme is set to shared, set both to shared (Exclusive or)
         if ((ip.controlSchemes[0] == ControlScheme.Shared ^ ip.controlSchemes[1] == ControlScheme.Shared))
         {
@@ -23,7 +42,14 @@ public class InputPreferenceValidator : MonoBehaviour
             Debug.Log("Scheme is set to shared yet players are using separate devices. Switch both to player 1's device.");
             ip.inputMethods[1] = ip.inputMethods[0];
         }
+    }
 
+    /// <summary>
+    /// If both players are set to the same device, correct them so they use the shared control schemes if possible
+    /// </summary>
+    /// <exception cref="ArgumentException">Thrown if an input device can't supplement a shared layout</exception>
+    private void configureSameInputMethod()
+    {
         // There are multiple special cases if the selected input methods are the same for both player and they relate to the keyboard or mouse
         if (ip.inputMethods[0] == ip.inputMethods[1])
         {
@@ -52,20 +78,17 @@ public class InputPreferenceValidator : MonoBehaviour
                     break;
             }
         }
-
-        for (int i = 1; i <= 2; i++)
-        {
-            validateKBM(i);
-        }
-
-        return ip;
     }
 
+    /// <summary>
+    /// Ensures that the "Keyboard and Mouse" layout is not being used one handed.
+    /// </summary>
+    /// <param name="PlayerNo">Int 1, 2. Denotes Player 1 or 2</param>
+    /// <exception cref="ArgumentException">Thrown if input preferences are bad</exception>
     private void validateKBM(int PlayerNo)
     {
         // You can't use a keyboard and mouse onehanded. Throw an exception.
         if (ip.inputMethods[PlayerNo - 1] == InputMethod.KeyboardAndMouse && ip.controlSchemes[PlayerNo - 1] == ControlScheme.OneHand)
             throw new ArgumentException("Cannot use KeyboardAndMouse one handed. Set device to 'Keyboard' or 'Mouse' ");
     }
-
 }

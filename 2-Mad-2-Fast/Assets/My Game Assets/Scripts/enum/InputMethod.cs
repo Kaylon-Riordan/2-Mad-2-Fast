@@ -1,3 +1,6 @@
+/// <summary>
+/// Possible input devices. Keyboard, Mouse, KB&M and Gamepads are supported.
+/// </summary>
 public enum InputMethod
 {
     Keyboard = 0,
