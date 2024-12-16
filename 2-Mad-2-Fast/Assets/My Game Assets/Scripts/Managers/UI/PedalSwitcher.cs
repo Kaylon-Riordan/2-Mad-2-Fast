@@ -9,10 +9,10 @@ public class PedalSwitcher : MonoBehaviour
     public Image[] canvasImages = new Image[2];
 
     /// <summary>
-    /// 
+    /// Sets pedal sprite according to what pedal is next for which player
     /// </summary>
-    /// <param name="PlayerNo"></param>
-    /// <param name="leftNext"></param>
+    /// <param name="PlayerNo">Int 1 or 2 representing Player</param>
+    /// <param name="leftNext">Whether or not the left pedal is the next pedal</param>
     public void SetPedalSprite(int PlayerNo, bool leftNext)
     {
         if (!leftNext)

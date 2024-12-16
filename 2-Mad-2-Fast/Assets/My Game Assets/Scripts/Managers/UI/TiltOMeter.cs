@@ -1,12 +1,13 @@
 using UnityEngine;
 
+/// <summary>
+/// Rotates each player's arrow pivot at the same angle found in each player's tiltshown
+/// </summary>
 public class TiltOMeter : MonoBehaviour
 {
     public RectTransform[] arrowPivots = new RectTransform[2]; 
 
-    /// <summary>
-    /// 
-    /// </summary>
+
     void FixedUpdate()
     {
         for (int i = 0; i < arrowPivots.Length; i++)
