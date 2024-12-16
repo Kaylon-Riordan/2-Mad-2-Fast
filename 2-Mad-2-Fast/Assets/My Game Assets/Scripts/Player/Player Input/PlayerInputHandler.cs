@@ -1,6 +1,8 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
+/// <summary>
+/// Receives inputs from Player and sends events that trigger each action
+/// </summary>
 public class PlayerInputHandler : MonoBehaviour
 {
     private PlayerInputBinder b;
@@ -27,6 +29,4 @@ public class PlayerInputHandler : MonoBehaviour
     {
         b.playerActions.Disable();
     }
-
-
 }

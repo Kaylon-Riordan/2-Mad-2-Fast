@@ -21,9 +21,21 @@ public class LapManager : MonoBehaviour, ICheckpointObserver
     [SerializeField]
     private AudioClip lapSound;
 
+    [Header("Player Stats")]
+
+    public PlayerStats[] ps = new PlayerStats[2];
+
     public delegate void LastLap();
     public static LastLap lastLap;
+
+    public delegate void GameFinished();
+    public static GameFinished gameFinished;
     #endregion
+
+    private void Awake()
+    {
+        instance = Singleton<LapManager>.get();
+    }
 
     #region routine function
     /// <summary>
@@ -36,11 +48,11 @@ public class LapManager : MonoBehaviour, ICheckpointObserver
         PlayerStats playerstats = null;
         if (bike.transform.parent.name.Equals("Player 1(Clone)"))
         {
-            playerstats = PlayerStatsStorage.ps1;
+            playerstats = ps[0];
         }
         else
         {
-            playerstats = PlayerStatsStorage.ps2;
+            playerstats = ps[1];
         }
         //end the lap or race
         if (checkpoint.gameObject == end && playerstats.started)
@@ -65,6 +77,7 @@ public class LapManager : MonoBehaviour, ICheckpointObserver
                     else
                     {
                         playerstats.finished = true;
+                        gameFinished();
                         Debug.Log($"Finished");
                     }
                 }
@@ -108,8 +121,8 @@ public class LapManager : MonoBehaviour, ICheckpointObserver
                     Debug.Log($"Did not go through all checkpoints");
                 }
             }
-
         }
+
         //check which checkpoint the played passed and if its the right or false one
         for (int i = 0; i <
                 checkpoints.Length; i++)

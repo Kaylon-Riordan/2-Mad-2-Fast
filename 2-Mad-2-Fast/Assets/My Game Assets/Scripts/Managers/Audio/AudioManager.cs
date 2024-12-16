@@ -71,7 +71,6 @@ public class AudioManager : MonoBehaviour
         audioSource.Play();
 
         StartCoroutine(ReturnAudioSourceAfterPlaying(audioSource));
-
     }
 
     public void PlayMusic(AudioClip clip, ref AudioSource audioSource)

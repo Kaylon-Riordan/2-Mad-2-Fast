@@ -382,8 +382,6 @@ MonoBehaviour:
   speed: 0
   speedBracket: 0
   minSpeed: 0
-  tilt: 0
-  tiltShown: {x: 0, y: 0, z: 0}
   decelerationMultiplier: 0
 --- !u!114 &2083418685852387596
 MonoBehaviour:
@@ -472,6 +470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de19f8c1df0ba2a4cbc353e077924f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilt: 0
+  tiltShown: {x: 0, y: 0, z: 0}
   tiltLimit: 30
   tiltRecovery: 0.6
   tiltRate: 0.06

@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private AudioClip pedalSound;
 
     PlayerPhysics pp;
+    PlayerInputBinder b;
     PlayerRhythmTracker rhythm;
     private PlayerCountdown countdown;
 
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         pp = GetComponent<PlayerPhysics>();
+        b = GetComponent<PlayerInputBinder>();
         rhythm = GetComponent<PlayerRhythmTracker>();
         countdown = GetComponent<PlayerCountdown>();
     }
@@ -70,6 +72,8 @@ public class PlayerController : MonoBehaviour
                 rightNext = true;
                 // Increase speed and apply rhythym multiplier if earned
                 pp.speed += accelerationPerPedal * rhythm.CheckRhythm();
+
+                UIManager.instance.pedalUI.SetPedalSprite(b.PlayerNo,leftNext);
             }
             // Decrease speed if the wrong pedal was pressed
             else
@@ -89,6 +93,7 @@ public class PlayerController : MonoBehaviour
                 leftNext = true;
 
                 pp.speed += accelerationPerPedal * rhythm.CheckRhythm();
+                UIManager.instance.pedalUI.SetPedalSprite(b.PlayerNo,leftNext);
             }
             else
             {

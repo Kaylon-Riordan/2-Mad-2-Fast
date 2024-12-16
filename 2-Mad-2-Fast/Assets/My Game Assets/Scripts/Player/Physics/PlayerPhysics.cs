@@ -45,10 +45,7 @@ public class PlayerPhysics : MonoBehaviour
     public Speed speedBracket;
     [HideInInspector]
     public float minSpeed;
-    [HideInInspector]
-    public float tilt;
-    [HideInInspector]
-    public Vector3 tiltShown;
+
     [HideInInspector]
     public float decelerationMultiplier;
 
@@ -60,7 +57,7 @@ public class PlayerPhysics : MonoBehaviour
     private PlayerSteeringCalculator steering;
 
     private PlayerTilting tilting;
-    private PlayerCollider collider;
+    private PlayerCollider playerCollider;
 
     public delegate void ChangeSpeed();
     public static ChangeSpeed changeSpeed;
@@ -72,7 +69,7 @@ public class PlayerPhysics : MonoBehaviour
 
         steering = GetComponent<PlayerSteeringCalculator>();
         tilting = GetComponent<PlayerTilting>();
-        collider = GetComponent<PlayerCollider>();
+        playerCollider = GetComponent<PlayerCollider>();
     }
 
     // Start is called before the first frame update
@@ -89,7 +86,7 @@ public class PlayerPhysics : MonoBehaviour
     {
         Vector3 movementDirection = steering.calculateDirection();
         tilting.tiltBike(steering.GetSteer());
-        collider.checkForContact();
+        playerCollider.checkForContact();
 
         // Constantly decelerate, faster if brakes are applied
         speed -= decelerationPerTick * decelerationMultiplier;
@@ -99,7 +96,7 @@ public class PlayerPhysics : MonoBehaviour
         // update speed bracket
         if (speed >= fastSpeed && speedBracket != Speed.Fast)
         {
-            AudioManager.instance.PlaySound(windSound, AudioMixerGroupName.SFX, transform.position);
+            //AudioManager.instance.PlaySound(windSound, AudioMixerGroupName.SFX, transform.position);
             // If the bike is fast but its enum isn't set to fast, update it
             speedBracket = Speed.Fast;
             // run the change speed delegate which will be ran inside the music script
@@ -112,7 +109,7 @@ public class PlayerPhysics : MonoBehaviour
             // If player was slow and has moved up to medium, play wind sound
             if (speedBracket == Speed.Slow)
             {
-                AudioManager.instance.PlaySound(windSound, AudioMixerGroupName.SFX, transform.position);
+                //AudioManager.instance.PlaySound(windSound, AudioMixerGroupName.SFX, transform.position);
             }
             speedBracket = Speed.Medium;
             if (changeSpeed != null)

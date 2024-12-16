@@ -15,6 +15,9 @@ public class InputPreferenceReader : MonoBehaviour
         oM = GetComponent<OptionsMenu>();
     }
 
+    /// <summary>
+    /// Records inputPreferences set in options panel to inputPreferences ScriptableObject
+    /// </summary>
     public void SavePreferences()
     {
         playerPanels[0] = oM.player1Panel;

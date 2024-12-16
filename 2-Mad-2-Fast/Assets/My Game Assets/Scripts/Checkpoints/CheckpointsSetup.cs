@@ -10,7 +10,6 @@ public class CheckpointsSetup : MonoBehaviour
     [SerializeField] private LapManager lapManager; //manager for everything
     #endregion
 
-
     #region StartMethod
     /// <summary>
     /// Start method, takes all subjects and subscribes them to the manager
@@ -32,17 +31,17 @@ public class CheckpointsSetup : MonoBehaviour
     public void StartRace()
     {
         //reset player stats
-        PlayerStatsStorage.ps1.finished = false;
-        PlayerStatsStorage.ps2.finished = false;
-        PlayerStatsStorage.ps1.currentLap = 1;
-        PlayerStatsStorage.ps2.currentLap = 1;
-        PlayerStatsStorage.ps1.currentCheckpoint = 0;
-        PlayerStatsStorage.ps2.currentCheckpoint = 0;
-        PlayerStatsStorage.ps1.currentLapTime = 0;
-        PlayerStatsStorage.ps2.currentLapTime = 0;
+        LapManager.instance.ps[0].finished = false;
+        LapManager.instance.ps[1].finished = false;
+        LapManager.instance.ps[0].currentLap = 1;
+        LapManager.instance.ps[1].currentLap = 1;
+        LapManager.instance.ps[0].currentCheckpoint = 0;
+        LapManager.instance.ps[1].currentCheckpoint = 0;
+        LapManager.instance.ps[0].currentLapTime = 0;
+        LapManager.instance.ps[1].currentLapTime = 0;
         //start race
-        PlayerStatsStorage.ps1.started = true;
-        PlayerStatsStorage.ps2.started = true;
+        LapManager.instance.ps[0].started = true;
+        LapManager.instance.ps[1].started = true;
     }
     #endregion
 
@@ -52,69 +51,53 @@ public class CheckpointsSetup : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        //ps1
-        if (PlayerStatsStorage.ps1.started && !PlayerStatsStorage.ps1.finished)
+        for (int i = 0; i < 2; i++)
         {
-            PlayerStatsStorage.ps1.currentLapTime += Time.deltaTime; //sums up current lap time
-            if (PlayerStatsStorage.ps1.bestLap == 0) //if lap time is 0 no best lap was made yet, so the first one is the best one
+            //ps[0]
+            if (LapManager.instance.ps[i].started && !LapManager.instance.ps[0].finished)
             {
-                PlayerStatsStorage.ps1.bestLap = 1;
+                LapManager.instance.ps[i].currentLapTime += Time.deltaTime; //sums up current lap time
+                if (LapManager.instance.ps[i].bestLap == 0) //if lap time is 0 no best lap was made yet, so the first one is the best one
+                {
+                    LapManager.instance.ps[i].bestLap = 1;
+                }
+            }
+
+            if (LapManager.instance.ps[i].started)
+            {
+                if (LapManager.instance.ps[i].bestLap == LapManager.instance.ps[0].currentLap) //if the game is started and no best lap time is made yet the best lap timer goes up equal to the current lap timer
+                {
+                    LapManager.instance.ps[i].bestLapTime = LapManager.instance.ps[0].currentLapTime;
+                }
             }
         }
-
-        if (PlayerStatsStorage.ps1.started)
-        {
-            if (PlayerStatsStorage.ps1.bestLap == PlayerStatsStorage.ps1.currentLap) //if the game is started and no best lap time is made yet the best lap timer goes up equal to the current lap timer
-            {
-                PlayerStatsStorage.ps1.bestLapTime = PlayerStatsStorage.ps1.currentLapTime;
-            }
-        }
-
-        //ps2
-        if (PlayerStatsStorage.ps2.started && !PlayerStatsStorage.ps2.finished)
-        {
-            PlayerStatsStorage.ps2.currentLapTime += Time.deltaTime; //sums up current lap time
-            if (PlayerStatsStorage.ps2.bestLap == 0) //if lap time is 0 no best lap was made yet, so the first one is the best one
-            {
-                PlayerStatsStorage.ps2.bestLap = 1;
-            }
-        }
-
-        if (PlayerStatsStorage.ps2.started)
-        {
-            if (PlayerStatsStorage.ps2.bestLap == PlayerStatsStorage.ps2.currentLap) //if the game is started and no best lap time is made yet the best lap timer goes up equal to the current lap timer
-            {
-                PlayerStatsStorage.ps2.bestLapTime = PlayerStatsStorage.ps2.currentLapTime;
-            }
-        }
-
 
     }
     #endregion
 
     #region GUI for debugging
-    /**
+    
     /// <summary>
     /// OnGUI function to show time and laps on screen for debugging
     /// </summary>
     private void OnGUI()
     {
         //shows the current time on gui
-        string formattedCurrentTime = $"Current: {Mathf.FloorToInt(PlayerStatsStorage.ps1.currentLapTime / 60)}:{PlayerStatsStorage.ps1.currentLapTime % 60:00.000} - (Lap {PlayerStatsStorage.ps1.currentLap})";
+        string formattedCurrentTime = $"Current: {Mathf.FloorToInt(LapManager.instance.ps[0].currentLapTime / 60)}:{LapManager.instance.ps[0].currentLapTime % 60:00.000} - (Lap {LapManager.instance.ps[0].currentLap})";
         GUI.Label(new Rect(50, 10, 250, 100), formattedCurrentTime);
 
         //shows the best time on gui
-        string formattedBestTime = $"Best: {Mathf.FloorToInt(PlayerStatsStorage.ps1.bestLapTime / 60)}:{PlayerStatsStorage.ps1.bestLapTime % 60:00.000} - (Lap {PlayerStatsStorage.ps1.bestLap})";
+        string formattedBestTime = $"Best: {Mathf.FloorToInt(LapManager.instance.ps[0].bestLapTime / 60)}:{LapManager.instance.ps[0].bestLapTime % 60:00.000} - (Lap {LapManager.instance.ps[0].bestLap})";
         GUI.Label(new Rect(250, 10, 250, 100), formattedBestTime);
 
         //shows the current time on gui
-        string formattedCurrentTime2 = $"Current: {Mathf.FloorToInt(PlayerStatsStorage.ps2.currentLapTime / 60)}:{PlayerStatsStorage.ps2.currentLapTime % 60:00.000} - (Lap {PlayerStatsStorage.ps2.currentLap})";
-        GUI.Label(new Rect(600, 10, 250, 100), formattedCurrentTime2);
+        string formattedCurrentTime2 = $"Current: {Mathf.FloorToInt(LapManager.instance.ps[1].currentLapTime / 60)}:{LapManager.instance.ps[1].currentLapTime % 60:00.000} - (Lap {LapManager.instance.ps[1].currentLap})";
+        GUI.Label(new Rect(Screen.width - 400, 10, 250, 100), formattedCurrentTime2);
 
         //shows the best time on gui
-        string formattedBestTime2 = $"Best: {Mathf.FloorToInt(PlayerStatsStorage.ps2.bestLapTime / 60)}:{PlayerStatsStorage.ps2.bestLapTime % 60:00.000} - (Lap {PlayerStatsStorage.ps2.bestLap})";
-        GUI.Label(new Rect(800, 10, 250, 100), formattedBestTime2);
+        string formattedBestTime2 = $"Best: {Mathf.FloorToInt(LapManager.instance.ps[1].bestLapTime / 60)}:{LapManager.instance.ps[1].bestLapTime % 60:00.000} - (Lap {LapManager.instance.ps[1].bestLap})";
+        GUI.Label(new Rect(Screen.width - 200, 10, 250, 100), formattedBestTime2);
     }
-    */
+    
     #endregion
 }

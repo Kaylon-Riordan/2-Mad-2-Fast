@@ -9,6 +9,8 @@ using static UnityEngine.SpriteMask;
 //  Learned how to use delegates for observer https://youtu.be/J01z1F-du-E
 public class DynamicMusic : MonoBehaviour
 {
+    public static DynamicMusic instance;
+
     [Header("Audio Clips")]
     [SerializeField]
     private AudioClip main;
@@ -27,6 +29,11 @@ public class DynamicMusic : MonoBehaviour
     private PlayerPhysics pp1;
     private PlayerPhysics pp2;
     private LapManager lm;
+
+    private void Awake()
+    {
+        instance = Singleton<DynamicMusic>.get();
+    }
 
     void Start()
     {
@@ -61,7 +68,7 @@ public class DynamicMusic : MonoBehaviour
             fastSource.mute = true;
             mediumSource.mute = false;
         }
-        else
+        else 
         {
             fastSource.mute = true;
             mediumSource.mute = true;
@@ -71,5 +78,13 @@ public class DynamicMusic : MonoBehaviour
     void LastLap()
     {
         finalSource.mute = false;
+    }
+
+    public void MuteAll()
+    {
+        mainSource.mute = true;
+        mediumSource.mute = true;
+        fastSource.mute = true;
+        finalSource.mute = true;
     }
 }

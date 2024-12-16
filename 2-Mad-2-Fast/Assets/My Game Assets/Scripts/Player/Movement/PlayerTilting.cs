@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerTilting : MonoBehaviour
 {
 
-
+    [HideInInspector]
+    public float tilt;
+    [HideInInspector]
+    public Vector3 tiltShown;
     [SerializeField]
     private float tiltLimit;
     [SerializeField]
@@ -37,25 +40,25 @@ public class PlayerTilting : MonoBehaviour
     public void tiltBike(Vector2 inputDirection)
     {
         // Tilt the player in the direction of input, depending on speed
-        pp.tilt += inputDirection.x * pp.speed * tiltRate;
+        tilt += inputDirection.x * pp.speed * tiltRate;
 
         // Handle negative tilt
-        if (pp.tilt < 0)
+        if (tilt < 0)
         {
             //gradually return tilt to 0
-            pp.tilt += tiltRecovery;
+            tilt += tiltRecovery;
             // If tilt passes the limit, cause the player to stumble and play sound
-            if (pp.tilt < -tiltLimit)
+            if (tilt < -tiltLimit)
             {
                 AudioManager.instance.PlaySound(stumbleSound, AudioMixerGroupName.SFX, transform.position);
                 StartCoroutine(s.Stumble(Penalty.Large, 0, false));
             }
         }
         // Handle positive tilt
-        else if (pp.tilt > 0)
+        else if (tilt > 0)
         {
-            pp.tilt -= tiltRecovery;
-            if (pp.tilt > tiltLimit)
+            tilt -= tiltRecovery;
+            if (tilt > tiltLimit)
             {
                 AudioManager.instance.PlaySound(stumbleSound, AudioMixerGroupName.SFX, transform.position);
                 StartCoroutine(s.Stumble(Penalty.Large, 0, false));
@@ -63,9 +66,10 @@ public class PlayerTilting : MonoBehaviour
         }
 
         // Get current roatation of model
-        pp.tiltShown = pivotPoint.localEulerAngles;
+        tiltShown = pivotPoint.localEulerAngles;
         // Gradually shift the models rotation towards the tilt variable
-        pp.tiltShown.z = Mathf.Lerp(pp.tiltShown.z, -pp.tilt, tiltLerpSpeed * Time.deltaTime);
-        pivotPoint.localEulerAngles = pp.tiltShown;
+        tiltShown.z = Mathf.Lerp(tiltShown.z, -tilt, tiltLerpSpeed * Time.deltaTime);
+
+        pivotPoint.localEulerAngles = tiltShown;
     }
 }

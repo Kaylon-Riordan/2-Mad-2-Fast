@@ -56,6 +56,7 @@ public class CheckpointTrigger : MonoBehaviour
         if (other.CompareTag("Bike"))
         {
             Debug.Log($"Checkpoint triggered: {name}");
+            Debug.Log($"Checkpoint triggered by: {other.gameObject.name}");
             NotifyObservers(other.gameObject);
         }
     }

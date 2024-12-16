@@ -309,6 +309,17 @@
                 },
                 {
                     "name": "",
+                    "id": "6a4e348d-18db-4dd0-aa26-a7f03a2676d1",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "LeftPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6950239e-11e1-4ad6-a1aa-8f8e5aed8a07",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
@@ -413,6 +424,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "RightPedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a005cd21-333a-45f8-a7a0-08d75d2c7beb",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "RightPedal",
                     "isComposite": false,
                     "isPartOfComposite": false

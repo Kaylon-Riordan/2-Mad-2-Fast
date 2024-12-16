@@ -2,10 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Matches a control scheme preference to a player object
+/// </summary>
 public class ControlSchemePlayerMatcher : MonoBehaviour
 {
     private InputPreferences ip;
 
+    /// <summary>
+    /// Gets the name of a player's control scheme of a given player.
+    /// </summary>
+    /// <param name="PlayerNo">Int 1 or 2 representing player 1 or 2</param>
+    /// <returns>A string matching the control scheme's name as seen in the new input manager</returns>
     public string getControlSchemeByPlayerNumber(int PlayerNo)
     {
         ip = PlayerManager.instance.ip;

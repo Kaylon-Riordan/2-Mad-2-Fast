@@ -1,8 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Matches a connected input device to a player's preference
+/// </summary>
 public class InputDevicePlayerMatcher : MonoBehaviour
 {
     private static InputDeviceGetter deviceGetter;
@@ -15,6 +17,11 @@ public class InputDevicePlayerMatcher : MonoBehaviour
         checker = GetComponent<InputDeviceChecker>();
     }
 
+    /// <summary>
+    /// Matches input device by player number and input preference
+    /// </summary>
+    /// <param name="PlayerNo">Int 1 or 2 representing Player 1 or 2</param>
+    /// <returns>the connected device matching the player's preferences</returns>
     public InputDevice getInputDeviceByPlayerNumber(int PlayerNo)
     {
         ip = PlayerManager.instance.ip;

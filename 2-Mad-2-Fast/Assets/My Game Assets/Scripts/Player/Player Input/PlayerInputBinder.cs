@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Binds a player's inputs as according to their desired control scheme
+/// </summary>
 public class PlayerInputBinder : MonoBehaviour
 {
     [HideInInspector]
@@ -29,17 +29,19 @@ public class PlayerInputBinder : MonoBehaviour
         if (PlayerManager.instance.ip.controlSchemes[PlayerNo - 1] == ControlScheme.Shared)
         {
             playerActions = playerActionAsset.FindActionMap("PlayerShared");
-            getSharedInputDeviceInputs();
+            getSharedInputDeviceBindings();
         }
         else
         {
             playerActions = playerActionAsset.FindActionMap("Player");
-            getIndependentInputDeviceInputs();
+            getIndependentInputDeviceBindings();
         }
     }
 
-    // Called where each player has their own input device (more common)
-    private void getIndependentInputDeviceInputs()
+    /// <summary>
+    /// returns default/onehanded device bindings
+    /// </summary>
+    private void getIndependentInputDeviceBindings()
     {
         // Find Actions
         steer = playerActions.FindAction("Steer");
@@ -48,8 +50,11 @@ public class PlayerInputBinder : MonoBehaviour
         brake = playerActions.FindAction("Brake");
     }
 
+    /// <summary>
+    /// Returns shared device bindings
+    /// </summary>
     // Called where each player shares a single input device
-    private void getSharedInputDeviceInputs()
+    private void getSharedInputDeviceBindings()
     {
         // Find Actions
         steer = playerActions.FindAction("SteerP" + PlayerNo);
